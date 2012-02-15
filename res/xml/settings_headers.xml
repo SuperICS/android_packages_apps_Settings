@@ -57,8 +57,8 @@
         android:fragment="com.android.settings.WirelessSettings"
         android:icon="@drawable/empty_icon" />
 
-    <!-- INTERFACE -->
-    <header android:title="@string/header_category_interface" />
+    <!-- INTERFACE
+    <header android:title="@string/header_category_interface" />-->
 
     <!-- Launcher -->
     <header
@@ -71,19 +71,19 @@
             android:targetClass="com.cyanogenmod.trebuchet.preference.Preferences" />
     </header>
 
-    <!-- Themes -->
+ <!-- Themes
     <header
         android:id="@+id/themes_settings"
         android:icon="@drawable/ic_settings_themes"
         android:fragment="com.android.settings.ThemesSettings"
         android:title="@string/themes_settings_title" />
  
-    <!-- System -->
+     System 
     <header
         android:id="@+id/system_settings"
         android:icon="@drawable/ic_settings_system"
         android:fragment="com.android.settings.SystemSettings"
-        android:title="@string/system_settings_title" />
+        android:title="@string/system_settings_title" /> -->
 
         
     <!-- Quick Links -->
