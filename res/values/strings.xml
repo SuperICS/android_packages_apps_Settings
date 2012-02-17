@@ -868,8 +868,8 @@
     <string name="additional_options_title">Additional options</string>
     <string name="unlock_menu_unlock_title">Menu unlock</string>
     <string name="unlock_menu_unlock_summary">Pressing the menu button unlocks the device</string>
-    <string name="unlock_quick_unlock_control_title">Quick Unlock</string>
-    <string name="unlock_quick_unlock_control_summary">No need to press OK when entering Pin or Password. Delete counts as bad try</string>
+    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
+    <string name="unlock_quick_unlock_control_summary">No need to press OK when entering PIN or password. Delete counts as bad try</string>
 
     <!-- Delays and timeouts -->
     <string name="delay_and_timeout_title">Lock delay</string>
@@ -1363,6 +1363,9 @@
     <!-- VM Heap Size -->
     <string name="pref_heapsize_title">VM heap size</string>
     <string name="pref_heapsize_summary">Maximum amount of memory per VM heap (requires reboot)</string>
+    <!-- KSM -->
+    <string name="pref_ksm_title">Kernel samepage merging</string>
+    <string name="pref_ksm_summary">KSM reduces physical memory requirements and improves performance</string>
     <!-- Purgeable Assets -->
     <string name="pref_purgeable_assets_title">Allow purging of assets</string>
     <string name="pref_purgeable_assets_summary">Purging of bitmap memory assets allows the freeing of more RAM when needed (requires reboot)</string>
