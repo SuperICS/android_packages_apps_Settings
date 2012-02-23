@@ -59,10 +59,11 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment {
     private static final String KEY_BASEBAND_VERSION = "baseband_version";
     private static final String KEY_FIRMWARE_VERSION = "firmware_version";
 
-    private static final String KEY_MOD_VERSION = "mod_version";
-    private static final String KEY_MOD_BUILD_DATE = "build_date";
+    //private static final String KEY_MOD_VERSION = "mod_version";
+   private static final String KEY_MOD_BUILD_DATE = "build_date";
 
     private static final String KEY_UPDATE_SETTING = "additional_system_update_settings";
+    private static final String KEY_MOD_VERSION = "mod_version";
 
     long[] mHits = new long[3];
 
@@ -77,9 +78,10 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment {
         setValueSummary(KEY_BASEBAND_VERSION, "gsm.version.baseband");
         setStringSummary(KEY_DEVICE_MODEL, Build.MODEL + getMsvSuffix());
         setStringSummary(KEY_BUILD_NUMBER, Build.DISPLAY);
+        setStringSummary(KEY_MOD_VERSION, Build.MODVERSION);
         findPreference(KEY_KERNEL_VERSION).setSummary(getFormattedKernelVersion());
         setValueSummary(KEY_MOD_VERSION, "ro.osr.version");
-        setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
+        setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");        
 
         // Remove Safety information preference if PROPERTY_URL_SAFETYLEGAL is not set
         removePreferenceIfPropertyMissing(getPreferenceScreen(), "safetylegal",
@@ -115,11 +117,11 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment {
                 Utils.UPDATE_PREFERENCE_FLAG_SET_TITLE_TO_MATCHING_ACTIVITY);
 
         // Read platform settings for additional system update setting
-        boolean isUpdateSettingAvailable =
-                getResources().getBoolean(R.bool.config_additional_system_update_setting_enable);
-        if (isUpdateSettingAvailable == false) {
+        //boolean isUpdateSettingAvailable =
+        //        getResources().getBoolean(R.bool.config_additional_system_update_setting_enable);
+        //if (isUpdateSettingAvailable == false) {
             getPreferenceScreen().removePreference(findPreference(KEY_UPDATE_SETTING));
-        }
+        //}
     }
 
     @Override
