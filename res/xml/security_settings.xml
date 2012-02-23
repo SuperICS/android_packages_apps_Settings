@@ -21,11 +21,11 @@
     <PreferenceCategory
        android:title="@string/screen_security_category">
 
-        <PreferenceScreen
+       <!-- <PreferenceScreen
             android:key="screen_security"
             android:fragment="com.android.settings.cyanogenmod.ScreenSecurity"
             android:title="@string/screen_security_title" 
-            android:summary="@string/screen_security_summary" />
+            android:summary="@string/screen_security_summary" />-->
 
     </PreferenceCategory>
 
