@@ -1581,5 +1581,5 @@
     <string name="additional_system_update_settings_list_item_title" msgid="214987609894661992">"Otras actualizaciones del sistema"</string>
 
     <string name="quick_links_title">Avanzado</string>
-    <string name="rom_control_title">ROM Control</string>
+    <string name="rom_control_title">Opciones especiales</string>
 </resources>

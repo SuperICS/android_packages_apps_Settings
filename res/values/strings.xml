@@ -4047,8 +4047,8 @@ found in the list of installed apps.</string>
     "system_update_settings_list_item_title" in this project. [CHAR LIMIT=25] -->
     <string name="additional_system_update_settings_list_item_title">Additional system updates</string>
 
-    <string name="quick_links_title">Quick Links</string>
-    <string name="rom_control_title">ROM Control</string>
+    <string name="quick_links_title">Special</string>
+    <string name="rom_control_title">Special options</string>
     
     <!--<string name="mod_version">Mod version</string>-->
 
