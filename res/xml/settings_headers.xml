@@ -56,21 +56,10 @@
         android:fragment="com.android.settings.WirelessSettings"
         android:icon="@drawable/empty_icon" />
         
-    <!-- Quick Links -->
-    <header android:title="@string/quick_links_title" />
-
-    <header android:icon="@drawable/ic_settings_rom_control"
-            android:title="@string/rom_control_title">
-        <intent
-                android:action="android.intent.action.MAIN"
-                android:targetClass="com.roman.romcontrol.ROMControlActivity"
-                android:targetPackage="com.roman.romcontrol" />
-    </header>
-
     <!-- INTERFACE
     <header android:title="@string/header_category_interface" />-->
 
-    <!-- Launcher -->
+    <!-- Launcher
     <header
         android:id="@+id/launcher_settings"
         android:title="@string/launcher_settings_title"
@@ -78,7 +67,7 @@
         <intent
             android:action="android.intent.action.MAIN"
             android:targetPackage="com.cyanogenmod.trebuchet"
-            android:targetClass="com.cyanogenmod.trebuchet.preference.Preferences" />
+            android:targetClass="com.cyanogenmod.trebuchet.preference.Preferences" />-->
     </header>
 
  <!-- Themes
@@ -96,7 +85,7 @@
         android:title="@string/system_settings_title" /> -->
 
         
-    <!-- Quick Links -->
+    <!-- Quick Links
     <header android:title="@string/quick_links_title" />
 
     <header android:icon="@drawable/ic_settings_rom_control"
@@ -105,7 +94,7 @@
                 android:action="android.intent.action.MAIN"
                 android:targetClass="com.roman.romcontrol.ROMControlActivity"
                 android:targetPackage="com.roman.romcontrol" />
-    </header>
+    </header>-->
 
     <!-- DEVICE -->
     <header android:title="@string/header_category_device" />
@@ -166,12 +155,12 @@
     <!-- PERSONAL -->
     <header android:title="@string/header_category_personal" />
 
-    <!-- Profiles -->
+    <!-- Profiles
     <header
         android:id="@+id/profiles_settings"
         android:icon="@drawable/ic_settings_profiles"
         android:fragment="com.android.settings.ProfilesSettings"
-        android:title="@string/profiles_settings_title" />
+        android:title="@string/profiles_settings_title" />-->
 
     <!-- Data Sync. The settings activity will ensure this is resolved to an
          activity on the system image, otherwise it will remove this
@@ -242,12 +231,12 @@
         android:icon="@drawable/ic_settings_development"
         android:title="@string/development_settings_title" />
 
-    <!-- Performance -->
+    <!-- Performance
     <header
         android:id="@+id/performance_settings"
         android:fragment="com.android.settings.PerformanceSettings"
         android:icon="@drawable/ic_settings_performance"
-        android:title="@string/performance_settings_title" />
+        android:title="@string/performance_settings_title" />-->
 
     <!-- About Device -->
     <header
