@@ -56,18 +56,18 @@
         android:fragment="com.android.settings.WirelessSettings"
         android:icon="@drawable/empty_icon" />
         
-    <!-- INTERFACE
+    <!-- INTERFACE -->
     <header android:title="@string/header_category_interface" />-->
 
     <!-- Launcher -->
     <header
         android:id="@+id/launcher_settings"
         android:title="@string/launcher_settings_title"
-        android:icon="@drawable/ic_settings_launcher">
+        android:icon="@drawable/ic_settings_cmlauncher">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetPackage="com.android.launcher2"
-            android:targetClass="com.android.launcher2.preference.Preferences" />
+            android:targetPackage="com.cyanogenmod.trebuchet"
+            android:targetClass="com.cyanogenmod.trebuchet.preference.Preferences" />
     </header>
 
  <!-- Themes
@@ -94,7 +94,7 @@
                 android:action="android.intent.action.MAIN"
                 android:targetClass="com.roman.romcontrol.ROMControlActivity"
                 android:targetPackage="com.roman.romcontrol" />
-    </header>-->
+    </header>
 
     <!-- DEVICE -->
     <header android:title="@string/header_category_device" />
