@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings;
+package com.android.settings.cyanogenmod;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -24,16 +24,15 @@ import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
 
+import com.android.settings.R;
+import com.android.settings.SettingsPreferenceFragment;
+
 /**
  * Performance Settings
  */
 public class PerformanceSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
     private static final String TAG = "PerformanceSettings";
-
-    private static final String PROCESSOR = "processor";
-
-    private static final String MEMORY_MANAGEMENT = "memory_management";
 
     private static final String USE_DITHERING_PREF = "pref_use_dithering";
 
@@ -45,21 +44,9 @@ public class PerformanceSettings extends SettingsPreferenceFragment
 
     private static final String USE_16BPP_ALPHA_PROP = "persist.sys.use_16bpp_alpha";
 
-    private static final String DISABLE_BOOTANIMATION_PREF = "pref_disable_bootanimation";
-
-    private static final String DISABLE_BOOTANIMATION_PERSIST_PROP = "persist.sys.nobootanimation";
-
-    private static final String DISABLE_BOOTANIMATION_DEFAULT = "0";
-
     private CheckBoxPreference mUseDitheringPref;
 
     private CheckBoxPreference mUse16bppAlphaPref;
-
-    private CheckBoxPreference mDisableBootanimPref;
-
-    private PreferenceScreen mProcessor;
-
-    private PreferenceScreen mMemoryManagement;
 
     private AlertDialog alertDialog;
 
@@ -73,12 +60,8 @@ public class PerformanceSettings extends SettingsPreferenceFragment
 
             PreferenceScreen prefSet = getPreferenceScreen();
 
-            mProcessor = (PreferenceScreen) prefSet.findPreference(PROCESSOR);
-            mMemoryManagement = (PreferenceScreen) prefSet.findPreference(MEMORY_MANAGEMENT);
             mUseDitheringPref = (CheckBoxPreference) prefSet.findPreference(USE_DITHERING_PREF);
             mUse16bppAlphaPref = (CheckBoxPreference) prefSet.findPreference(USE_16BPP_ALPHA_PREF);
-            mDisableBootanimPref = (CheckBoxPreference) prefSet
-                    .findPreference(DISABLE_BOOTANIMATION_PREF);
 
             String useDithering = SystemProperties.get(USE_DITHERING_PERSIST_PROP,
                     USE_DITHERING_DEFAULT);
@@ -86,10 +69,6 @@ public class PerformanceSettings extends SettingsPreferenceFragment
 
             String use16bppAlpha = SystemProperties.get(USE_16BPP_ALPHA_PROP, "0");
             mUse16bppAlphaPref.setChecked("1".equals(use16bppAlpha));
-
-            String disableBootanimation = SystemProperties.get(DISABLE_BOOTANIMATION_PERSIST_PROP,
-                    DISABLE_BOOTANIMATION_DEFAULT);
-            mDisableBootanimPref.setChecked("1".equals(disableBootanimation));
 
             /* Display the warning dialog */
             alertDialog = new AlertDialog.Builder(getActivity()).create();
@@ -115,9 +94,6 @@ public class PerformanceSettings extends SettingsPreferenceFragment
         } else if (preference == mUse16bppAlphaPref) {
             SystemProperties.set(USE_16BPP_ALPHA_PROP,
                     mUse16bppAlphaPref.isChecked() ? "1" : "0");
-        } else if (preference == mDisableBootanimPref) {
-            SystemProperties.set(DISABLE_BOOTANIMATION_PERSIST_PROP,
-                    mDisableBootanimPref.isChecked() ? "1" : "0");
         } else {
             // If we didn't handle it, let preferences handle it.
             return super.onPreferenceTreeClick(preferenceScreen, preference);

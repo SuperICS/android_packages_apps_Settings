@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings;
+package com.android.settings.cyanogenmod;
 
 import android.app.ActivityManagerNative;
 import android.content.res.Configuration;
@@ -26,11 +26,16 @@ import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.util.Log;
 
+import com.android.settings.R;
+import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
+
 public class SystemSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "SystemSettings";
 
     private static final String KEY_FONT_SIZE = "font_size";
+    private static final String KEY_NOTIFICATION_DRAWER = "notification_drawer";
 
     private ListPreference mFontSizePref;
 
@@ -44,6 +49,9 @@ public class SystemSettings extends SettingsPreferenceFragment implements
 
         mFontSizePref = (ListPreference) findPreference(KEY_FONT_SIZE);
         mFontSizePref.setOnPreferenceChangeListener(this);
+        if (Utils.isScreenLarge()) {
+            getPreferenceScreen().removePreference(findPreference(KEY_NOTIFICATION_DRAWER));
+        }
     }
 
     int floatToIndex(float val) {

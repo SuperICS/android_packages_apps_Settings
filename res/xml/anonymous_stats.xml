@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2012 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,13 +16,20 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/combined_bar_title">
+    android:title="@string/anonymous_statistics_title"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <!-- Status bar tweaks -->
     <CheckBoxPreference
-	android:key="combined_bar_auto_hide"
-	android:title="@string/combined_bar_auto_hide_title"
-	android:summary="@string/combined_bar_auto_hide_summary"
-	android:defaultValue="true" />
+        android:key="pref_anonymous_opt_in"
+        android:defaultValue="true"
+        android:title="@string/enable_reporting_title" />
+
+    <PreferenceScreen
+        android:title="@string/preview_data_title"
+        android:fragment="com.android.settings.cmstats.PreviewData" />
+
+    <Preference
+        android:key="pref_view_stats"
+        android:title="@string/view_stats_title" />
 
 </PreferenceScreen>

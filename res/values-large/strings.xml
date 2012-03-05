@@ -14,14 +14,6 @@
      limitations under the License.
 -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-        android:title="@string/profiles_settings_title"
-        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
-
-    <!-- Temporary - Preference stub -->
-    <Preference android:key="stubbed"
-            style="?android:preferenceInformationStyle"
-            android:title="@string/stubbed"
-            android:summary="@string/stubbed_summary" />
-
-</PreferenceScreen>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="combined_status_bar_title">@string/combined_bar_title</string>
+</resources>
