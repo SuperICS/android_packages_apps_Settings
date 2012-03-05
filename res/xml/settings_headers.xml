@@ -55,37 +55,37 @@
         android:breadCrumbTitle="@string/wireless_networks_settings_title"
         android:fragment="com.android.settings.WirelessSettings"
         android:icon="@drawable/empty_icon" />
-
-    <!-- INTERFACE
+        
+    <!-- INTERFACE -->
     <header android:title="@string/header_category_interface" />-->
 
     <!-- Launcher -->
     <header
         android:id="@+id/launcher_settings"
         android:title="@string/launcher_settings_title"
-        android:icon="@drawable/ic_settings_cmlauncher">
+        android:icon="@drawable/ic_settings_launcher">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetPackage="com.cyanogenmod.trebuchet"
-            android:targetClass="com.cyanogenmod.trebuchet.preference.Preferences" />
+            android:targetPackage="com.android.launcher2"
+            android:targetClass="com.android.launcher2.preference.Preferences" />
     </header>
 
- <!-- Themes -->
+ <!-- Themes
     <header
         android:id="@+id/themes_settings"
         android:icon="@drawable/ic_settings_themes"
         android:fragment="com.android.settings.ThemesSettings"
         android:title="@string/themes_settings_title" />
  
- <!-- System  -->
+     System 
     <header
         android:id="@+id/system_settings"
         android:icon="@drawable/ic_settings_system"
         android:fragment="com.android.settings.SystemSettings"
-        android:title="@string/system_settings_title" />
+        android:title="@string/system_settings_title" /> -->
 
         
-    <!-- Quick Links
+    <!-- Personal -->
     <header android:title="@string/quick_links_title" />
 
     <header android:icon="@drawable/ic_settings_rom_control"
@@ -94,7 +94,7 @@
                 android:action="android.intent.action.MAIN"
                 android:targetClass="com.roman.romcontrol.ROMControlActivity"
                 android:targetPackage="com.roman.romcontrol" />
-    </header>-->
+    </header>
 
     <!-- DEVICE -->
     <header android:title="@string/header_category_device" />
@@ -155,7 +155,7 @@
     <!-- PERSONAL -->
     <header android:title="@string/header_category_personal" />
 
-    <!-- Profiles -->
+    <!-- Profiles
     <header
         android:id="@+id/profiles_settings"
         android:icon="@drawable/ic_settings_profiles"
@@ -231,7 +231,7 @@
         android:icon="@drawable/ic_settings_development"
         android:title="@string/development_settings_title" />
 
-    <!-- Performance  -->
+    <!-- Performance
     <header
         android:id="@+id/performance_settings"
         android:fragment="com.android.settings.PerformanceSettings"
