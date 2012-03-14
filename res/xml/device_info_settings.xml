@@ -117,7 +117,8 @@
         <Preference android:key="mod_version"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/mod_version"
-                android:summary="@string/mod_version_default" />
+                android:summary="@string/mod_version_default"
+                android:icon="@drawable/st_pref_mask" />
 
         <!-- Mod build date -->
         <Preference android:key="build_date"
