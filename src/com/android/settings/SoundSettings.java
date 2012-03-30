@@ -16,6 +16,10 @@
 
 package com.android.settings;
 
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
+
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -26,7 +30,6 @@ import android.content.pm.ResolveInfo;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteException;
 import android.media.AudioManager;
-import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.media.audiofx.AudioEffect;
 import android.net.Uri;
@@ -41,12 +44,9 @@ import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
 import android.provider.MediaStore;
 import android.provider.Settings;
-import android.provider.MediaStore.Images.Media;
-import android.provider.Settings.SettingNotFoundException;
 import android.telephony.TelephonyManager;
+import android.text.format.DateFormat;
 import android.util.Log;
-
-import java.util.List;
 
 public class SoundSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -69,6 +69,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private static final String KEY_NOTIFICATION_SOUND = "notification_sound";
     private static final String KEY_CATEGORY_CALLS = "category_calls";
     private static final String KEY_QUIET_HOURS = "quiet_hours";
+    private static final String KEY_VOLBTN_MUSIC_CTRL = "volbtn_music_controls";
 
     private static final String SILENT_MODE_OFF = "off";
     private static final String SILENT_MODE_VIBRATE = "vibrate";
@@ -89,6 +90,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mHapticFeedback;
     private Preference mMusicFx;
     private CheckBoxPreference mLockSounds;
+    private CheckBoxPreference mVolBtnMusicCtrl;
     private Preference mRingtonePreference;
     private Preference mNotificationPreference;
     private PreferenceScreen mQuietHours;
@@ -145,6 +147,14 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         }
 
         mQuietHours = (PreferenceScreen) findPreference(KEY_QUIET_HOURS);
+        if (Settings.System.getInt(resolver, Settings.System.QUIET_HOURS_ENABLED, 0) == 1) {
+            mQuietHours.setSummary(getString(R.string.quiet_hours_active_from) + " " + 
+                    returnTime(Settings.System.getString(resolver, Settings.System.QUIET_HOURS_START)) 
+                    + " " + getString(R.string.quiet_hours_active_to) + " " +
+                    returnTime(Settings.System.getString(resolver, Settings.System.QUIET_HOURS_END)));
+        } else {
+            mQuietHours.setSummary(getString(R.string.quiet_hours_summary));
+        }
 
         mVibrateOnRing = (CheckBoxPreference) findPreference(KEY_VIBRATE);
         mVibrateOnRing.setOnPreferenceChangeListener(this);
@@ -165,6 +175,10 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         mLockSounds.setPersistent(false);
         mLockSounds.setChecked(Settings.System.getInt(resolver,
                 Settings.System.LOCKSCREEN_SOUNDS_ENABLED, 1) != 0);
+
+        mVolBtnMusicCtrl = (CheckBoxPreference) findPreference(KEY_VOLBTN_MUSIC_CTRL);
+        mVolBtnMusicCtrl.setChecked(Settings.System.getInt(resolver,
+                Settings.System.VOLBTN_MUSIC_CONTROLS, 0) != 0);
 
         mRingtonePreference = findPreference(KEY_RINGTONE);
         mNotificationPreference = findPreference(KEY_NOTIFICATION_SOUND);
@@ -276,11 +290,21 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     // updateState in fact updates the UI to reflect the system state
     private void updateState(boolean force) {
         if (getActivity() == null) return;
+        ContentResolver resolver = getContentResolver();
 
         final int vibrateMode = mAudioManager.getVibrateSetting(AudioManager.VIBRATE_TYPE_RINGER);
 
         mVibrateOnRing.setChecked(vibrateMode == AudioManager.VIBRATE_SETTING_ON);
         mSilentMode.setValue(getPhoneSilentModeSettingValue());
+
+        if (Settings.System.getInt(resolver, Settings.System.QUIET_HOURS_ENABLED, 0) == 1) {
+            mQuietHours.setSummary(getString(R.string.quiet_hours_active_from) + " " +
+                    returnTime(Settings.System.getString(resolver, Settings.System.QUIET_HOURS_START))
+                    + " " + getString(R.string.quiet_hours_active_to) + " " +
+                    returnTime(Settings.System.getString(resolver, Settings.System.QUIET_HOURS_END)));
+        } else {
+            mQuietHours.setSummary(getString(R.string.quiet_hours_summary));
+        }
 
         mSilentMode.setSummary(mSilentMode.getEntry());
     }
@@ -343,6 +367,10 @@ public class SoundSettings extends SettingsPreferenceFragment implements
             // let the framework fire off the intent
             return false;
 
+        } else if (preference == mVolBtnMusicCtrl) {
+            Settings.System.putInt(getContentResolver(), Settings.System.VOLBTN_MUSIC_CONTROLS,
+                    mVolBtnMusicCtrl.isChecked() ? 1 : 0);
+
         } else {
             // If we didn't handle it, let preferences handle it.
             return super.onPreferenceTreeClick(preferenceScreen, preference);
@@ -368,5 +396,21 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         }
 
         return true;
+    }
+
+    private String returnTime(String t) {
+        if (t == null || t.equals("")) {
+            return "";
+        }
+        int hr = Integer.parseInt(t.trim());
+        int mn = hr;
+
+        hr = hr / 60;
+        mn = mn % 60;
+        Calendar cal = Calendar.getInstance();
+        cal.set(Calendar.HOUR_OF_DAY, hr);
+        cal.set(Calendar.MINUTE, mn);
+        Date date = cal.getTime();
+        return DateFormat.getTimeFormat(getActivity().getApplicationContext()).format(date);
     }
 }

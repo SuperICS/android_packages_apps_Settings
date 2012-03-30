@@ -222,15 +222,17 @@
             </intent-filter>
         </activity-alias>
 
-        <activity android:name="ApnSettings" android:label="@string/apn_settings"
+        <activity android:name="Settings$ApnSettingsActivity" android:label="@string/apn_settings"
                   android:configChanges="orientation|keyboardHidden|screenSize"
-                  android:launchMode="singleTask">
+                  android:clearTaskOnLaunch="true" android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.settings.APN_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.VOICE_LAUNCH" />
             </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.ApnSettings" />
         </activity>
 
         <activity android:name="Settings$BluetoothSettingsActivity"
@@ -939,9 +941,9 @@
         <activity android:name=".deviceinfo.MiscFilesHandler"
                 android:theme="@android:style/Theme.Holo.DialogWhenLarge"/>
 
-        <activity android:name="ApnEditor"
+        <activity android:name="Settings$ApnEditorActivity"
                 android:label="@string/apn_edit"
-                android:theme="@android:style/Theme.Holo.DialogWhenLarge">
+                android:clearTaskOnLaunch="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.EDIT" />
@@ -954,6 +956,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="vnd.android.cursor.dir/telephony-carrier" />
             </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.ApnEditor" />
         </activity>
 
         <activity android:name="MediaFormat" android:label="@string/media_format_title">
@@ -1158,9 +1162,6 @@
             </intent-filter>
         </activity>
 
-
-
-
         <!-- Development settings -->
 
         <activity android:name="DebugIntentSender" android:label="@string/debug_intent_sender_label">
@@ -1349,12 +1350,35 @@
             android:theme="@style/CryptKeeperBlankTheme"
         />
 
-        <!-- CyanogenMod activities -->
+        <!-- CyanogenMod activities Start -->
         <activity android:name=".cyanogenmod.LightLevelsActivity" />
+
         <activity android:name=".cyanogenmod.ThemesSettings" />
+
         <activity android:name=".cyanogenmod.SystemSettings" />
-        <activity android:name=".cyanogenmod.ProfilesSettings" />
+
         <activity android:name=".cyanogenmod.PerformanceSettings" />
+
+        <activity android:name=".profiles.ProfilesSettings" />
+
+        <activity android:name=".profiles.ProfileConfig" />
+
+        <activity android:name=".profiles.AppGroupList" />
+
+        <activity android:name=".profiles.AppGroupConfig" />
+
+        <activity android:name=".profiles.ProfileGroupConfig" />
+
+        <activity android:name=".ApnEditor" />
+
+        <activity android:name="Settings$AnonymousStatsActivity"
+                android:label="@string/anonymous_statistics_title"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:clearTaskOnLaunch="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.cmstats.AnonymousStats" />
+        </activity>
+        <!-- CyanogenMod activities End -->
 
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"

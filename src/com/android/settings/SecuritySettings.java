@@ -66,6 +66,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private static final String KEY_SHOW_PASSWORD = "show_password";
     private static final String KEY_RESET_CREDENTIALS = "reset_credentials";
     private static final String KEY_TOGGLE_INSTALL_APPLICATIONS = "toggle_install_applications";
+    private static final String KEY_POWER_INSTANTLY_LOCKS = "power_button_instantly_locks";
 
     DevicePolicyManager mDPM;
 
@@ -82,6 +83,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
 
     private CheckBoxPreference mToggleAppInstallation;
     private DialogInterface mWarnInstallApps;
+    private CheckBoxPreference mPowerButtonInstantlyLocks;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -185,6 +187,14 @@ public class SecuritySettings extends SettingsPreferenceFragment
         if ((TelephonyManager.PHONE_TYPE_CDMA == tm.getCurrentPhoneType()) &&
                 (tm.getLteOnCdmaMode() != Phone.LTE_ON_CDMA_TRUE)) {
             root.removePreference(root.findPreference(KEY_SIM_LOCK));
+        } else {
+            // Disable SIM lock if sim card is missing or unknown
+            if ((TelephonyManager.getDefault().getSimState() ==
+                                 TelephonyManager.SIM_STATE_ABSENT) ||
+                (TelephonyManager.getDefault().getSimState() ==
+                                 TelephonyManager.SIM_STATE_UNKNOWN)) {
+                root.findPreference(KEY_SIM_LOCK).setEnabled(false);
+            }
         }
 
         // Show password
