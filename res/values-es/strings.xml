@@ -1591,29 +1591,29 @@
     <!-- Display settings screen, battery light repeat pulsing title -->
     <string name="battery_pulse_title">"Indicador de batería baja"</string>    
 
-<!-- INTERFACE Settings #CM -->
+<!-- INTERFACE Settings -->
     <!-- Settings main menu category heading. Interface (Launcher, Themes, System). [CHAR LIMIT=40] -->
     <string name="header_category_interface">"Interfaz Gráfica"</string>
 
-    <!-- Launcher settings #CM -->
-    <string name="launcher_settings_title">"Ventanas"</string>
+    <!-- Launcher settings -->
+    <string name="launcher_settings_title">"Launcher"</string>
 
-    <!-- Themes settings #CM -->
+    <!-- Themes settings -->
     <string name="themes_settings_title">"Temas"</string>
 
-    <!-- System Interface settings #CM -->
+    <!-- System Interface settings -->
     <string name="system_settings_title">"Sistema"</string>
     <string name="system_interface_title">"Interfaz de Sistema"</string>
 
-    <!-- Notification Drawer #CM -->
+    <!-- Notification Drawer -->
     <string name="notification_drawer_title">"Área de notificación"</string>
 
-    <!-- Combined Bar #CM -->
+    <!-- Combined Bar -->
     <string name="combined_bar_title">"Barra de estado"</string>
     <string name="combined_bar_auto_hide_title">"Ocultar automáticamente"</string>
     <string name="combined_bar_auto_hide_summary">"Permitir ocultar la barra de estado cuando una aplicación se muestra a pantalla completa"</string>
 
-    <!-- Power Widget #CM -->
+    <!-- Power Widget -->
     <string name="power_widget_title">"Controles de Energía"</string>
     <string name="title_expanded_widget">"Barra de Energía"</string>
     <string name="summary_expanded_widget">"Mostrar la barra de controles de energía en el área de notificación"</string>
@@ -1624,18 +1624,18 @@
     <string name="title_expanded_hide_scrollbar">"Barra de desplazamiento"</string>
     <string name="summary_expanded_hide_scrollbar">"Ocultar la barra de desplazamiento cuando se ha haya llegado al máximo de controles"</string>
 
-    <!-- Power Widget, Haptic feedback #CM -->
+    <!-- Power Widget, Haptic feedback -->
     <string name="expanded_haptic_feedback_title">"Respuesta táctil"</string>
     <string name="expanded_haptic_feedback_summary">"Activar/desactivar respuesta táctil"</string>
 
-    <!-- Power Widget, Buttons #CM -->
+    <!-- Power Widget, Buttons -->
     <string name="title_widget_picker">"Controles"</string>
     <string name="summary_widget_picker">"Seleccionar que controles de energía se mostrarán en la barra de controles de energía"</string>
-    <!-- Power Widget, Buttons order #CM -->
+    <!-- Power Widget, Buttons order -->
     <string name="title_widget_order">"Orden de controles"</string>
     <string name="summary_widget_order">"Seleccionar el orden de los controles mostradores en la barra de controles de energía"</string>
 
-    <!-- Power Widget, Buttons, Buttons #CM -->
+    <!-- Power Widget, Buttons, Buttons -->
     <string name="title_buttons">"Controles"</string>
     <string name="title_toggle_wifi">"Wi-Fi"</string>
     <string name="title_toggle_bluetooth">"Bluetooth"</string>
@@ -1675,7 +1675,7 @@
     <string name="pref_flash_mode_title">"Flash LED"</string>
     <string name="pref_flash_mode_summary">"Escoja los modos de flash LED disponibles en la barra de controles de energía"</string>
 
-    <!-- Status bar #CM -->
+    <!-- Status bar -->
     <string name="status_bar_title">"Barra de estado"</string>
     <string name="status_bar_clock_title">"Reloj"</string>
     <string name="status_bar_general_title">"General"</string>
@@ -1694,16 +1694,16 @@
     <string name="status_bar_toggle_brightness_summary">"Permitir ajustar la luminosidad de la pantalla mediante el deslizamiento por la barra de estado"</string>
     <string name="status_bar_toggle_info">"Ajuste de brillo automático esta activado"</string>
 
-    <!-- Lock screen #CM -->
+    <!-- Lock screen -->
     <string name="lock_screen_title">"Bloqueo de pantalla"</string>
 
-    <!-- Sound settings #CM -->
-    <!-- Volumes #CM -->
+    <!-- Sound settings -->
+    <!-- Volumes -->
     <string name="link_volume_ringtones">"Vincular\nvolúmenes"</string>
     <string name="link_volume_ringtones_toast">"Asegurese de establecer de nuevo el volumen para igualar los volúmenes de notificación y de tono del teléfono."</string>
     <string name="link_volume_mutes">"Vincular\nsilencio"</string>
 
-    <!-- Quiet hours #CM -->
+    <!-- Quiet hours -->
     <string name="quiet_hours_title">"Modo 'Tranquilidad'"</string>
     <string name="quiet_hours_summary">"Configurar las horas en las que el dispositivo debe de estar en modo 'Tranquilidad'"</string>
     <string name="quiet_hours_note_title">"Nota"</string>
@@ -1732,14 +1732,14 @@
     <string name="start_time_title">"Inicio"</string>
     <string name="end_time_title">"Fin"</string>
 
-    <!-- Setting for volume rocker music controls #CM -->
+    <!-- Setting for volume rocker music controls -->
     <string name="volbtn_music_controls_title">"Controles Volumen"</string>
     <string name="volbtn_music_controls_summary">"Cuando la pantalla este apagada, una pulsación prolongada de los controles de volumen avanzará/retrocederá sobre las pistas de música activas"</string>
 
-    <!-- Volume description for ringtone volume #CM -->
+    <!-- Volume description for ringtone volume -->
     <string name="volume_ring_only_description">Tonos del teléfono</string>
 
-    <!-- Backlight #CM -->
+    <!-- Backlight -->
     <string name="backlight_title">"Brillo automático"</string>
     <string name="backlight_summary">"Ajustar niveles y filtrado"</string>
     <string name="light_filter_title">"Filtro sensor luminosidad"</string>
@@ -1761,7 +1761,7 @@
     <string name="light_decrease_hysteresis_title">"Disminuir histéresis"</string>
     <string name="light_decrease_hysteresis_summary">"Disminuir histéresis cuando el nivel del sensor se encuentre por debajo del porcentaje definido"</string>
 
-    <!-- Light sensor levels #CM -->
+    <!-- Light sensor levels -->
     <string name="ll_title">"Opciones avanzadas luminosidad"</string>
     <string name="ll_header_upper">"Subir"</string>
     <string name="ll_header_lower">"Bajar"</string>
@@ -1779,7 +1779,7 @@
     <string name="ll_bad_levels">"Los niveles deben de ser incrementados"</string>
     <string name="ll_num_levels">"Establecer número de niveles"</string>
 
-    <!-- Display : Rotation #CM -->
+    <!-- Display : Rotation -->
     <string name="display_rotation_title">"Rotación"</string>
     <string name="display_rotation_enabled">"Activado."</string>
     <string name="display_rotation_disabled">"Desactivado."</string>

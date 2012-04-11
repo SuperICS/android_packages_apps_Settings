@@ -17,6 +17,7 @@
 <preference-headers
         xmlns:android="http://schemas.android.com/apk/res/android">
 
+
     <!-- WIRELESS and NETWORKS -->
     <header android:title="@string/header_category_wireless_networks" />
 
@@ -57,7 +58,7 @@
         android:icon="@drawable/empty_icon" />
         
     <!-- INTERFACE -->
-    <header android:title="@string/header_category_interface" />-->
+    <header android:title="@string/header_category_interface" />
 
     <!-- Launcher -->
     <header
@@ -70,19 +71,19 @@
             android:targetClass="com.android.launcher2.preference.Preferences" />
     </header>
 
- <!-- Themes
+ <!-- Themes -->
     <header
         android:id="@+id/themes_settings"
         android:icon="@drawable/ic_settings_themes"
-        android:fragment="com.android.settings.ThemesSettings"
+        android:fragment="com.android.settings.cyanogenmod.ThemesSettings"
         android:title="@string/themes_settings_title" />
  
-     System 
+ <!-- System
     <header
         android:id="@+id/system_settings"
         android:icon="@drawable/ic_settings_system"
-        android:fragment="com.android.settings.SystemSettings"
-        android:title="@string/system_settings_title" /> -->
+        android:fragment="com.android.settings.cyanogenmod.SystemSettings"
+        android:title="@string/system_settings_title" />-->
 
         
     <!-- Personal -->
