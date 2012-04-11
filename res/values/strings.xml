@@ -563,7 +563,6 @@
     <string name="android_beam_label">Android Beam</string>
     <!-- Explanation of the Android Beam feature in the Android Beam settings panel. The use of "beam" here is as a verb and not considered trademarked. [CHAR LIMIT=NONE] -->
     <string name="android_beam_explained">When this feature is turned on, you can beam app content to another NFC-capable device by holding the devices close together. For example, you can beam Browser pages, YouTube videos, People contacts, and more.\n\nJust bring the devices together (typically back to back) and then touch your screen. The app determines what gets beamed.</string>
-    
 <!-- DEVICE Settings -->
     <!-- Settings main menu category heading. Device (Sound, display, battery, applications...). [CHAR LIMIT=40] -->
     <string name="header_category_device">DEVICE</string>
@@ -573,7 +572,9 @@
     <string name="display_settings_title">Display</string>
     <!-- Sound settings screen heading -->
     <string name="sound_settings">Sound</string>
-    <!-- Sound settings screen, setting option name checkbox -->
+    <!-- Sound settings screen, setting option volume overlay title -->
+    <string name="volume_overlay_title">Volume panel</string>
+    <!-- Sound settings screen, setting option silent mode title -->
     <string name="silent_mode_title">Silent mode</string>
     <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
     <string name="ringtone_title">Phone ringtone</string>
@@ -608,8 +609,6 @@
     <string name="media_volume_summary">Set volume for music and videos</string>
     <!-- Sound settings screen, alarm volume slider title -->
     <string name="alarm_volume_title">Alarm</string>
-    <!-- Sound settings screen, dock settings summary-->
-    <string name="dock_settings_summary">Audio settings for the attached dock</string>
     <!-- Sound settings screen, setting check box label -->
     <string name="dtmf_tone_enable_title">Dial pad touch tones</string>
     <!-- Sound settings screen, setting check box label -->
@@ -637,7 +636,7 @@
     <string name="link_volume_ringtones_toast">Make sure to change your volume to re-set your notification volume to match your ringtone volume.</string>
     <string name="link_volume_mutes">Link mute states</string>
 
-    <!-- Quiet hours #CM -->
+    <!-- Quiet hours   -->
     <string name="quiet_hours_title">Quiet hours</string>
     <string name="quiet_hours_summary">Configure the hours the device should be quiet</string>
     <string name="quiet_hours_note_title">Note</string>
@@ -719,7 +718,7 @@
     <!-- Display settings screen, battery light repeat pulsing title -->
     <string name="battery_pulse_title">Pulse low battery light</string>
 
-    <!-- Backlight #CM -->
+    <!-- Backlight -->
     <string name="backlight_title">Automatic backlight</string>
     <string name="backlight_summary">Tweak levels and filtering</string>
     <string name="light_filter_title">Light sensor filter</string>
@@ -741,7 +740,7 @@
     <string name="light_decrease_hysteresis_title">Decrease hysteresis</string>
     <string name="light_decrease_hysteresis_summary">Sensor levels overlap this much downwards</string>
 
-    <!-- Light sensor levels #CM -->
+    <!-- Light sensor levels -->
     <string name="ll_title">Light sensor levels</string>
     <string name="ll_header_upper">Upper</string>
     <string name="ll_header_lower">Lower</string>
@@ -759,32 +758,32 @@
     <string name="ll_bad_levels">Levels must be increasing</string>
     <string name="ll_num_levels">Set number of levels</string>
 
-    <!-- Advanced, Device specific (DeviceParts) settings #CM -->
+    <!-- Advanced, Device specific (DeviceParts) settings   -->
     <string name="advanced_settings_title">Advanced</string>
     
-<!-- INTERFACE Settings #CM -->
+<!-- INTERFACE Settings   -->
     <!-- Settings main menu category heading. Interface (Launcher, Themes, System). [CHAR LIMIT=40] -->
     <string name="header_category_interface">INTERFACE</string>
     
-    <!-- Launcher settings #CM -->
+    <!-- Launcher settings -->
     <string name="launcher_settings_title">Launcher</string>
 
-    <!-- Themes settings #CM -->
+    <!-- Themes settings   -->
     <string name="themes_settings_title">Themes</string>
 
-    <!-- System Interface settings #CM -->
+    <!-- System Interface settings   -->
     <string name="system_settings_title">System</string>
     <string name="system_interface_title">System interface</string>
     
-    <!-- Notification Drawer #CM -->
+    <!-- Notification Drawer   -->
     <string name="notification_drawer_title">Notification drawer</string>
 
-    <!-- Combined Bar #CM -->
+    <!-- Combined Bar   -->
     <string name="combined_bar_title">Combined bar</string>
     <string name="combined_bar_auto_hide_title">Auto hide</string>
     <string name="combined_bar_auto_hide_summary">Allow combined bar to hide when showing a fullscreen app</string>
 
-    <!-- Power Widget #CM -->
+    <!-- Power Widget   -->
     <string name="power_widget_title">Power widget</string>
     <string name="title_expanded_widget">Show power widget</string>
     <string name="summary_expanded_widget">Show the power widget in the notification drawer</string>
@@ -837,11 +836,11 @@
     <string name="pref_flash_mode_title">Flash mode</string>
     <string name="pref_flash_mode_summary">Choose High / Death Ray</string>
 
-    <!-- Power Widget, Haptic feedback #CM -->
+    <!-- Power Widget, Haptic feedback   -->
     <string name="expanded_haptic_feedback_title">Haptic feedback</string>
     <string name="expanded_haptic_feedback_summary">Enable/disable haptic feedback</string>
 
-    <!-- Status bar #CM -->
+    <!-- Status bar   -->
     <string name="combined_status_bar_title">@string/status_bar_title</string>
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_clock_title">Clock</string>
@@ -861,7 +860,7 @@
     <string name="status_bar_signal_text_show_text">Text</string>
     <string name="status_bar_signal_text_hidden">Hidden</string>
 
-    <!-- Lock screen #CM -->
+    <!-- Lock screen   -->
     <string name="lock_screen_title">Lock screen</string>
     <!-- Lock Screen -->
 
@@ -874,7 +873,7 @@
     <!-- Settings main menu category heading. Personal (Accounts, security, language, backup...). [CHAR LIMIT=40] -->
     <string name="header_category_personal">PERSONAL</string>
 
-    <!-- Profiles settings #CM -->
+    <!-- Profiles settings   -->
     <string name="profiles_settings_title">Profiles</string>
     <string name="profiles_general_title">General</string>
     <string name="profiles_add">Add</string>
@@ -1005,7 +1004,7 @@
     <!-- In the security screen, the header title for settings related to  Passwords-->
     <string name="security_passwords_title">Passwords</string>
 
-    <!-- Screen security - Screen security  #CM -->
+    <!-- Screen security - Screen security    -->
     <string name="screen_security_category">Screen Security</string>
     <string name="screen_security_title">Lock screen</string>
     <string name="screen_security_summary">View or change lock screen security, delay and timeout settings</string>
@@ -1013,7 +1012,7 @@
     <string name="unlock_menu_unlock_title">Menu unlock</string>
     <string name="unlock_menu_unlock_summary">Pressing the menu button unlocks the device</string>
     <string name="unlock_quick_unlock_control_title">Quick unlock</string>
-    <string name="unlock_quick_unlock_control_summary">No need to press OK when entering PIN or password. Delete counts as bad try</string>
+    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
 
     <!-- Delays and timeouts -->
     <string name="delay_and_timeout_title">Lock delay</string>
@@ -1402,23 +1401,31 @@
     <!-- Dock settings title -->
     <string name="dock_settings_title">Dock settings</string>
     <!-- Dock audio settings -->
-    <string name="dock_audio_settings_title">Audio</string>
+    <string name="dock_audio_settings_title">Dock Bluetooth Audio</string>
+    <!-- Sound settings screen, dock settings summary-->
+    <string name="dock_settings_summary">Bluetooth audio settings for the attached dock</string>
     <!-- Dock audio summary for docked to desk dock -->
-    <string name="dock_audio_summary_desk">Settings for the attached desktop dock</string>
+    <string name="dock_audio_summary_desk">Bluetooth audio settings for the attached desktop dock</string>
     <!-- Dock audio summary for docked to car dock -->
-    <string name="dock_audio_summary_car">Settings for the attached car dock</string>
+    <string name="dock_audio_summary_car">Bluetooth audio settings for the attached car dock</string>
     <!-- Dock audio summary for undocked -->
     <string name="dock_audio_summary_none" product="tablet">Tablet not docked</string>
     <!-- Dock audio summary for undocked -->
     <string name="dock_audio_summary_none" product="default">Phone not docked</string>
     <!-- Dock audio summary for docked to unknown -->
-    <string name="dock_audio_summary_unknown">Settings for the attached dock</string>
+    <string name="dock_audio_summary_unknown">Bluetooth audio settings for the attached dock</string>
     <!-- Dock not found dialog title -->
     <string name="dock_not_found_title">Dock not found</string>
     <!-- Dock not found dialog text -->
     <string name="dock_not_found_text" product="tablet">You must dock the tablet before setting up dock audio.</string>
     <!-- Dock not found dialog text -->
     <string name="dock_not_found_text" product="default">You must dock the phone before setting up dock audio.</string>
+    <!-- Dock settings screen, Enable Dock USB Audio check box label -->
+    <string name="dock_usb_audio_enable_title">Use Dock USB Audio</string>
+    <!-- Enable Dock USB Audio, setting option summary text when check box is selected -->
+    <string name="dock_usb_audio_enable_summary_on">Use the passive audio out on the dock</string>
+    <!-- Enable Dock USB Audio, setting option summary text when check box is clear -->
+    <string name="dock_usb_audio_enable_summary_off">Don\'t use the passive audio out on the dock</string>
     <!-- Dock settings screen, dock events SFX setting check box label -->
     <string name="dock_sounds_enable_title">Dock insert sound</string>
     <!-- Dock settings screen, setting option summary text when check box is selected -->
@@ -1429,7 +1436,17 @@
     <string name="dock_sounds_enable_summary_off" product="tablet">Don\'t play sound when inserting or removing tablet from dock</string>
     <!-- Sound settings screen, setting option summary text when check box is clear -->
     <string name="dock_sounds_enable_summary_off" product="default">Don\'t play sound when inserting or removing phone from dock</string>
-    
+<!-- -->
+<string name="dock_force_undock_title">Force Undock</string>
+<!-- -->
+<string name="dock_force_undock_summary_no_dock" product="tablet">Tablet is not docked</string>
+<!-- -->
+<string name="dock_force_undock_summary_no_dock" product="default">Phone is not docked</string>
+<!-- -->
+<string name="dock_force_undock_summary" product="tablet">Undock the Tablet</string>
+<!-- -->
+<string name="dock_force_undock_summary" product="default">Undock the Phone</string>
+
 <!-- Date and time settings --><skip />
     <!-- Main Settings screen setting option name to go into the date and time settings-->
     <string name="date_and_time_settings_title">Date &amp; time</string>
@@ -1470,10 +1487,10 @@
     <!-- Title string shown above TimePicker, letting a user select system time [CHAR LIMIT=20] -->
     <string name="time_picker_title">Time</string>
     
-    <!-- Performance settings #CM -->
+    <!-- Performance settings   -->
     <string name="performance_settings_title">Performance</string>
 
-    <!-- Performance Settings : Warning dialog #CM -->
+    <!-- Performance Settings : Warning dialog   -->
     <string name="performance_settings_warning_title">Proceed with Caution</string>
     <string name="performance_settings_warning">These settings are included for experimentation and any changes made to them have the potential to cause instability, crashes, data loss or hardware failures.\n\nWe request you do not file bug reports if any of these settings have been changed from the defaults.</string>
 
@@ -1570,25 +1587,25 @@
     <!-- About phone, status item title. How much time the device has had its main CPU awake. -->
     <string name="status_awake_time">Awake time</string>
 
-    <!-- System Updates #CM -->
+    <!-- System Updates   -->
     <!-- About device screen, list item title. Takes the user to the screen for seeing and installing system updates. -->
     <string name="system_update_settings_list_item_title">System updates</string>
     <!-- About device screen, list item summary. Takes the user to the screen for seeing and installing system updates. -->
     <string name="system_update_settings_list_item_summary">""</string>
 
-    <!-- Donate #CM -->
-    <!-- About device screen, list item title. Takes the user to the screen about how to donate to the CyanogenMod Project. -->
+    <!-- Donate   -->
+    <!-- About device screen, list item title. Takes the user to the screen about how to donate to the Project. -->
     <string name="donate_settings_title">Donate</string>
-    <!-- About device screen, list item summary. Takes the user to the screen about how to donate to the CyanogenMod Project. -->
+    <!-- About device screen, list item summary. Takes the user to the screen about how to donate to the Project. -->
     <string name="donate_settings_summary">""</string>
 
-    <!-- Anonymous Statistics #CM -->
+    <!-- Anonymous Statistics   -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-    <string name="anonymous_statistics_title">CyanogenMod Statistics</string>
-    <string name="anonymous_statistics_summary">Help make CyanogenMod better by opting into anonymous statistics reporting</string>
+    <string name="anonymous_statistics_title">Statistics</string>
+    <string name="anonymous_statistics_summary">Help make better by opting into anonymous statistics reporting</string>
     <string name="anonymous_statistics_warning_title">About</string>
-    <string name="anonymous_statistics_warning">Opting into CyanogenMod Statistics will allow non-personal data to be submitted to the
-        developers of CyanogenMod to track unique installations across devices. The information submitted includes an unique identifier,
+    <string name="anonymous_statistics_warning">Opting into Statistics will allow non-personal data to be submitted to the
+        developers to track unique installations across devices. The information submitted includes an unique identifier,
         which does not compromise your privacy or personal data. The data is submitted during each boot.\n\nFor an example of the data that is submitted, tap on Preview Data.</string>
     <string name="enable_reporting_title">Enable reporting</string>
     <string name="preview_data_title">Preview data</string>
@@ -1597,7 +1614,7 @@
     <string name="anonymous_learn_more">Learn more</string>
 
     <!-- Anonymous Statistics - Notification -->
-    <string name="anonymous_notification_desc">Enable or Disable CyanogenMod Statistics</string>
+    <string name="anonymous_notification_desc">Enable or Disable Statistics</string>
 
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Unique ID</string>
@@ -1606,7 +1623,7 @@
     <string name="preview_country_title">Country</string>
     <string name="preview_carrier_title">Carrier</string>
 
-    <!-- Display : Rotation #CM -->
+    <!-- Display : Rotation   -->
     <string name="display_rotation_title">Rotation</string>
     <string name="display_rotation_enabled">Enabled.</string>
     <string name="display_rotation_disabled">Disabled.</string>
