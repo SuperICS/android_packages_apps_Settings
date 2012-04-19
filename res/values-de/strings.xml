@@ -597,7 +597,6 @@
     <string name="vibrate_in_silent_title" msgid="3897968069156767036">"Im Lautlos-Modus vibrieren"</string>
     <string name="vibrate_on_ring_title" msgid="40343855247989536">"Vibrieren und klingeln"</string>
     <string name="notification_sound_title" msgid="312032901303146002">"Standardbenachrichtigung"</string>
-    <string name="notification_pulse_title" msgid="1247988024534030629">"Benachrichtigungslicht"</string>
     <string name="incoming_call_volume_title" msgid="8073714801365904099">"Klingelton"</string>
     <string name="notification_volume_title" msgid="2012640760341080408">"Benachrichtigung"</string>
     <string name="checkbox_notification_same_as_incoming_call" msgid="1073644356290338921">"Lautstärke für eingehende Anrufe für Benachrichtigungen verwenden"</string>
@@ -1648,6 +1647,11 @@
     <!-- Notification Drawer #CM -->
     <string name="notification_drawer_title">Benachrichtigungsanzeige</string>
 
+    <!-- Combined Bar #CM -->
+    <string name="combined_bar_title">Kombinierte Leiste</string>
+    <string name="combined_bar_auto_hide_title">Automatisch verstecken</string>
+    <string name="combined_bar_auto_hide_summary">Erlaube es der kombinierten Leiste sich zu verstecken, wenn eine Vollbild-App gezeigt wird</string>
+
     <!-- Power Widget #CM -->
     <string name="power_widget_title">Energie-Widget</string>
     <string name="title_expanded_widget">Benachr.-Energiesteuerung</string>
@@ -1721,6 +1725,7 @@
     <string name="status_bar_signal_text_summary">Anzeige der Mobilfunk-Signalstärke in dBm statt der Balkenanzeige</string>
     <string name="status_bar_signal_text_show_bars">Nur Balken</string>
     <string name="status_bar_signal_text_show_text">Signalstärke (nur Wert)</string>
+    <string name="status_bar_signal_text_hidden">Versteckt</string>
 
     <!-- Lock screen #CM -->
     <string name="lock_screen_title">Bildschirmsperre</string>
@@ -1765,20 +1770,20 @@
     <!-- zRam -->
     <string name="pref_zram_title">zRam</string>
     <string name="pref_zram_summary">Speicherinhalte für mehr virtuellen Speicher mit zRAM komprimieren (Neustart erforderlich)</string>
-    <!-- VM Heap Size -->
-    <string name="pref_heapsize_title">Größe VM-Heap</string>
-    <string name="pref_heapsize_summary">Maximale Speichernutzung pro VM-Heap (Neustart erforderlich)</string>
+    <!-- KSM -->
+    <string name="pref_ksm_title">Kernel Samepage Merging</string>
+    <string name="pref_ksm_summary">KSM verringert den Speicherbedarf und erhöht die Leistung.</string>
     <!-- Purgeable Assets -->
     <string name="pref_purgeable_assets_title">Freigabe von Ressourcen</string>
     <string name="pref_purgeable_assets_summary">Erlaubt dem System, Speicherbereiche von nicht mehr benutzen Bildern freizugeben, um mehr RAM bereitzustellen (Neustart erforderlich)</string>
+
     <!-- Performance Settings : Dithering -->
     <string name="pref_use_dithering_title">Dithering</string>
     <string name="pref_use_dithering_summary">Dithering von Oberflächen verbessert die Bildqualität auf Kosten der Geräteleistung (Neustart erforderlich)</string>
+
     <!-- Performance Settings : 16bpp Alpha -->
     <string name="pref_use_16bpp_alpha_title">16-bit-Transparenz</string>
     <string name="pref_use_16bpp_alpha_summary">Verwenden der 16-bit-Transparenz kann die Performance beim Scrollen verbessern, aber Grafikfehler verursachen (Neustart erforderlich)</string>
-
-    <!-- System Updates #CM -->
 
     <!-- Donate #CM -->
     <!-- About device screen, list item title. Takes the user to the screen about how to donate to the CyanogenMod Project. -->
@@ -1797,8 +1802,10 @@
     <string name="preview_data_title">Vorschau</string>
     <string name="view_stats_title">Statistiken ansehen</string>
     <string name="anonymous_learn_more">Mehr erfahren</string>
+
     <!-- Anonymous Statistics - Notification -->
     <string name="anonymous_notification_desc">Anonyme Statistiken ein- oder ausschalten</string>
+
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Eindeutige ID</string>
     <string name="preview_device_title">Gerät</string>
@@ -1986,10 +1993,62 @@
     <!-- Setting checkbox title for root access -->
     <string name="root_access">Root-Zugriff</string>
     <string name="root_access_warning_title">Root-Zugriff erlauben?</string>
-    <string name="root_access_warning_message">Apps Root-Zugriff zu erlauben, ist sehr gefährlich und kann die Sicherheit des Systems gefährden!</string>
+    <string name="root_access_warning_message">Apps Root-Zugriff zu erlauben ist sehr gefährlich und kann die Sicherheit des Systems beeinträchtigen!</string>
     <string name="root_access_none">Verweigern</string>
     <string name="root_access_apps">Nur Apps</string>
     <string name="root_access_adb">Nur ADB</string>
     <string name="root_access_all">Apps und ADB</string>
+
+    <!-- Dock menu #CM -->
+    <string name="dock_force_undock_title">Abdocken erzwingen</string>
+    <string name="dock_force_undock_summary_no_dock" product="tablet">Tablet nicht angedockt</string>
+    <string name="dock_force_undock_summary_no_dock" product="default">Telefon nicht angedockt</string>
+    <string name="dock_force_undock_summary" product="tablet">Tablet abdocken</string>
+    <string name="dock_force_undock_summary" product="default">Telefon abdocken</string>
+
+    <!-- Storage Menus #CM -->
+    <string name="usb_mass_storage_title">Massenspeicher</string>
+    <string name="usb_mass_storage_summary">Aktiviere Massenspeichermodus</string>
+    <string name="storage_menu_storage">Speicherkonfiguration</string>
+    <string name="storage_title_storage">Speicherkonfiguration</string>
+    <string name="storage_layout">Speicherlayout</string>
+    <string name="storage_switch_title">Benutze internen Speicher</string>
+    <string name="storage_switch_summary_on">Benutze erweiterten internen Speicher für Apps und Medien</string>
+    <string name="storage_switch_summary_off">Benutze SD-Karte für Apps und Medien</string>
+    <string name="storage_switch_unavailable">Dieses Gerät hat keinen erweiterten internen Speicher</string>
+
+    <!-- Display settings screen, notification light settings -->
+    <string name="notification_pulse_title">Benachrichtigungslicht</string>
+    <string name="notification_light_general_title">Allgemein</string>
+    <string name="notification_light_applist_title">Apps</string>
+    <string name="notification_light_default_value">Standard</string>
+    <string name="notification_light_use_custom">App-Anpassung</string>
+    <string name="notification_light_enabled">Farben anpassen</string>
+    <string name="notification_light_disabled">Farben nicht anpassen</string>
+
+    <!-- Notification light dialogs -->
+    <string name="edit_light_settings">Farbeinstellungen ändern</string>
+    <string name="pulse_speed_title">Pulsdauer und Geschwindigkeit</string>
+    <string name="picker_arrow">→</string>
+    <string name="default_time">Normal</string>
+    <string name="custom_time">Angepasst</string>
+    <string name="dialog_test">Test</string>
+    <string name="dialog_delete_title">Löschen</string>
+    <string name="dialog_delete_message">Anpassung für diese App entfernen?</string>
+    <string name="dialog_test_message">Display abschalten, um diese Einstellung zu testen.</string>
+    <string name="dialog_test_button">Abbrechen</string>
+
+    <!-- Values for the notification light pulse spinners -->
+    <string name="pulse_length_always_on">Immer an</string>
+    <string name="pulse_length_very_short">Sehr kurz</string>
+    <string name="pulse_length_short">Kurz</string>
+    <string name="pulse_length_normal">Normal</string>
+    <string name="pulse_length_long">Lang</string>
+    <string name="pulse_length_very_long">Sehr lang</string>
+    <string name="pulse_speed_very_fast">Sehr schnell</string>
+    <string name="pulse_speed_fast">Schnell</string>
+    <string name="pulse_speed_normal">Normal</string>
+    <string name="pulse_speed_slow">Langsam</string>
+    <string name="pulse_speed_very_slow">Sehr langsam</string>
 
 </resources>

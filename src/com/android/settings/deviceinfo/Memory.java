@@ -37,6 +37,7 @@ import android.os.storage.StorageVolume;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceScreen;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -99,8 +100,11 @@ public class Memory extends SettingsPreferenceFragment {
 
         StorageVolume[] storageVolumes = mStorageManager.getVolumeList();
         // mass storage is enabled if primary volume supports it
-        mMassStorageEnabled = (storageVolumes.length > 0
-                && storageVolumes[0].allowMassStorage());
+        if (Settings.Secure.getInt(getContentResolver(), Settings.Secure.USB_MASS_STORAGE_ENABLED, 0) > 0 ) {
+            mMassStorageEnabled = (storageVolumes.length > 0
+                                   && storageVolumes[0].allowMassStorage());
+        }
+
         int length = storageVolumes.length;
         mStorageVolumePreferenceCategories = new StorageVolumePreferenceCategory[length];
         for (int i = 0; i < length; i++) {
@@ -114,7 +118,7 @@ public class Memory extends SettingsPreferenceFragment {
 
         // only show options menu if we are not using the legacy USB mass storage support
         // or if we need the mountpoints switcher
-        setHasOptionsMenu(!mMassStorageEnabled || mHasSwitchableStorage);
+        setHasOptionsMenu(true);
     }
 
     @Override
@@ -170,11 +174,9 @@ public class Memory extends SettingsPreferenceFragment {
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        if (!mMassStorageEnabled) {
-            menu.add(Menu.NONE, MENU_ID_USB, 0, R.string.storage_menu_usb)
-                //.setIcon(com.android.internal.R.drawable.stat_sys_data_usb)
-                .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
-        }
+        menu.add(Menu.NONE, MENU_ID_USB, 0, R.string.storage_menu_usb)
+            //.setIcon(com.android.internal.R.drawable.stat_sys_data_usb)
+            .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
         if (mHasSwitchableStorage) {
             menu.add(Menu.NONE, MENU_ID_STORAGE, 0, R.string.storage_menu_storage)
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
