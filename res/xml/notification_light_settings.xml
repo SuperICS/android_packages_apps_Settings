@@ -34,6 +34,11 @@
             android:key="custom_enabled"
             android:title="@string/notification_light_use_custom" />
 
+  	<CheckBoxPreference
+    	    android:key="led_screen_on"
+            android:title="@string/title_led_screen_on"
+    	    android:summary="@string/summary_led_screen_on" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

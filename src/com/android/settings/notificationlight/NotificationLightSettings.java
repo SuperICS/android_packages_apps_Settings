@@ -48,6 +48,7 @@ import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -77,6 +78,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     private static final String PULSE_PREF = "pulse_enabled";
     private static final String DEFAULT_PREF = "default";
     private static final String CUSTOM_PREF = "custom_enabled";
+    private static final String PREF_LED_SCREEN_ON = "led_screen_on";
     public static final int DEFAULT_COLOR = 0xFFFFFF; //White
     public static final int DEFAULT_TIME = 1000;
     public static final int ACTION_TEST = 0;
@@ -89,6 +91,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     private boolean mLightEnabled;
     private ApplicationLightPreference mDefaultPref;
     private CheckBoxPreference mCustomEnabledPref;
+    CheckBoxPreference mLedScreenOn;
     private Menu mMenu;
     AppAdapter mAppAdapter;
     private String mApplicationList;
@@ -107,9 +110,31 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         mAppAdapter = new AppAdapter(mInstalledApps);
         mAppAdapter.update();
 
+	mLedScreenOn = (CheckBoxPreference) findPreference(PREF_LED_SCREEN_ON);
+	mLedScreenOn.setChecked(Settings.Secure.getInt(getActivity().getContentResolver(),
+		Settings.Secure.LED_SCREEN_ON, 0) == 1);
+
+
         mApplications = new HashMap<String, Application>();
 
         setHasOptionsMenu(true);
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen,
+            Preference preference) {
+        // if (preference == mColorPicker) {
+        //
+        // }
+				if (preference == mLedScreenOn) {
+						boolean checked = ((CheckBoxPreference) preference).isChecked();
+						Settings.Secure.putInt(getActivity().getContentResolver(),
+							Settings.Secure.LED_SCREEN_ON, checked ? 1 : 0);
+						Log.i(TAG, "LED flash when screen ON is set to: " + checked);
+						return true;
+				}
+
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     @Override
@@ -141,6 +166,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
             mDefaultPref = (ApplicationLightPreference) prefSet.findPreference(DEFAULT_PREF);
             mDefaultPref.setAllValues(color, timeOn, timeOff);
             mDefaultPref.setEnabled(mLightEnabled);
+            mLedScreenOn.setEnabled(mLightEnabled);
             mDefaultPref.setOnPreferenceChangeListener(this);
 
             // Custom enabled preference
@@ -323,6 +349,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
             Settings.System.putInt(getContentResolver(), Settings.System.NOTIFICATION_LIGHT_PULSE,
                     mLightEnabled ? 1 : 0);
             mDefaultPref.setEnabled(mLightEnabled);
+            mLedScreenOn.setEnabled(mLightEnabled);
             mCustomEnabledPref.setEnabled(mLightEnabled);
             setCustomEnabled();
         } else if (CUSTOM_PREF.equals(key)) {
