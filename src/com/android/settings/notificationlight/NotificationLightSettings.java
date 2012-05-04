@@ -80,7 +80,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     private static final String CUSTOM_PREF = "custom_enabled";
     private static final String PREF_LED_SCREEN_ON = "led_screen_on";
     public static final int DEFAULT_COLOR = 0xFFFFFF; //White
-    public static final int DEFAULT_TIME = 1000;
+    public static final int DEFAULT_TIME = 500;
     public static final int ACTION_TEST = 0;
     public static final int ACTION_DELETE = 1;
     private static final int MENU_ADD = 0;
