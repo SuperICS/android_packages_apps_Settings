@@ -71,7 +71,7 @@
             android:targetClass="com.android.launcher2.preference.Preferences" />
     </header>
 
- <!-- Themes
+ <!-- Themes -->
     <header
         android:id="@+id/themes_settings"
         android:icon="@drawable/ic_settings_themes"
@@ -80,7 +80,7 @@
             android:action="android.intent.action.MAIN"
             android:targetPackage="com.tmobile.themechooser"
             android:targetClass="com.tmobile.themechooser.ThemeChooser" />
-    </header>-->
+    </header>
 
  
  <!-- System
