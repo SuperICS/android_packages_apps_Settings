@@ -667,9 +667,9 @@
     <string name="volume_notification_description">Notifications</string>
     <!-- Volume description for alarm volume -->
     <string name="volume_alarm_description">Alarms</string>
-    <string name="link_volume_ringtones">Link volumes</string>
+    <string name="link_volume_ringtones">Link ringtone + notification volume</string>
     <string name="link_volume_ringtones_toast">Make sure to change your volume to re-set your notification volume to match your ringtone volume.</string>
-    <string name="link_volume_mutes">Link mute states</string>
+    <string name="link_volume_mutes">Link ringtone + notification mutes</string>
 
     <!-- Quiet hours   -->
     <string name="quiet_hours_title">Quiet hours</string>
@@ -800,12 +800,15 @@
     <string name="notification_pulse_title">Notification light</string>
     <string name="notification_light_general_title">General</string>
     <string name="notification_light_applist_title">Applications</string>
-    <string name="notification_light_default_value">Default</string>
+    <string name="notification_light_phonelist_title">Phone</string>
     <string name="notification_light_use_custom">Use custom values</string>
     <string name="notification_light_enabled">Enabled</string>
     <string name="notification_light_disabled">Disabled</string>
     <string name="title_led_screen_on">LED flash while screen ON</string>
     <string name="summary_led_screen_on">@null</string>
+    <string name="notification_light_default_value">Default</string>
+    <string name="notification_light_missed_call_title">Missed call</string>
+    <string name="notification_light_voicemail_title">Voicemail</string>
 
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Edit light settings</string>
@@ -4096,6 +4099,8 @@ found in the list of installed apps.</string>
     <string name="data_usage_menu_show_wifi">Show Wi-Fi usage</string>
     <!-- Title for checkbox menu option to show Ethernet data usage. [CHAR LIMIT=32] -->
     <string name="data_usage_menu_show_ethernet">Show Ethernet usage</string>
+    <!-- Title for checkbox menu option to enable linear chart. [CHAR LIMIT=32] -->
+    <string name="data_usage_menu_linear_chart">Linear chart</string>
     <!-- Title for option to change data usage cycle day. [CHAR LIMIT=32] -->
     <string name="data_usage_change_cycle">Change cycle\u2026</string>
     <!-- Body of dialog prompting user to change numerical day of month that data usage cycle should reset. [CHAR LIMIT=64] -->
