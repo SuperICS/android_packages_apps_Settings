@@ -285,7 +285,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         updateDisplayRotationPreferenceDescription();
         updateLightPulseDescription();
 
-        updateState();
         getContentResolver().registerContentObserver(
                 Settings.System.getUriFor(Settings.System.ACCELEROMETER_ROTATION), true,
                 mAccelerometerRotationObserver);
