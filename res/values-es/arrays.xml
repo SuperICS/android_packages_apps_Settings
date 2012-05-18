@@ -277,6 +277,15 @@
 
 
     <!-- **** CYANOGENMOD EDITS START **** -->
+
+    <!-- Volume Overlay options. -->
+    <string-array name="volume_overlay_entries">
+        <item>Solo</item>
+        <item>Ampliable</item>
+        <item>Expandido</item>
+        <item>Ninguno</item>
+    </string-array>
+
     <!-- Arrays required by Automatic Backlight. -->
     <string-array name="entries_light_filter_window">
         <item>2 seg</item>
