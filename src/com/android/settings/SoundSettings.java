@@ -31,6 +31,7 @@ import android.content.pm.ResolveInfo;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteException;
 import android.media.AudioManager;
+import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.media.audiofx.AudioEffect;
 import android.net.Uri;
@@ -162,6 +163,16 @@ public class SoundSettings extends SettingsPreferenceFragment implements
             mSilentMode.setOnPreferenceChangeListener(this);
         }
 
+        mQuietHours = (PreferenceScreen) findPreference(KEY_QUIET_HOURS);
+        if (Settings.System.getInt(resolver, Settings.System.QUIET_HOURS_ENABLED, 0) == 1) {
+            mQuietHours.setSummary(getString(R.string.quiet_hours_active_from) + " " + 
+                    returnTime(Settings.System.getString(resolver, Settings.System.QUIET_HOURS_START)) 
+                    + " " + getString(R.string.quiet_hours_active_to) + " " +
+                    returnTime(Settings.System.getString(resolver, Settings.System.QUIET_HOURS_END)));
+        } else {
+            mQuietHours.setSummary(getString(R.string.quiet_hours_summary));
+        }
+
         mVibrateOnRing = (CheckBoxPreference) findPreference(KEY_VIBRATE);
         mVibrateOnRing.setOnPreferenceChangeListener(this);
 
@@ -194,16 +205,6 @@ public class SoundSettings extends SettingsPreferenceFragment implements
 
         mRingtonePreference = findPreference(KEY_RINGTONE);
         mNotificationPreference = findPreference(KEY_NOTIFICATION_SOUND);
-        
-        mQuietHours = (PreferenceScreen) findPreference(KEY_QUIET_HOURS);
-        if (Settings.System.getInt(resolver, Settings.System.QUIET_HOURS_ENABLED, 0) == 1) {
-            mQuietHours.setSummary(getString(R.string.quiet_hours_active_from) + " " + 
-                    returnTime(Settings.System.getString(resolver, Settings.System.QUIET_HOURS_START)) 
-                    + " " + getString(R.string.quiet_hours_active_to) + " " +
-                    returnTime(Settings.System.getString(resolver, Settings.System.QUIET_HOURS_END)));
-        } else {
-            mQuietHours.setSummary(getString(R.string.quiet_hours_summary));
-        }
 
         if (!((Vibrator) getSystemService(Context.VIBRATOR_SERVICE)).hasVibrator()) {
             getPreferenceScreen().removePreference(mVibrateOnRing);

@@ -34,6 +34,8 @@ public class QuietHours extends SettingsPreferenceFragment implements
     private static final String KEY_QUIET_HOURS_ENABLED = "quiet_hours_enabled";
 
     private static final String KEY_QUIET_HOURS_MUTE = "quiet_hours_mute";
+    
+    private static final String KEY_QUIET_HOURS_RINGER = "quiet_hours_ringer";
 
     private static final String KEY_QUIET_HOURS_STILL = "quiet_hours_still";
 
@@ -48,6 +50,8 @@ public class QuietHours extends SettingsPreferenceFragment implements
     private CheckBoxPreference mQuietHoursEnabled;
 
     private Preference mQuietHoursNote;
+    
+    private CheckBoxPreference mQuietHoursRinger;
 
     private CheckBoxPreference mQuietHoursMute;
 
@@ -75,6 +79,7 @@ public class QuietHours extends SettingsPreferenceFragment implements
             mQuietHoursEnabled = (CheckBoxPreference) prefSet.findPreference(KEY_QUIET_HOURS_ENABLED);
             mQuietHoursTimeRange = (TimeRangePreference) prefSet.findPreference(KEY_QUIET_HOURS_TIMERANGE);
             mQuietHoursMute = (CheckBoxPreference) prefSet.findPreference(KEY_QUIET_HOURS_MUTE);
+            mQuietHoursRinger = (CheckBoxPreference) prefSet.findPreference(KEY_QUIET_HOURS_RINGER);
             mQuietHoursStill = (CheckBoxPreference) prefSet.findPreference(KEY_QUIET_HOURS_STILL);
             mQuietHoursHaptic = (CheckBoxPreference) prefSet.findPreference(KEY_QUIET_HOURS_HAPTIC);
             mQuietHoursDim = (CheckBoxPreference) findPreference(KEY_QUIET_HOURS_DIM);
@@ -90,6 +95,7 @@ public class QuietHours extends SettingsPreferenceFragment implements
                     Settings.System.getInt(resolver, Settings.System.QUIET_HOURS_END, 0));
             mQuietHoursTimeRange.setOnPreferenceChangeListener(this);
             mQuietHoursMute.setChecked(Settings.System.getInt(resolver, Settings.System.QUIET_HOURS_MUTE, 0) == 1);
+            mQuietHoursRinger.setChecked(Settings.System.getInt(resolver, Settings.System.QUIET_HOURS_RINGER, 0) == 1);
             mQuietHoursStill.setChecked(Settings.System.getInt(resolver, Settings.System.QUIET_HOURS_STILL, 0) == 1);
             mQuietHoursHaptic.setChecked(Settings.System.getInt(resolver, Settings.System.QUIET_HOURS_HAPTIC, 0) == 1);
 
@@ -113,6 +119,10 @@ public class QuietHours extends SettingsPreferenceFragment implements
         } else if (preference == mQuietHoursMute) {
             Settings.System.putInt(resolver, Settings.System.QUIET_HOURS_MUTE,
                     mQuietHoursMute.isChecked() ? 1 : 0);
+            return true;
+        } else if (preference == mQuietHoursRinger) {
+            Settings.System.putInt(resolver, Settings.System.QUIET_HOURS_RINGER,
+                    mQuietHoursRinger.isChecked() ? 1 : 0);
             return true;
         } else if (preference == mQuietHoursStill) {
             Settings.System.putInt(resolver, Settings.System.QUIET_HOURS_STILL,
