@@ -646,6 +646,8 @@
     <string name="sound_effects_enable_title" msgid="1171590821131077296">"Sonido al tocar"</string>
     <string name="lock_sounds_enable_title" msgid="450098505659399520">"Sonido pantalla bloqueo"</string>
     <string name="haptic_feedback_enable_title" msgid="2438293710530828760">"Vibrar al pulsar"</string>
+    <string name="volume_adjust_sounds_enable_title">Ajustar sonido volumen</string>
+    <string name="volume_adjust_sounds_enable_summary">Reproducir un sonido cuando se ajusta el volumen con las teclas</string>
     <string name="camera_sounds_title">Sonidos de camara</string>
     <string name="camera_sounds_summary">ATENCIÓN: Desactivar el sonido del disparador es ilegal en algunas zonas!</string>
     <string name="audio_record_proc_title" msgid="4271091199976457534">"Supresión de ruido"</string>
