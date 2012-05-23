@@ -2068,4 +2068,24 @@
     <string name="mod_version_default">"Desconocida"</string>
     <!-- About device screen, build date of ROM. -->
     <string name="build_date">"Fecha de compilación"</string>
+
+    <!-- Barra de estado | Interruptores -->
+    <string name="toggles_layout">Interruptores</string>
+    <string name="toggle_style_title">Estilo</string>
+    <string name="toggle_style_summary">Ya sea para mostrar los iconos o el texto.</string>
+
+    <string name="alternate_button_layout_title">Accesos directos alternativos</string>
+    <string name="alternate_button_layout_summary">Use botones en lugar de interruptores.</string>
+    
+    <string name="enabled_toggles_title">Activar interruptores</string>
+    <string name="enabled_toggles_summary">Cambio de interruptores en pantalla</string>
+    <string name="toggles_display_dialog">Escoge que interruptores usar</string>
+    <string name="toggles_display_close">Cerrar</string>
+    <string name="toggles_order_title">Ordenar los interruptores</string>
+    <string name="toggles_order_summary">Elegir el orden para mostrarse</string>
+    <string name="brightness_location_title">Localización del brillo</string>
+    <string name="always_visible_toggles">Auto-oculta interruptores</string>
+    <string name="reset_toggles_title">Resetear interruptores</string>
+    <string name="reset_toggles_summary">Resetea todos los interruptores</string>
+
 </resources>

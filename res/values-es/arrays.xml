@@ -274,10 +274,6 @@
     <item msgid="7664124146786465092">"Con error"</item>
   </string-array>
 
-
-
-    <!-- **** CYANOGENMOD EDITS START **** -->
-
     <!-- Volume Overlay options. -->
     <string-array name="volume_overlay_entries">
         <item>Solo</item>
@@ -409,6 +405,18 @@
         <item>Utilizar GPS interno</item>
     </string-array>
 
-    <!-- **** CYANOGENMOD EDITS END **** -->
+	<!-- toggle style -->
+	<string-array name="toggle_style_entries">
+		<item>Solo icono</item>
+		<item>Solo texto</item>
+	</string-array>
+
+	<!-- Toggles -->
+
+	<string-array name="brightness_location_entries">
+		<item>Arriba</item>
+		<item>Abajo</item>
+		<item>No mostrar</item>
+	</string-array>
 
 </resources>

@@ -71,6 +71,14 @@
             android:targetClass="com.android.launcher2.preference.Preferences" />
     </header>
 
+   
+    <!-- Toggle Settings -->
+    <header
+        android:id="@+id/statusbar_toggles"
+        android:fragment="com.android.settings.osr.fragments.StatusBarToggles"
+        android:title="@string/toggles_layout"
+        android:icon="@drawable/ic_toggles_settings"/>
+
  <!-- Themes -->
     <header
         android:id="@+id/themes_settings"
