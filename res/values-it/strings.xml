@@ -131,17 +131,6 @@
     <string name="wifi_dns2" msgid="1368601006824882659">"DNS 2"</string>
     <string name="wifi_gateway" msgid="163914742461092086">"Gateway"</string>
     <string name="wifi_network_prefix_length" msgid="3028785234245085998">"Lunghezza prefisso rete"</string>
-    <string name="wifi_p2p_settings_title" msgid="5933614000444751775">"Wi-Fi Direct"</string>
-    <string name="wifi_p2p_settings_summary" msgid="6653169526746701975">"Imposta connettività peer-to-peer"</string>
-    <string name="wifi_p2p_device_info" msgid="3191876744469364173">"Informazioni dispositivo"</string>
-    <string name="wifi_p2p_wps_setup" msgid="1780420204385670531">"Impostazione protetta Wi-Fi"</string>
-    <string name="wifi_p2p_wps_pin" msgid="6025317359151049787">"Digita il PIN"</string>
-    <string name="wifi_p2p_persist_network" msgid="1646424791818168590">"Memorizza questa connessione"</string>
-    <string name="wifi_p2p_menu_search" msgid="7189970585393813135">"Cerca"</string>
-    <string name="wifi_p2p_menu_create_group" msgid="7595229161883902082">"Crea gruppo"</string>
-    <string name="wifi_p2p_menu_remove_group" msgid="4844634506540667517">"Rimuovi gruppo"</string>
-    <string name="wifi_p2p_menu_advanced" msgid="2578792521809265949">"Avanzate"</string>
-    <string name="wifi_p2p_available_devices" msgid="5943352520059654483">"Dispositivi disponibili"</string>
     <string name="wifi_tether_checkbox_text" msgid="6961605862058056788">"Hotspot Wi-Fi portatile"</string>
     <string name="wifi_tether_enabled_subtext" msgid="8948641212931906143">"Hotspot portatile <xliff:g id="NETWORK_SSID">%1$s</xliff:g> attivo"</string>
     <string name="wifi_tether_failed_subtext" msgid="2654888578056042315">"Errore hotspot Wi-Fi portatile"</string>
@@ -252,6 +241,8 @@
     <string name="alarm_volume_title" msgid="2285597478377758706">"Allarme"</string>
     <string name="dtmf_tone_enable_title" msgid="8533399267725365088">"Toni tastierino numerico"</string>
     <string name="sound_effects_enable_title" msgid="1171590821131077296">"Suoni alla pressione"</string>
+    <string name="vibrator_type_ringer">Chiamate</string>
+    <string name="vibrator_type_notification">Notifiche</string>
     <string name="lock_sounds_enable_title" msgid="450098505659399520">"Suono di blocco schermo"</string>
     <string name="haptic_feedback_enable_title" msgid="2438293710530828760">"Vibra alla pressione"</string>
     <string name="volbtn_music_controls_title">"Cambia traccia con tasti"</string>
@@ -292,6 +283,8 @@
     <string name="quiet_hours_active_to">"alle"</string>
     <string name="start_time_title">"Inizio"</string>
     <string name="end_time_title">"Fine"</string>
+    <string name="safe_headset_restore_title">Volume di sicurezza cuffie</string>
+    <string name="safe_headset_restore_summary">Evita livelli di volume troppo alti appena si collegano le cuffie</string>
     <string name="display_settings" msgid="7965901687241669598">"Display"</string>
     <string name="accelerometer_title" msgid="7854608399547349157">"Rotazione automatica"</string>
     <string name="accelerometer_summary_on" product="tablet" msgid="429982132339828942">"Cambia automaticamente l\'orientamento quando il tablet viene ruotato"</string>
@@ -331,7 +324,7 @@
     <string name="light_levels_dim_title">"Valore di oscuramento schermo"</string>
     <string name="light_levels_dim_summary">"Luminosità usata per oscurare lo schermo"</string>
     <string name="light_levels_editor_title">"Modifica altri livelli\u2026</string>
-    <string name="light_decrease_enabled_title">"Permetti di abbassare la luminosità"</string>
+    <string name="light_decrease_enabled_title">"Ridurre luminosità"</string>
     <string name="light_decrease_enabled_summary">"Attivare per permettere di abbassare la luminosità. Usare l\'isteresi per ridurre i cambiamenti di luminosità</string>
     <string name="light_decrease_hysteresis_title">"Diminuisci isteresi"</string>
     <string name="light_decrease_hysteresis_summary">"I livelli del sensore si sovrappangono di questo valore verso il basso"</string>
@@ -392,10 +385,17 @@
     <string name="combined_bar_title">"Barra combinata"</string>
     <string name="combined_bar_auto_hide_title">"Nascondi automaticamente"</string>
     <string name="combined_bar_auto_hide_summary">"Permetti di nascondere la barra combinata con applicazioni a pieno schermo"</string>
+    <string name="navigation_bar_title">Barra di navigazione</string>
+    <string name="navigation_bar_help_text">1 - Per iniziare le modifiche, tocca l\'icona del lucchetto\n\n2 - Tocca un pulsante qualsiasi per assegnare o modificare le funzionalità\n\n3 - Premi a lungo un tasto qualsiasi per modificare l\'ordine\n\n4 - Per salvare, tocca l\'icona del lucchetto nuovamente\n\n5 - Per ripristinare le impostazioni, tocca il pulsante di reset\n\n</string>
+    <string name="navigation_bar_tips">&#8226; Le azioni possono essere assegnate ad un solo tasto alla volta\n\n&#8226; Il tasto Home non può essere riassegnato\n\n&#8226; I pulsanti laterali non possono essere riorganizzati</string>
+    <string name="navigation_bar_tips_title">Consigli rapidi</string>
+    <string name="navigation_bar_reset_message">Elimina impostazioni correnti e ripristinare quelle di default?</string>
+    <string name="navigation_bar_save_message">Impostazioni della barra di navigazione salvate</string>
+    <string name="navigation_bar_reset_toast">Barra di navigazione resettata</string>
     <string name="power_widget_title">"Power widget"</string>
     <string name="title_expanded_widget">"Mostra il power widget"</string>
     <string name="summary_expanded_widget">"Mostra il power widget nel menù delle notifiche"</string>
-    <string name="title_expanded_hide_onchange">"Nascondi con modifica"</string>
+    <string name="title_expanded_hide_onchange">"Nascondi dopo modifica"</string>
     <string name="summary_expanded_hide_onchange">"Nascondi il menù delle notifiche dopo aver premuto un tasto nel power widget"</string>
     <string name="title_expanded_hide_indicator">"Nascondi indicatori"</string>
     <string name="summary_expanded_hide_indicator">"Nascondi indicatori del power widget"</string>
@@ -452,6 +452,7 @@
     <string name="status_bar_show_clock_summary">"Mostra l\'orologio nella barra di stato"</string>
     <string name="status_bar_am_pm_title">"Indicatore AM/PM"</string>
     <string name="status_bar_am_pm_summary">"Stile di visualizzazione dell\'indicatore AM/PM al fianco dell\'orologio"</string>
+    <string name="status_bar_am_pm_info">Formato 24 ore abilitato</string>
     <string name="status_bar_battery_title">"Stile indicatore batteria"</string>
     <string name="status_bar_battery_summary">"Stile di visualizzazione dell\'indicatore della batteria"</string>
     <string name="status_bar_toggle_brightness">"Controllo luminosità"</string>
@@ -465,14 +466,62 @@
     <string name="lock_screen_title">"Schermata di sblocco"</string>
     <string name="lockscreen_target_info">Trascina il cursore e imposta le scorciatoie</string>
     <string name="lockscreen_target_title">Scorciatoie di sblocco</string>
-    <string name="lockscreen_target_summary">Aggiungi o personalizza scorciatoie di sblocco schermo</string>
+    <string name="lockscreen_target_summary">Visualizza o modifica scorciatoie di sblocco schermo</string>
     <string name="lockscreen_target_reset">Scorciatoie di sblocco ripristinate</string>
     <string name="lockscreen_target_save">Scorciatoie di sblocco salvate</string>
     <string name="lockscreen_target_reset_title">Ripristino</string>
     <string name="lockscreen_target_reset_message">Eliminare tutte le funzioni rapide e ripristinare quelle di default?</string>
     <string name="lockscreen_target_empty">Vuoto</string>
-    <string name="lockscreen_target_edit_title">Modifica scorciatoia</string>
-    <string name="lockscreen_target_edit_msg">Seleziona o modifica l\'applicazione desiderata o l\'activity e l\'icona</string>
+    <string name="lockscreen_target_edit_title">Modifica scorciatoia e icona</string>
+    <string name="lockscreen_target_edit_msg">Seleziona o modifica l\'applicazione desiderata o l\'activity e l\'icona associata</string>
+    <string name="lockscreen_weather_title">Meteo</string>
+    <string name="lockscreen_weather_summary">Visualizza informazioni meteo nella schermata di blocco</string>
+    <string name="lockscreen_weather_enabled">Abilitato</string>
+    <string name="weather_enable">Visualizza meteo</string>
+    <string name="weather_source">Yahoo! Weather</string>
+    <string name="weather_use_custom_location">Usa posizione personalizzata</string>
+    <string name="weather_geolocated">Geolocalizzazione usando la rete cellulare</string>
+    <string name="weather_custom_location_dialog_title">Inserisci posizione</string>
+    <string name="weather_custom_location_dialog_message">Attenzione: inserire posizione non valida fermerà gli aggiornamenti.</string>
+    <string name="weather_custom_location_hint">Città, Stato</string>
+    <string name="weather_custom_location_title">Posizione</string>
+    <string name="weather_show_location_title">Visualizza posizione</string>
+    <string name="weather_show_timestamp_title">Visualizza timestamp</string>
+    <string name="weather_refresh_interval">Intervallo di aggiornamento</string>
+    <string name="weather_update">Aggiorna</string>
+    <string name="weather_use_metric">Usa sistema metrico</string>
+    <string name="weather_refreshing">Aggiornamento meteo</string>
+    <string name="weather_retrieve_location_dialog_title">Impossibile recuperare posizione!</string>
+    <string name="weather_retrieve_location_dialog_message">Geolocalizzazione su rete disabilitata.\n\nImposta una posizione personalizzata o abilita la localizzazione su rete</string>
+    <string name="weather_retrieve_location_dialog_enable_button">Abilita</string>
+    <string name="weather_invert_lowhigh">Inverti temperature Min/Max</string>
+    <string name="weather_refresh_manual">Manuale</string>
+    <string name="weather_refresh_30min">30 minuti</string>
+    <string name="weather_refresh_60min">60 minuti</string>
+    <string name="weather_refresh_2hrs">2 ore</string>
+    <string name="weather_refresh_4hrs">4 ore</string>
+    <string name="weather_refresh_6hrs">6 ore</string>
+    <string name="weather_refresh_8hrs">8 ore</string>
+    <string name="lockscreen_calendar_title">Calendario</string>
+    <string name="lockscreen_calendar_summary">Visualizza il prossimo evento del calendario nella schermata di blocco</string>
+    <string name="lockscreen_calendar_enabled">Abilitato</string>
+    <string name="calendar_title">Visualizza prossimo evento</string>
+    <string name="calendars_title">Eventi calendari</string>
+    <string name="calendars_summary">Trova eventi da questi calendari</string>
+    <string name="calendar_reminders_only_title">Solo promemoria</string>
+    <string name="calendar_reminders_only_summary">Visualizza solo eventi con promemoria</string>
+    <string name="calendar_lookahead_title">Prossimi eventi</string>
+    <string name="calendar_show_location_title">Posizione evento</string>
+    <string name="calendar_show_description_title">Descrizione evento</string>
+    <string name="calendar_lookahead_3hrs">3 ore</string>
+    <string name="calendar_lookahead_6hrs">6 ore</string>
+    <string name="calendar_lookahead_12hrs">12 ore</string>
+    <string name="calendar_lookahead_1day">1 giorno</string>
+    <string name="calendar_lookahead_3days">3 giorni</string>
+    <string name="calendar_lookahead_1wk">1 settimana</string>
+    <string name="calendar_metadata_none">Non visualizzare</string>
+    <string name="calendar_metadata_first_line">Visualizza prima riga</string>
+    <string name="calendar_metadata_all">Visualizza tutti</string>
     <string name="wallpaper_settings_title" msgid="5449180116365824625">"Sfondo"</string>
     <string name="wallpaper_settings_fragment_title" msgid="519078346877860129">"Scegli sfondo da"</string>
     <string name="header_category_personal" msgid="6225932173498802187">"PERSONALE"</string>
@@ -498,9 +547,13 @@
     <string name="profile_cannot_delete">"Un profilo attivo non può essere cancellato."</string>
     <string name="profile_connectionoverrides_title">"Sovrascrittura connessioni"</string>
     <string name="profile_volumeoverrides_title">"Sovrascrittura volumi"</string>
+    <string name="profile_vibratoroverrides_title">Sovrascrittura vibrazione</string>
     <string name="connection_state_disabled">"Disattiva"</string>
     <string name="connection_state_enabled">"Attiva"</string>
     <string name="volume_override_summary">"Imposta a"</string>
+    <string name="vibrator_state_disabled">Disabilitato</string>
+    <string name="vibrator_state_enabled">Abilitato</string>
+    <string name="vibrator_state_silent">Solo in silenzioso</string>
     <string name="profile_profiles_manage">"Profili"</string>
     <string name="profile_profile_manage">"Gestisci profili"</string>
     <string name="profile_applist_manage">"Lista applicazioni"</string>
@@ -529,11 +582,18 @@
     <string name="profile_system_settings_title">"Impostazioni sistema"</string>
     <string name="profile_lockmode_title">"Modalità blocco schermo"</string>
     <string name="profile_lockmode_default">"Predefinito"</string>
-    <string name="profile_lockmode_insecure">"Insicuro"</string>
+    <string name="profile_lockmode_insecure">"Non sicuro"</string>
     <string name="profile_lockmode_disabled">"Disattivato"</string>
     <string name="profile_lockmode_default_summary">"Usa l\'impostazione predefinita"</string>
     <string name="profile_lockmode_insecure_summary">"Non usare protezioni per il blocco schermo"</string>
     <string name="profile_lockmode_disabled_summary">"Il blocco schermo è disattivo"</string>
+    <string name="profile_airplanemode_title">Modalità aereo</string>
+    <string name="profile_airplanemode_default">Predefinito</string>
+    <string name="profile_airplanemode_enabled">Attivato</string>
+    <string name="profile_airplanemode_disabled">Disattivato</string>
+    <string name="profile_airplanemode_default_summary">Usa l\'impostazione predefinita</string>
+    <string name="profile_airplanemode_enabled_summary">Modalità aereo attivata</string>
+    <string name="profile_airplanemode_disabled_summary">Modalità aereo disattivata</string>
     <string name="profile_disable_screen_lock_summary">"Disattiva protezioni per il sblocco schermo mentre questo profilo è attivo"</string>
     <string name="possibleButtons">"Pulsanti possibili"</string>
     <string name="toggleWifi">"Wi-Fi"</string>
@@ -554,10 +614,10 @@
     <string name="biometric_weak_improve_matching_title" msgid="8754080894393195194">"Migliora riconoscimento viso"</string>
     <string name="lock_after_timeout" msgid="4590337686681194648">"Blocca automaticamente"</string>
     <string name="lock_after_timeout_summary" msgid="6128431871360905631">"<xliff:g id="TIMEOUT_STRING">%1$s</xliff:g> dopo sospensione"</string>
-    <string name="show_owner_info_on_lockscreen_label" msgid="5074906168357568434">"Mostra info proprietario su blocco schermo"</string>
+    <string name="show_owner_info_on_lockscreen_label" msgid="5074906168357568434">"Mostra info proprietario nella schermata di sblocco"</string>
     <string name="owner_info_settings_title" msgid="2723190010708381889">"Info proprietario"</string>
     <string name="owner_info_settings_summary" msgid="3800834657847339570"></string>
-    <string name="owner_info_settings_edit_text_hint" msgid="4608681417960923911">"Digita testo da visualizzare in schermo blocco"</string>
+    <string name="owner_info_settings_edit_text_hint" msgid="4608681417960923911">"Digita testo da visualizzare nella schermata di sblocco"</string>
     <string name="location_settings_title" msgid="8935806698251432196">"Servizi di localizzazione"</string>
     <string name="security_settings_title" msgid="7945465324818485460">"Sicurezza"</string>
     <string name="security_settings_summary" msgid="967393342537986570">"Imposta La mia posizione, sblocco schermo, blocco SIM, blocco cred."</string>
@@ -571,10 +631,10 @@
     <string name="unlock_menu_unlock_summary">Premendo il tasto menu sblocca il dispositivo</string>
     <string name="unlock_quick_unlock_control_title">Sblocco rapido</string>
     <string name="unlock_quick_unlock_control_summary">Sblocca automaticamente quando il PIN / la password viene inserito in modo corretto</string>
-    <string name="delay_and_timeout_title">Ritardo blocco</string>
-    <string name="slide_lock_delay_title">Ritardo schermata sblocco</string>
-    <string name="slide_lock_timeout_delay_title">Timeout schermo</string>
-    <string name="slide_lock_screenoff_delay_title">Ritardo dopo spegnimento schermo</string>
+    <string name="delay_and_timeout_title">Ritardo schermata di sblocco</string>
+    <string name="slide_lock_delay_title">Ritardo schermata</string>
+    <string name="slide_lock_timeout_delay_title">Dopo timeout schermo</string>
+    <string name="slide_lock_screenoff_delay_title">Dopo spegnimento schermo</string>
     <string name="slide_lock_delay_none">Nessuno</string>
     <string name="slide_lock_delay_1s">1 secondo</string>
     <string name="slide_lock_delay_5s">5 secondi</string>
@@ -619,7 +679,7 @@
     <string name="unlock_backup_info_summary" msgid="108524727803788172">"Quando Sblocco col sorriso non funziona, come vuoi sbloccare il dispositivo?"</string>
     <string name="unlock_set_unlock_off_title" msgid="7117155352183088342">"Nessuno"</string>
     <string name="unlock_set_unlock_off_summary" msgid="94361581669110415"></string>
-    <string name="unlock_set_unlock_none_title" msgid="2871898266296656162">"Fai scorrere"</string>
+    <string name="unlock_set_unlock_none_title" msgid="2871898266296656162">"Scorrimento"</string>
     <string name="unlock_set_unlock_none_summary" msgid="8914673583104628191">"Nessuna protezione"</string>
     <string name="unlock_set_unlock_biometric_weak_title" msgid="2227215291604628670">"Sblocco col sorriso"</string>
     <string name="unlock_set_unlock_biometric_weak_summary" msgid="180083326982058964">"Protezione bassa, sperimentale"</string>
@@ -775,13 +835,12 @@
     <string name="processor_summary">"Seleziona il governor e la velocità della CPU"</string>
     <string name="cpu_cur_freq_title">"Frequenza CPU attuale"</string>
     <string name="cpu_governors_title">"Governor CPU"</string>
-    <string name="cpu_governors_summary">%S</string>
     <string name="cpu_min_freq_title">"Frequenza minima CPU"</string>
-    <string name="cpu_min_freq_summary">%s</string>
     <string name="cpu_max_freq_title">"Frequenza massima CPU"</string>
-    <string name="cpu_max_freq_summary">%s</string>
     <string name="cpu_set_on_boot">"Imposta all\'avvio"</string>
     <string name="cpu_set_on_boot_summary">"Reimposta i parametri selezionati ad ogni riavvio"</string>
+    <string name="pref_disable_bootanimation_title">Disabilita bootanimation</string>
+    <string name="pref_disable_bootanimation_summary">Non visualizza la bootanimation per un avvio più rapido</string>
     <string name="memory_management_title">"Gestione memoria"</string>
     <string name="memory_management_summary">"Personalizza l\'uso della memoria per modificare le prestazioni del sistema"</string>
     <string name="pref_zram_title">"zRam"</string>
@@ -795,9 +854,10 @@
     <string name="pref_use_16bpp_alpha_title">"Trasparenze a 16bit"</string>
     <string name="pref_use_16bpp_alpha_summary">"Aumenta le prestazioni ma abbassa la qualità della grafica e potrebbe causare artefatti visivi (Richiede il riavvio)</string>
     <string name="device_status_activity_title" msgid="1411201799384697904">"Stato"</string>
-    <string name="device_status" msgid="607405385799807324">"Stato"</string>
     <string name="device_status_summary" product="tablet" msgid="3292717754497039686">"Stato delle batteria, della rete e altre informazioni"</string>
     <string name="device_status_summary" product="default" msgid="2599162787451519618">"Numero di telefono, segnale ecc."</string>
+    <string name="device_status" msgid="607405385799807324">"Stato"</string>
+    <string name="status_imei">IMEI</string>
     <string name="status_number" product="tablet" msgid="1138837891091222272">"Numero di telefono"</string>
     <string name="status_number" product="default" msgid="5123197324870153205">"Il mio numero di telefono"</string>
     <string name="status_min_number" msgid="3519504522179420597">"MIN"</string>
@@ -827,7 +887,6 @@
     <string name="anonymous_statistics_warning">"Consentire di inviare statistiche anonime permetterà l\'invio di dati non personali agli sviluppatori di Cyanogenmod per contare il numero di installazioni uniche sui diversi terminali. Le informazioni inviate includono un identificativo univoco che non compromette la tua privacy o i tuoi dati personali. I dati sono inviati ad ogni avvio.\n\nPer un esempio dei dati inviati premere su Anteprima dati."</string>
     <string name="enable_reporting_title">"Attiva invio"</string>
     <string name="preview_data_title">"Anteprima dati"</string>
-    <string name="preview_data_summary">%s</string>
     <string name="view_stats_title">"Guarda statistiche"</string>
     <string name="anonymous_learn_more">"Maggiori informazioni"</string>
     <string name="anonymous_notification_desc">"Attiva o disattiva le statistiche CyanogenMod"</string>
@@ -1024,6 +1083,18 @@
     <string name="radio_info_signal_location_label" msgid="16475158265551708">"Posizione:"</string>
     <string name="radio_info_neighboring_location_label" msgid="2385625674055934880">"CID adiacente:"</string>
     <string name="radio_info_data_attempts_label" msgid="1731106244577323381">"Tentativi dati:"</string>
+    <string name="wifi_p2p_settings_title" msgid="5933614000444751775">"Wi-Fi Direct"</string>
+    <string name="wifi_p2p_settings_summary" msgid="6653169526746701975">"Imposta connettività peer-to-peer"</string>
+    <string name="wifi_p2p_device_info" msgid="3191876744469364173">"Informazioni dispositivo"</string>
+    <string name="wifi_p2p_wps_setup" msgid="1780420204385670531">"Impostazione protetta Wi-Fi"</string>
+    <string name="wifi_p2p_wps_pin" msgid="6025317359151049787">"Digita il PIN"</string>
+    <string name="wifi_p2p_persist_network" msgid="1646424791818168590">"Memorizza questa connessione"</string>
+    <string name="wifi_p2p_menu_search" msgid="7189970585393813135">"Cerca"</string>
+    <string name="wifi_p2p_menu_create_group" msgid="7595229161883902082">"Crea gruppo"</string>
+    <string name="wifi_p2p_menu_remove_group" msgid="4844634506540667517">"Rimuovi gruppo"</string>
+    <string name="wifi_p2p_available_devices" msgid="5943352520059654483">"Dispositivi disponibili"</string>
+    <string name="wifi_p2p_on_summary">Abilita Wi-Fi Direct</string>
+    <string name="wifi_p2p_settings">Opzioni Wi-Fi Direct</string>
     <string name="radio_info_gprs_service_label" msgid="2331818110375395364">"Servizio GPRS:"</string>
     <string name="radio_info_roaming_label" msgid="6141505430275138647">"Roaming:"</string>
     <string name="radio_info_imei_label" msgid="1220524224732944192">"IMEI:"</string>
@@ -1080,7 +1151,6 @@
     <string name="next_label" msgid="4693520878012668114">"Avanti"</string>
     <string name="language_picker_title" msgid="5349877711342869319">"Lingua"</string>
     <string name="activity_picker_label" msgid="6295660302548177109">"Scegli attività"</string>
-    <string name="debug_intent_sender_label">Debug intent sender</string>
     <string name="device_info_label" msgid="6551553813651711205">"Info dispositivo"</string>
     <string name="battery_info_label" msgid="4132685016148679403">"Info batteria"</string>
     <string name="display_label" msgid="8074070940506840792">"Schermo"</string>
@@ -1347,6 +1417,7 @@
     <string name="lockpattern_settings_help_how_to_record" msgid="2614673439060830433">"Procedura per l\'impostazione di una sequenza di sblocco"</string>
     <string name="lockpattern_too_many_failed_confirmation_attempts_header" msgid="819903817323783498">"Troppi tentativi errati."</string>
     <string name="lockpattern_too_many_failed_confirmation_attempts_footer" msgid="6759029360597122873">"Riprova fra <xliff:g id="NUMBER">%d</xliff:g> secondi."</string>
+    <string name="lockpattern_settings_enable_lock_before_unlock">Vedi widget senza sbloccare</string>
     <string name="skip_button_label" msgid="8680422740354436943">"Annulla"</string>
     <string name="next_button_label" msgid="8890792540116568321">"Avanti"</string>
     <string name="lock_title" product="tablet" msgid="2909697418179419990">"Protezione del tablet"</string>
@@ -1622,7 +1693,6 @@
     <string name="awake" msgid="387122265874485088">"Tempo di attività dispositivo"</string>
     <string name="wifi_on_time" msgid="6310209835617490616">"Tempo accensione Wi-Fi"</string>
     <string name="bluetooth_on_time" msgid="6157799524996162271">"Tempo accensione Wi-Fi"</string>
-    <string name="usage_name_percent" msgid="7976919382448235858">"<xliff:g id="NAME">%1$s</xliff:g> -  <xliff:g id="NUMBER">%2$s</xliff:g><xliff:g id="PERCENT">%%</xliff:g>"</string>
     <string name="history_details_title" msgid="3608240585315506067">"Dettagli cronologia"</string>
     <string name="details_title" msgid="3792801565213935385">"Dettagli di utilizzo"</string>
     <string name="details_subtitle" msgid="32593908269911734">"Dettagli di utilizzo"</string>
@@ -1985,7 +2055,6 @@
     <string name="confirm_new_backup_pw_prompt" msgid="3238728882512787864">"Digita nuovamente  la nuova password di backup completo qui"</string>
     <string name="backup_pw_set_button_text" msgid="2387480910044648795">"Imposta password di backup"</string>
     <string name="backup_pw_cancel_button_text" msgid="8845630125391744615">"Annulla"</string>
-    <string name="percentage" msgid="5866131581207788624">"<xliff:g id="NUMBER">%d</xliff:g>%%"</string>
     <string name="additional_system_update_settings_list_item_title" msgid="214987609894661992">"Aggiornamenti di sistema aggiuntivi"</string>
     <string name="display_category_wakeup_options_title">"Opzioni attivazione"</string>
     <string name="pref_volume_wake_title">"Tasti volume"</string>
@@ -1996,5 +2065,4 @@
     <string name="profile_write_failed">"Scrittura etichetta fallita!"</string>
     <string name="profile_selected">"Profilo selezionato: %1$s"</string>
     <string name="profile_nfc_text">"Scrivere un profilo per un\'etichetta NFC permette di toccare l\'etichetta per selezionare quel profilo. Toccandola una seconda volta verrà selezionato il profilo precedente."</string>
-
 </resources>

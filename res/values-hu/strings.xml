@@ -613,6 +613,8 @@
     <string name="wifi_p2p_menu_remove_group" msgid="4844634506540667517">"Csoport eltávolítása"</string>
     <string name="wifi_p2p_menu_advanced" msgid="2578792521809265949">"Haladó"</string>
     <string name="wifi_p2p_available_devices" msgid="5943352520059654483">"Elérhető eszközök"</string>
+    <string name="wifi_p2p_on_summary">Közvetlen Wi-Fi bekapcsolása</string>
+    <string name="wifi_p2p_settings">Közvetlen Wi-Fi beállítások</string>
     <string name="wifi_tether_checkbox_text" msgid="6961605862058056788">"Hordozható Wi-Fi hotspot"</string>
     <string name="wifi_tether_enabled_subtext" msgid="8948641212931906143">"A(z) <xliff:g id="NETWORK_SSID">%1$s</xliff:g> hordozható hotspot aktív"</string>
     <string name="wifi_tether_failed_subtext" msgid="2654888578056042315">"A hordozható Wi-Fi hotspot hibája"</string>
@@ -641,6 +643,10 @@
     <string name="dock_settings_summary" msgid="455802113668982481">"A csatlakoztatott dokkoló hangbeállításai"</string>
     <string name="dtmf_tone_enable_title" msgid="8533399267725365088">"Tárcsázó érintési hangjai"</string>
     <string name="sound_effects_enable_title" msgid="1171590821131077296">"Érintés hangja"</string>
+    <!-- Vibrator settings screen, setting check box label -->
+    <string name="vibrator_type_ringer">Telefonhívások</string>
+    <!-- Vibrator settings screen, setting check box label -->
+    <string name="vibrator_type_notification">Értesítések</string>
     <string name="lock_sounds_enable_title" msgid="450098505659399520">"Képernyőzár hangja"</string>
     <string name="haptic_feedback_enable_title" msgid="2438293710530828760">"Érintéskor rezegjen"</string>
     <string name="audio_record_proc_title" msgid="4271091199976457534">"Zajszűrés"</string>
@@ -967,6 +973,7 @@
     <string name="lockpattern_settings_help_how_to_record" msgid="2614673439060830433">"Hogyan kell feloldási mintát rajzolni"</string>
     <string name="lockpattern_too_many_failed_confirmation_attempts_header" msgid="819903817323783498">"Túl sok helytelen próbálkozás!"</string>
     <string name="lockpattern_too_many_failed_confirmation_attempts_footer" msgid="6759029360597122873">"Próbálja újra <xliff:g id="NUMBER">%d</xliff:g> másodperc múlva."</string>
+    <string name="lockpattern_settings_enable_lock_before_unlock">Modulok mutatása feloldás előtt</string>
     <string name="skip_button_label" msgid="8680422740354436943">"Mégse"</string>
     <string name="next_button_label" msgid="8890792540116568321">"Tovább"</string>
     <string name="lock_title" product="tablet" msgid="2909697418179419990">"A táblagép védelme"</string>
@@ -1505,6 +1512,7 @@
     <string name="data_usage_menu_split_4g" msgid="5322857680792601899">"Külön 4G-használat"</string>
     <string name="data_usage_menu_show_wifi" msgid="8266875319417201085">"Wi-Fi forgalom megjelenítése"</string>
     <string name="data_usage_menu_show_ethernet" msgid="5181361208532314097">"Ethernet-használat megjelenítése"</string>
+    <string name="data_usage_menu_linear_chart">Vonaldiagram</string>
     <string name="data_usage_change_cycle" msgid="7776556448920114866">"Ciklus módosítása..."</string>
     <string name="data_usage_pick_cycle_day" msgid="4470796861757050966">"Az adatforgalmi ciklus visszaállítása a hónap e napján:"</string>
     <string name="data_usage_empty" msgid="8621855507876539282">"Egy alkalmazás sem használt adatokat ekkor."</string>
@@ -1641,6 +1649,9 @@
     <string name="notification_light_enabled">Engedélyezve</string>
     <string name="notification_light_general_title">Általános</string>
     <string name="notification_light_use_custom">Egyéni érték használata</string>
+    <string name="notification_light_missed_call_title">Nem fogadott hívás</string>
+    <string name="notification_light_phonelist_title">Telefon</string>
+    <string name="notification_light_voicemail_title">Hangposta</string>
     <string name="ok">Ok</string>
     <string name="picker_arrow">→</string>
     <string name="preview_carrier_title">Szolgáltató</string>
@@ -1782,6 +1793,9 @@
     <string name="quiet_hours_haptic_off">Érintési visszajelzés engedélyezve</string>
     <string name="quiet_hours_active_from">Bekapcsolva ettől</string>
     <string name="quiet_hours_active_to">eddig</string>
+    <!-- Safe headset volume restore checkbox -->
+    <string name="safe_headset_restore_title">Biztonságos hangerő</string>
+    <string name="safe_headset_restore_summary">Nagy hangerő megakadályozása füllhalgató csatlakoztatásakor</string>
     <!-- Wakeup options -->
     <string name="display_category_wakeup_options_title">Ébredés beállítások</string>
     <string name="pref_volume_wake_title">Hangerő gombra ébredés</string>
@@ -1844,6 +1858,14 @@
     <string name="combined_bar_title">Értesítési sáv</string>
     <string name="combined_bar_auto_hide_title">Auto elrejtés</string>
     <string name="combined_bar_auto_hide_summary">Értesítési sáv elrejtése teljes képernyős alkalmazások esetén</string>
+    <!-- Navigation Bar #CM -->
+    <string name="navigation_bar_title">Navigációs sáv</string>
+    <string name="navigation_bar_help_text">1 - A szerkeztéshez érintse meg a lakatot\n\n2 - Válasszon gombot a hozzárendelés módosításához\n\n3 - Tartsa hosszan a sorba rendezéshez\n\n4 - A mentéshez érintse meg ismét az ikont\n\n5 - Az alaphelyzet visszaállításához érintse meg a Visszaállítás gombot\n\n</string>
+    <string name="navigation_bar_tips">&#8226; Esemény csak egy gombhoz állítható be\n\n&#8226; A home gomb nem társítható\n\n&#8226; Az oldalsó gombok nem rendezhetőek át</string>
+    <string name="navigation_bar_tips_title">Gyors tippek</string>
+    <string name="navigation_bar_reset_message">Törli a jelenlegi beállításokat és visszaállítja az alaphelyzetet?</string>
+    <string name="navigation_bar_save_message">Navigációs sáv beállításai elmentve.</string>
+    <string name="navigation_bar_reset_toast">Navigációs sáv beállításai visszaállítva az alaphelyzetbe.</string>
     <!-- Power Widget #CM -->
     <string name="power_widget_title">Energiagazdálkodás</string>
     <string name="title_expanded_widget">Energiagazdálkodás modul</string>
@@ -1908,6 +1930,7 @@
     <string name="status_bar_show_clock_summary">Óra mutatása az értesítési sávon</string>
     <string name="status_bar_am_pm_title">AM/PM stílus</string>
     <string name="status_bar_am_pm_summary">AM/PM kijelzés stílusának kiválasztása</string>
+    <string name="status_bar_am_pm_info">24 órás megjelenítés aktív</string>
     <string name="status_bar_battery_title">Akkumulátor állapotjelző stílusa</string>
     <string name="status_bar_battery_summary">Akkumulátor állapotjelző stílusának kiválasztása</string>
     <string name="status_bar_toggle_brightness">Fényerő vezérlés</string>
@@ -1931,6 +1954,65 @@
     <string name="lockscreen_target_empty">Üres</string>
     <string name="lockscreen_target_edit_title">Hivatkozás szerkesztése</string>
     <string name="lockscreen_target_edit_msg">Válassza ki vagy módosítsa a kívánt alkalmazást vagy tevékenységet és a hozzá tartozó ikont</string>
+
+    <!-- Lock Screen Weather -->
+    <string name="lockscreen_weather_title">Időjárás</string>
+    <string name="lockscreen_weather_summary">Időjárás információk megjelenítése a zárolt képernyőn</string>
+    <string name="lockscreen_weather_enabled">Engedélyezve</string>
+    <string name="weather_enable">Időjárás megjelenítése</string>
+    <string name="weather_source">Yahoo! Weather</string>
+    <string name="weather_use_custom_location">Egyéni hely használata</string>
+    <string name="weather_geolocated">Helyzetmeghatározás</string>
+    <string name="weather_custom_location_dialog_title">Hely megadása</string>
+    <string name="weather_custom_location_dialog_message">Vigyázat: Hibás hely megadása esetén leáll a frissítés.</string>
+    <string name="weather_custom_location_hint">Város, Ország</string>
+    <string name="weather_custom_location_title">Hely neve</string>
+    <string name="weather_show_location_title">Hely mutatása</string>
+    <string name="weather_show_timestamp_title">Frissítés idejének mutatása</string>
+    <string name="weather_refresh_interval">Frissítések gyakorisága</string>
+    <string name="weather_update">Frissítés</string>
+    <string name="weather_use_metric">Metrikus értékek</string>
+    <string name="weather_refreshing">Időjárás frissítése</string>
+    <string name="weather_retrieve_location_dialog_title">Nem található hely információ!</string>
+    <string name="weather_retrieve_location_dialog_message">Helyzetmeghatározás letiltva.\n\nÁllítsd be a helyet vagy használd az automatikus helyzetmeghatározást</string>
+    <string name="weather_retrieve_location_dialog_enable_button">Engedélyez</string>
+    <string name="weather_invert_lowhigh">Minimum/maximum hőmérséklet megfordítása</string>
+
+    <!-- Lock screen Weather - Update frequency -->
+    <string name="weather_refresh_manual">Kézi</string>
+    <string name="weather_refresh_30min">30 perc</string>
+    <string name="weather_refresh_60min">60 perc</string>
+    <string name="weather_refresh_2hrs">2 óra</string>
+    <string name="weather_refresh_4hrs">4 óra</string>
+    <string name="weather_refresh_6hrs">6 óra</string>
+    <string name="weather_refresh_8hrs">8 óra</string>
+
+    <!-- Lock screen Calendar -->
+    <string name="lockscreen_calendar_title">Naptár</string>
+    <string name="lockscreen_calendar_summary">Megjeleníti a következő naptárbejegyzést a zárolt képernyőn</string>
+    <string name="lockscreen_calendar_enabled">Engedélyezve</string>
+    <string name="calendar_title">Mutassa a naptárbejegyzéseket</string>
+    <string name="calendars_title">Naptárak</string>
+    <string name="calendars_summary">Csak a megadott naptárakban keresse az eseményeket</string>
+    <string name="calendar_reminders_only_title">Csak emlékeztetők</string>
+    <string name="calendar_reminders_only_summary">Csak az emlékeztetővel ellátott eseményeket mutassa</string>
+    <string name="calendar_lookahead_title">Keresési időszak</string>
+    <string name="calendar_show_location_title">Az esemény helye</string>
+    <string name="calendar_show_description_title">Az esemény leírása</string>
+
+    <!-- Lock screen calendar - lookahead -->
+    <string name="calendar_lookahead_3hrs">3 óra</string>
+    <string name="calendar_lookahead_6hrs">6 óra</string>
+    <string name="calendar_lookahead_12hrs">12 óra</string>
+    <string name="calendar_lookahead_1day">1 nap</string>
+    <string name="calendar_lookahead_3days">3 nap</string>
+    <string name="calendar_lookahead_1wk">1 hét</string>
+
+    <!-- Lock screen calendar - event metadata -->
+    <string name="calendar_metadata_none">Ne mutassa</string>
+    <string name="calendar_metadata_first_line">Csak az első sorát mutassa</string>
+    <string name="calendar_metadata_all">A teljeset mutassa</string>
+
     <!-- Lock Screen -->
     <!-- Profiles settings #CM -->
     <string name="profiles_settings_title">Profilok</string>
@@ -1963,6 +2045,10 @@
     <string name="connection_state_disabled">Letiltva</string>
     <string name="connection_state_enabled">Engedélyezve</string>
     <string name="volume_override_summary">Beállítva</string>
+    <string name="profile_vibratoroverrides_title">Rezgő mód felülbírálása</string>
+    <string name="vibrator_state_disabled">Letiltva</string>
+    <string name="vibrator_state_enabled">Engedélyezve</string>
+    <string name="vibrator_state_silent">Néma mód esetén</string>
     <!-- Menu item for managing profiles -->
     <string name="profile_profiles_manage">Profilok</string>
     <string name="profile_profile_manage">Profilok kezelése</string>
@@ -2004,6 +2090,14 @@
     <string name="profile_lockmode_insecure_summary">Védtelen használata</string>
     <string name="profile_lockmode_disabled_summary">Nincs zárolt képernyő</string>
     <string name="profile_disable_screen_lock_summary">Zárolt képernyő kikapcsolása ha aktív ez a profil</string>
+    <string name="profile_airplanemode_title">Repülőgép üzemmód</string>
+    <string name="profile_airplanemode_default">Alapértelmezett</string>
+    <string name="profile_airplanemode_enabled">Engedélyezve</string>
+    <string name="profile_airplanemode_disabled">Letiltva</string>
+    <string name="profile_airplanemode_default_summary">Alapértelmezett használata</string>
+    <string name="profile_airplanemode_enabled_summary">Repülőgép üzemmód engedélyezve</string>
+    <string name="profile_airplanemode_disabled_summary">Repülőgép üzemmód letiltva</string>
+
     <!-- Connection override toggles (not all are used at this time ) -->
     <string name="possibleButtons">Lehetséges kapcsolók</string>
     <string name="toggleWifi">Wi-Fi</string>

@@ -59,6 +59,8 @@ public class ScreenSecurity extends SettingsPreferenceFragment implements
 
     private static final String KEY_LOCK_AFTER_TIMEOUT = "lock_after_timeout";
 
+    private static final String KEY_POWER_INSTANTLY_LOCKS = "power_button_instantly_locks";
+
     private static final int SET_OR_CHANGE_LOCK_METHOD_REQUEST = 123;
 
     private static final int CONFIRM_EXISTING_FOR_BIOMETRIC_IMPROVE_REQUEST = 124;
@@ -73,6 +75,8 @@ public class ScreenSecurity extends SettingsPreferenceFragment implements
 
     private static final String LOCKSCREEN_QUICK_UNLOCK_CONTROL = "quick_unlock_control";
 
+    private static final String KEY_LOCK_BEFORE_UNLOCK = "lock_before_unlock";
+
     private LockPatternUtils mLockPatternUtils;
 
     private CheckBoxPreference mSlideLockDelayToggle;
@@ -80,6 +84,8 @@ public class ScreenSecurity extends SettingsPreferenceFragment implements
     private ListPreference mSlideLockTimeoutDelay;
 
     private ListPreference mSlideLockScreenOffDelay;
+
+    private CheckBoxPreference mPowerButtonInstantlyLocks;
 
     DevicePolicyManager mDPM;
 
@@ -157,6 +163,11 @@ public class ScreenSecurity extends SettingsPreferenceFragment implements
 
         // visible pattern
         mVisiblePattern = (CheckBoxPreference) root.findPreference(KEY_VISIBLE_PATTERN);
+
+        // lock instantly on power key press
+        mPowerButtonInstantlyLocks = (CheckBoxPreference) root.findPreference(
+                KEY_POWER_INSTANTLY_LOCKS);
+        checkPowerInstantLockDependency();
 
         // don't display visible pattern if biometric and backup is not pattern
         if (resid == R.xml.security_settings_biometric_weak &&
@@ -278,6 +289,18 @@ public class ScreenSecurity extends SettingsPreferenceFragment implements
         mLockAfter.setSummary(getString(R.string.lock_after_timeout_summary, entries[best]));
     }
 
+    private void checkPowerInstantLockDependency() {
+        if (mPowerButtonInstantlyLocks != null) {
+            long timeout = Settings.Secure.getLong(getContentResolver(),
+                    Settings.Secure.LOCK_SCREEN_LOCK_AFTER_TIMEOUT, 5000);
+            if (timeout == 0) {
+                mPowerButtonInstantlyLocks.setEnabled(false);
+            } else {
+                mPowerButtonInstantlyLocks.setEnabled(true);
+            }
+        }
+    }
+
     private void disableUnusableTimeouts(long maxTimeout) {
         final CharSequence[] entries = mLockAfter.getEntries();
         final CharSequence[] values = mLockAfter.getEntryValues();
@@ -325,6 +348,9 @@ public class ScreenSecurity extends SettingsPreferenceFragment implements
         if (mTactileFeedback != null) {
             mTactileFeedback.setChecked(lockPatternUtils.isTactileFeedbackEnabled());
         }
+        if (mPowerButtonInstantlyLocks != null) {
+            mPowerButtonInstantlyLocks.setChecked(lockPatternUtils.getPowerButtonInstantlyLocks());
+        }
     }
 
     @Override
@@ -350,6 +376,10 @@ public class ScreenSecurity extends SettingsPreferenceFragment implements
             lockPatternUtils.setVisiblePatternEnabled(isToggled(preference));
         } else if (KEY_TACTILE_FEEDBACK_ENABLED.equals(key)) {
             lockPatternUtils.setTactileFeedbackEnabled(isToggled(preference));
+        } else if (KEY_LOCK_BEFORE_UNLOCK.equals(key)) {
+            lockPatternUtils.setLockBeforeUnlock(isToggled(preference));
+        } else if (KEY_POWER_INSTANTLY_LOCKS.equals(key)) {
+            lockPatternUtils.setPowerButtonInstantlyLocks(isToggled(preference));
         } else if (preference == mSlideLockDelayToggle) {
             value = mSlideLockDelayToggle.isChecked();
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
@@ -398,6 +428,7 @@ public class ScreenSecurity extends SettingsPreferenceFragment implements
                 Log.e("SecuritySettings", "could not persist lockAfter timeout setting", e);
             }
             updateLockAfterPreferenceSummary();
+            checkPowerInstantLockDependency();
         } else if (preference == mSlideLockTimeoutDelay) {
             int slideTimeoutDelay = Integer.valueOf((String) value);
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),

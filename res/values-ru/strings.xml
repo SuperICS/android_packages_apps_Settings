@@ -581,6 +581,8 @@
     <string name="wifi_p2p_menu_remove_group" msgid="4844634506540667517">"Удалить группу"</string>
     <string name="wifi_p2p_menu_advanced" msgid="2578792521809265949">"Дополнительно"</string>
     <string name="wifi_p2p_available_devices" msgid="5943352520059654483">"Список"</string>
+    <string name="wifi_p2p_on_summary">Вкл. Wi-Fi Direct</string>
+    <string name="wifi_p2p_settings">Настройки Wi-Fi Direct</string>
     <string name="wifi_tether_checkbox_text" msgid="6961605862058056788">"Точка доступа Wi-Fi"</string>
     <string name="wifi_tether_enabled_subtext" msgid="8948641212931906143">"Точка доступа <xliff:g id="NETWORK_SSID">%1$s</xliff:g> активна"</string>
     <string name="wifi_tether_failed_subtext" msgid="2654888578056042315">"Ошибка подключения"</string>
@@ -608,6 +610,8 @@
     <string name="alarm_volume_title" msgid="2285597478377758706">"Будильник"</string>
     <string name="dtmf_tone_enable_title" msgid="8533399267725365088">"Звук клавиш"</string>
     <string name="sound_effects_enable_title" msgid="1171590821131077296">"Звук нажатия на экран"</string>
+    <string name="vibrator_type_ringer">Вызовы</string>
+    <string name="vibrator_type_notification">Уведомления</string>
     <string name="lock_sounds_enable_title" msgid="450098505659399520">"Звук блокировки экрана"</string>
     <string name="haptic_feedback_enable_title">Виброотклик</string>
     <string name="volbtn_music_controls_title">Управление музыкой кнопками громкости</string>
@@ -962,6 +966,7 @@
     <string name="lockpattern_settings_help_how_to_record" msgid="2614673439060830433">"Как начертить графический ключ разблокировки"</string>
     <string name="lockpattern_too_many_failed_confirmation_attempts_header" msgid="819903817323783498">"Слишком много неудачных попыток!"</string>
     <string name="lockpattern_too_many_failed_confirmation_attempts_footer" msgid="6759029360597122873">"Повторите попытку через <xliff:g id="NUMBER">%d</xliff:g> с."</string>
+    <string name="lockpattern_settings_enable_lock_before_unlock">Показывать виджеты до разблокировки</string>
     <string name="skip_button_label" msgid="8680422740354436943">"Отмена"</string>
     <string name="next_button_label" msgid="8890792540116568321">"Далее"</string>
     <string name="lock_title" product="tablet" msgid="2909697418179419990">"Безопасность планшетного ПК"</string>
@@ -1517,6 +1522,7 @@
     <string name="data_usage_menu_split_4g" msgid="5322857680792601899">"Только по каналу 4G"</string>
     <string name="data_usage_menu_show_wifi" msgid="8266875319417201085">"Трафик Wi-Fi"</string>
     <string name="data_usage_menu_show_ethernet" msgid="5181361208532314097">"Показывать загрузку Ethernet"</string>
+    <string name="data_usage_menu_linear_chart">Линейный график</string>
     <string name="data_usage_change_cycle" msgid="7776556448920114866">"Изменить…"</string>
     <string name="data_usage_pick_cycle_day" msgid="4470796861757050966">"День месяца, когда сбрасывается цикл использования данных:"</string>
     <string name="data_usage_empty" msgid="8621855507876539282">"В этот период не было трафика от приложений."</string>
@@ -1672,10 +1678,13 @@
     <string name="notification_pulse_title">Индикатор событий</string>
     <string name="notification_light_general_title">Основные</string>
     <string name="notification_light_applist_title">Приложения</string>
-    <string name="notification_light_default_value">Умолчание</string>
+    <string name="notification_light_phonelist_title">Телефон</string>
     <string name="notification_light_use_custom">Собственные значения</string>
     <string name="notification_light_enabled">Включено</string>
     <string name="notification_light_disabled">Выключено</string>
+    <string name="notification_light_default_value">По умолчанию</string>
+    <string name="notification_light_missed_call_title">Пропущенный вызов</string>
+    <string name="notification_light_voicemail_title">Голосовая почта</string>
 
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Изменить настройки индикатора</string>
@@ -1725,6 +1734,16 @@
     <string name="combined_bar_title">Объединённая панель</string>
     <string name="combined_bar_auto_hide_title">Скрывать автоматически</string>
     <string name="combined_bar_auto_hide_summary">Скрывать объединённую панель при показе полноэкранного приложения</string>
+
+    <!-- Navigation Bar #CM -->
+    <string name="navigation_bar_title">Строка навигации</string>
+
+    <string name="navigation_bar_help_text">1 - Для редактирования, нажмите значок замка\n2 - Нажмите любую кнопку, чтобы задать или изменить функциональность\n3 - Долгим нажатием на любой кнопке можно изменить её порядок\n4 - Для сохранения нажмите на значок замка\n5 - Для сброса настроек, нажмите кнопку сброса\n</string>
+    <string name="navigation_bar_tips">&#8226; Одно действие может быть назначено только на одну кнопку\n\n&#8226; Кнопка Домой не может быть изменена\n\n&#8226; Боковые кнопки не могут быть изменены</string>
+    <string name="navigation_bar_tips_title">Быстрые подсказки</string>
+    <string name="navigation_bar_reset_message">Удалить текущие настройки и восстановить значения по умолчанию?</string>
+    <string name="navigation_bar_save_message">Настройки строки навигации сохранены</string>
+    <string name="navigation_bar_reset_toast">Настройки строки навигации сброшены по умолчанию</string>
 
     <!-- Power Widget #CM -->
     <string name="power_widget_title">Кнопки в панели уведомлений</string>
@@ -1791,6 +1810,7 @@
     <string name="status_bar_show_clock_summary">Показывать часы в строке состояния</string>
     <string name="status_bar_am_pm_title">Стиль AM/PM</string>
     <string name="status_bar_am_pm_summary">Стиль отображения AM/PM рядом с часами</string>
+    <string name="status_bar_am_pm_info">Включен 24-часовой формат</string>
     <string name="status_bar_battery_title">Стиль батареи</string>
     <string name="status_bar_battery_summary">Стиль отображения заряда аккумулятора</string>
     <string name="status_bar_toggle_brightness">Управление яркостью</string>
@@ -1812,8 +1832,66 @@
     <string name="lockscreen_target_reset_title">Сброс</string>
     <string name="lockscreen_target_reset_message">Удалить все созданные ярлыки экрана блокировки и восстановить значения по умолчанию?</string>
     <string name="lockscreen_target_empty">Пусто</string>
-    <string name="lockscreen_target_edit_title">Изменить ярлык</string>
+    <string name="lockscreen_target_edit_title">Изменить ярлык и иконку</string>
     <string name="lockscreen_target_edit_msg">Выберите или измените нужные приложения или действие и иконку</string>
+
+    <!-- Lock Screen Weather -->
+    <string name="lockscreen_weather_title">Погода</string>
+    <string name="lockscreen_weather_summary">Показывать информацию о погоде на экране блокировки</string>
+    <string name="lockscreen_weather_enabled">Включено</string>
+    <string name="weather_enable">Погода отображается</string>
+    <string name="weather_source">Yahoo! Weather</string>
+    <string name="weather_use_custom_location">Не определять автоматически</string>
+    <string name="weather_geolocated">Местоположение по сети</string>
+    <string name="weather_custom_location_dialog_title">Введите местоположение</string>
+    <string name="weather_custom_location_dialog_message">Внимание: название города вводится на английском языке. Ошибочно введённое местоположение не будет отображаться.</string>
+    <string name="weather_custom_location_hint">Город, штат/страна</string>
+    <string name="weather_custom_location_title">Местоположение</string>
+    <string name="weather_show_location_title">Показывать местоположение</string>
+    <string name="weather_show_timestamp_title">Показывать время</string>
+    <string name="weather_refresh_interval">Частота обновления</string>
+    <string name="weather_update">Обновить</string>
+    <string name="weather_use_metric">Метрическая система</string>
+    <string name="weather_refreshing">Обновление информации о погоде</string>
+    <string name="weather_retrieve_location_dialog_title">Не удаётся получить местоположение!</string>
+    <string name="weather_retrieve_location_dialog_message">Определение местоположения по сети выключено.\n\nВключите определение местоположения по сети или введите местоположение вручную.</string>
+    <string name="weather_retrieve_location_dialog_enable_button">Включить</string>
+    <string name="weather_invert_lowhigh">Изменить порядок температур</string>
+
+    <!-- Lock screen Weather - Update frequency -->
+    <string name="weather_refresh_manual">Вручную</string>
+    <string name="weather_refresh_30min">30 минут</string>
+    <string name="weather_refresh_60min">60 минут</string>
+    <string name="weather_refresh_2hrs">2 часа</string>
+    <string name="weather_refresh_4hrs">4 часа</string>
+    <string name="weather_refresh_6hrs">6 часов</string>
+    <string name="weather_refresh_8hrs">8 часов</string>
+
+    <!-- Lock screen Calendar -->
+    <string name="lockscreen_calendar_title">Календарь</string>
+    <string name="lockscreen_calendar_summary">Отображать на экране блокировки события из календаря</string>
+    <string name="lockscreen_calendar_enabled">Включено</string>
+    <string name="calendar_title">Показывать следующие события</string>
+    <string name="calendars_title">События календарей</string>
+    <string name="calendars_summary">Найти события из этих календарей</string>
+    <string name="calendar_reminders_only_title">Только с напоминаниями</string>
+    <string name="calendar_reminders_only_summary">Отображать только события с напоминаниями</string>
+    <string name="calendar_lookahead_title">Предпросмотр события</string>
+    <string name="calendar_show_location_title">Место проведения</string>
+    <string name="calendar_show_description_title">Описание события</string>
+
+    <!-- Lock screen calendar - lookahead -->
+    <string name="calendar_lookahead_3hrs">3 часа</string>
+    <string name="calendar_lookahead_6hrs">6 часов</string>
+    <string name="calendar_lookahead_12hrs">12 часов</string>
+    <string name="calendar_lookahead_1day">1 день</string>
+    <string name="calendar_lookahead_3days">3 дня</string>
+    <string name="calendar_lookahead_1wk">1 неделя</string>
+
+    <!-- Lock screen calendar - event metadata -->
+    <string name="calendar_metadata_none">Не показывать</string>
+    <string name="calendar_metadata_first_line">Показывать первую строку</string>
+    <string name="calendar_metadata_all">Показывать всё</string>
 
     <!-- Profiles settings #CM -->
     <string name="profiles_settings_title">Профили</string>
@@ -1848,9 +1926,13 @@
     <!-- Profile Config screen PreferenceGroup titles -->
     <string name="profile_connectionoverrides_title">Сетевые подключения</string>
     <string name="profile_volumeoverrides_title">Переопределение громкости</string>
+    <string name="profile_vibratoroverrides_title">Переопределение вибро</string>
     <string name="connection_state_disabled">Выключено</string>
     <string name="connection_state_enabled">Включено</string>
     <string name="volume_override_summary">Установить</string>
+    <string name="vibrator_state_disabled">Выключено</string>
+    <string name="vibrator_state_enabled">Включено</string>
+    <string name="vibrator_state_silent">Только при беззвуч. режиме</string>
 
     <!-- Menu item for managing profiles -->
     <string name="profile_profiles_manage">Профили</string>
@@ -1899,6 +1981,13 @@
     <string name="profile_lockmode_insecure_summary">Использовать ненадёжную блокировку экрана</string>
     <string name="profile_lockmode_disabled_summary">Блокировка экрана выключена</string>
     <string name="profile_disable_screen_lock_summary">Отключать блокировку экрана когда этот профиль активен</string>
+    <string name="profile_airplanemode_title">Режим полёта</string>
+    <string name="profile_airplanemode_default">По умолчанию</string>
+    <string name="profile_airplanemode_enabled">Включен</string>
+    <string name="profile_airplanemode_disabled">Выключен</string>
+    <string name="profile_airplanemode_default_summary">Использовать умолчания системы</string>
+    <string name="profile_airplanemode_enabled_summary">Режим полёта включен</string>
+    <string name="profile_airplanemode_disabled_summary">Режим полёта выключен</string>
 
     <!-- Connection override toggles (not all are used at this time ) -->
     <string name="possibleButtons">Доступные кнопки</string>
@@ -1942,6 +2031,10 @@
     <!-- time range preference -->
     <string name="start_time_title">Начало</string>
     <string name="end_time_title">Конец</string>
+
+    <!-- Safe headset volume restore checkbox -->
+    <string name="safe_headset_restore_title">Безопасная громкость наушников</string>
+    <string name="safe_headset_restore_summary">Уменьшать громкость до 55% при первом подключении наушников</string>
 
     <!-- Performance settings #CM -->
     <string name="performance_settings_title">Производительность</string>
@@ -2081,23 +2174,23 @@
     <string name="select_custom_app_title">Выбрать собственное приложение</string>
     <string name="select_custom_activity_title">Выбрать собственное действие</string>
     <string name="icon_picker_choose_icon_title">Выбрать иконку</string>
-    <string name="icon_picker_alarm">Часы</string>
     <string name="icon_picker_browser">Браузер</string>
+    <string name="icon_picker_movie">Видео</string>
+    <string name="icon_picker_gallery">Галерея</string>
     <string name="icon_picker_calendar">Календарь</string>
     <string name="icon_picker_camera">Камера</string>
-    <string name="icon_picker_email">Email</string>
-    <string name="icon_picker_facebook">Facebook</string>
-    <string name="icon_picker_gallery">Галерея</string>
-    <string name="icon_picker_googleplus">Google Plus</string>
-    <string name="icon_picker_googletalk">Google Talk</string>
     <string name="icon_picker_maps">Карты</string>
-    <string name="icon_picker_movie">Видео</string>
     <string name="icon_picker_music">Музыка</string>
     <string name="icon_picker_nav_normal">Навигация</string>
-    <string name="icon_picker_phone">Телефон</string>
-    <string name="icon_picker_podcast">Подкаст</string>
-    <string name="icon_picker_rss">Rss</string>
+    <string name="icon_picker_podcast">Подкасты</string>
     <string name="icon_picker_sms">Сообщения</string>
+    <string name="icon_picker_phone">Телефон</string>
+    <string name="icon_picker_alarm">Часы</string>
+    <string name="icon_picker_email">Email</string>
+    <string name="icon_picker_facebook">Facebook</string>
+    <string name="icon_picker_googleplus">Google +</string>
+    <string name="icon_picker_googletalk">Google Talk</string>
+    <string name="icon_picker_rss">Rss</string>
     <string name="icon_picker_twitter">Twitter</string>
 
     <!-- String for IconPicker -->

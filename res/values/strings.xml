@@ -628,6 +628,10 @@
     <string name="dtmf_tone_enable_title">Dial pad touch tones</string>
     <!-- Sound settings screen, setting check box label -->
     <string name="sound_effects_enable_title">Touch sounds</string>
+    <!-- Vibrator settings screen, setting check box label -->
+    <string name="vibrator_type_ringer">Calls</string>
+    <!-- Vibrator settings screen, setting check box label -->
+    <string name="vibrator_type_notification">Notifications</string>
     <!-- Sound settings screen, setting check box label -->
     <string name="lock_sounds_enable_title">Screen lock sound</string>
     <!-- Sound settings screen, setting check box label -->
@@ -688,6 +692,10 @@
     <!-- time range preference -->
     <string name="start_time_title">Start</string>
     <string name="end_time_title">End</string>
+
+    <!-- Safe headset volume restore checkbox -->
+    <string name="safe_headset_restore_title">Safe headset volume</string>
+    <string name="safe_headset_restore_summary">Prevent loud volume levels when headset is first plugged in</string>
 
     <!-- Display settings --><skip/>
     <!-- Sound & display settings screen, section header for settings related to display -->
@@ -910,6 +918,7 @@
     <string name="status_bar_show_clock_summary">Show the clock in the status bar</string>
     <string name="status_bar_am_pm_title">AM/PM style</string>
     <string name="status_bar_am_pm_summary">Display style of AM/PM next to clock</string>
+    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
     <string name="status_bar_battery_title">Battery status style</string>
     <string name="status_bar_battery_summary">Display style of battery status</string>
     <string name="status_bar_toggle_brightness">Brightness control</string>
@@ -925,15 +934,73 @@
 
     <!-- Lock Screen Shortcuts -->
     <string name="lockscreen_target_info">Drag the slider to targets to assign shortcuts</string>
-    <string name="lockscreen_target_title">Lock screen shortcuts</string>
-    <string name="lockscreen_target_summary">Add or configure custom lock screen shortcuts</string>
+    <string name="lockscreen_target_title">Slider shortcuts</string>
+    <string name="lockscreen_target_summary">View or change custom lock screen shortcuts</string>
     <string name="lockscreen_target_reset">Lock screen shortcuts reset to default</string>
     <string name="lockscreen_target_save">Lock screen shortcuts saved</string>
     <string name="lockscreen_target_reset_title">Reset</string>
-    <string name="lockscreen_target_reset_message">Delete all user created Lock screen shortcuts and restore to default?</string>
+    <string name="lockscreen_target_reset_message">Delete all user created lock screen shortcuts and restore to default?</string>
     <string name="lockscreen_target_empty">Empty</string>
-    <string name="lockscreen_target_edit_title">Edit shortcut</string>
-    <string name="lockscreen_target_edit_msg">Select or change the desired application or activity and icon</string>
+    <string name="lockscreen_target_edit_title">Edit shortcut and icon</string>
+    <string name="lockscreen_target_edit_msg">Select or change the desired application or activity and the associated icon</string>
+
+    <!-- Lock Screen Weather -->
+    <string name="lockscreen_weather_title">Weather</string>
+    <string name="lockscreen_weather_summary">Display weather information on the lock screen</string>
+    <string name="lockscreen_weather_enabled">Enabled</string>
+    <string name="weather_enable">Display weather</string>
+    <string name="weather_source">Yahoo! Weather</string>
+    <string name="weather_use_custom_location">Use custom location</string>
+    <string name="weather_geolocated">Geolocated using network</string>
+    <string name="weather_custom_location_dialog_title">Enter location</string>
+    <string name="weather_custom_location_dialog_message">Caution: Entering an invalid location will stop updates.</string>
+    <string name="weather_custom_location_hint">City, State/Country</string>
+    <string name="weather_custom_location_title">Location</string>
+    <string name="weather_show_location_title">Show location</string>
+    <string name="weather_show_timestamp_title">Show timestamp</string>
+    <string name="weather_refresh_interval">Update interval</string>
+    <string name="weather_update">Update</string>
+    <string name="weather_use_metric">Use metric</string>
+    <string name="weather_refreshing">Updating weather</string>
+    <string name="weather_retrieve_location_dialog_title">Cannot retrieve location!</string>
+    <string name="weather_retrieve_location_dialog_message">Network geolocation is disabled.\n\nSet a custom location or enable network location</string>
+    <string name="weather_retrieve_location_dialog_enable_button">Enable</string>
+    <string name="weather_invert_lowhigh">Invert low/high temperatures</string>
+
+    <!-- Lock screen Weather - Update frequency -->
+    <string name="weather_refresh_manual">Manual</string>
+    <string name="weather_refresh_30min">30 minutes</string>
+    <string name="weather_refresh_60min">60 minutes</string>
+    <string name="weather_refresh_2hrs">2 hours</string>
+    <string name="weather_refresh_4hrs">4 hours</string>
+    <string name="weather_refresh_6hrs">6 hours</string>
+    <string name="weather_refresh_8hrs">8 hours</string>
+
+    <!-- Lock screen Calendar -->
+    <string name="lockscreen_calendar_title">Calendar</string>
+    <string name="lockscreen_calendar_summary">Display the next calendar event on the lock screen</string>
+    <string name="lockscreen_calendar_enabled">Enabled</string>
+    <string name="calendar_title">Display next event</string>
+    <string name="calendars_title">Event calendars</string>
+    <string name="calendars_summary">Find events from these calendars</string>
+    <string name="calendar_reminders_only_title">Reminders only</string>
+    <string name="calendar_reminders_only_summary">Show only events with reminders</string>
+    <string name="calendar_lookahead_title">Event lookahead</string>
+    <string name="calendar_show_location_title">Event location</string>
+    <string name="calendar_show_description_title">Event description</string>
+
+    <!-- Lock screen calendar - lookahead -->
+    <string name="calendar_lookahead_3hrs">3 hours</string>
+    <string name="calendar_lookahead_6hrs">6 hours</string>
+    <string name="calendar_lookahead_12hrs">12 hours</string>
+    <string name="calendar_lookahead_1day">1 day</string>
+    <string name="calendar_lookahead_3days">3 days</string>
+    <string name="calendar_lookahead_1wk">1 week</string>
+
+    <!-- Lock screen calendar - event metadata -->
+    <string name="calendar_metadata_none">Do not show</string>
+    <string name="calendar_metadata_first_line">Show first line</string>
+    <string name="calendar_metadata_all">Show all</string>
 
     <!-- Wallpaper settings title [CHAR LIMIT=30] -->
     <string name="wallpaper_settings_title">Wallpaper</string>
@@ -977,9 +1044,13 @@
     <!-- Profile Config screen PreferenceGroup titles -->
     <string name="profile_connectionoverrides_title">Connection overrides</string>
     <string name="profile_volumeoverrides_title">Volume overrides</string>
+    <string name="profile_vibratoroverrides_title">Vibrator overrides</string>
     <string name="connection_state_disabled">Disable</string>
     <string name="connection_state_enabled">Enable</string>
     <string name="volume_override_summary">Set to</string>
+    <string name="vibrator_state_disabled">Disable</string>
+    <string name="vibrator_state_enabled">Enable</string>
+    <string name="vibrator_state_silent">Only when silent</string>
 
     <!-- Menu item for managing profiles -->
     <string name="profile_profiles_manage">Profiles</string>
@@ -1027,6 +1098,13 @@
     <string name="profile_lockmode_default_summary">Use system default</string>
     <string name="profile_lockmode_insecure_summary">Use insecure lock screen</string>
     <string name="profile_lockmode_disabled_summary">Lock screen is disabled</string>
+    <string name="profile_airplanemode_title">Airplane mode</string>
+    <string name="profile_airplanemode_default">Default</string>
+    <string name="profile_airplanemode_enabled">Enabled</string>
+    <string name="profile_airplanemode_disabled">Disabled</string>
+    <string name="profile_airplanemode_default_summary">Use system default</string>
+    <string name="profile_airplanemode_enabled_summary">Airplane mode is enabled</string>
+    <string name="profile_airplanemode_disabled_summary">Airplane mode is disabled</string>
 
     <string name="profile_disable_screen_lock_summary">Disable lock screen security while this profile is active</string>
 
@@ -1057,11 +1135,13 @@
     <!-- Security settings screen, setting option summary to change screen timeout -->
     <string name="lock_after_timeout_summary"><xliff:g id="timeout_string">%1$s</xliff:g> after sleep</string>
     <!-- Text shown next to checkbox for showing owner info on LockScreen [CHAR LIMIT=50]-->
-    <string name="show_owner_info_on_lockscreen_label">Show owner info on lock screen</string>
+    <string name="show_owner_info_on_lockscreen_label">Show owner info</string>
     <!-- Text shown for title of owner info setting [CHAR LIMIT=20]-->
     <string name="owner_info_settings_title">Owner info</string>
     <!-- Text shown for summary of owner info setting [CHAR LIMIT=40]-->
-    <string name="owner_info_settings_summary"></string>
+    <string name="owner_info_settings_summary">Display owner information on lock screen</string>
+    <!-- Text shown for enabed owner info setting [CHAR LIMIT=40]-->
+    <string name="owner_info_settings_enabled">Enabled</string>
     <!-- Hint text shown in owner info edit text [CHAR LIMIT=50] -->
     <string name="owner_info_settings_edit_text_hint">Type text to display on the lock screen</string>
     <!-- Main Settings screen setting option title for the item to take you to the location screen -->
@@ -2819,6 +2899,8 @@
     <string name="lockpattern_too_many_failed_confirmation_attempts_header">Too many incorrect attempts!</string>
     <!-- Security & location settings screen, change unlock pattern screen countdown hint on bottom of screen after too many incorrect attempts -->
     <string name="lockpattern_too_many_failed_confirmation_attempts_footer">Try again in <xliff:g id="number">%d</xliff:g> seconds.</string>
+    <!-- Security & location settings screen, setting check box title. This controls whether the device shows the slider widgets before the unlock option [CHAR LIMIT=28]-->
+    <string name="lockpattern_settings_enable_lock_before_unlock">Show widgets before unlock</string>
 
     <!-- ChooseLockPatternTutorial --> <skip />
     <!-- ChooseLockPatternTutorial, button labels: This is to cancel the tutorial -->
@@ -3169,6 +3251,9 @@ found in the list of installed apps.</string>
     <string name="pointer_settings_category">Mouse/trackpad</string>
     <!-- On Language & input settings screen, setting summary. Setting for mouse pointer speed. [CHAR LIMIT=35] -->
     <string name="pointer_speed">Pointer speed</string>
+    <!-- Whether to display IME switcher notifcation -->
+    <string name="ime_switcher_notify">Selector notification</string>
+    <string name="ime_switcher_notify_summary">Display input method selector notification</string>
 
     <!-- User dictionary settings --><skip />
     <!-- User dictionary settings, The titlebar text of the User dictionary settings screen. -->
@@ -4356,6 +4441,10 @@ found in the list of installed apps.</string>
 
     <string name="quick_links_title">Advanded</string>
     <string name="rom_control_title">Advanced options</string>
+    <!-- Electron Beam -->
+    <string name="display_category_animation_options_title">Animation</string>
+    <string name="display_electron_beam_animation_on_title">Screen-on animation</string>
+    <string name="display_electron_beam_animation_off_title">Screen-off animation</string>
 
     <!-- Wakeup options -->
     <string name="display_category_wakeup_options_title">Wakeup options</string>
@@ -4455,4 +4544,10 @@ found in the list of installed apps.</string>
 
 
 
+    <!-- Stylus Icon -->
+    <string name="stylus_icon_enabled_title">Show icon when using stylus</string>
+    <string name="stylus_icon_enabled_summary">Show the pointer icon when hovering or drawing with the stylus</string>
+
+    <!-- Hostname setting -->
+    <string name="device_hostname">Device hostname</string>
 </resources>

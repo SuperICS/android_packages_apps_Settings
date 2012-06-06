@@ -148,7 +148,7 @@
     <string name="bluetooth_ask_enablement_and_discovery" product="default" msgid="3040361003987241057">"Eine App auf Ihrem Telefon versucht, Bluetooth zu aktivieren und Ihr Telefon für <xliff:g id="TIMEOUT">%1$d</xliff:g> Sekunden für andere Telefone sichtbar zu machen. Möchten Sie dies zulassen?"</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="tablet" msgid="7254712987802497615">"Eine App auf Ihrem Tablet versucht, Bluetooth zu aktivieren und Ihr Tablet für andere Geräte erkennbar zu machen. Zulassen?"</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="default" msgid="3947789545028519103">"Eine App auf Ihrem Telefon versucht, Bluetooth zu aktivieren und Ihr Telefon für andere Geräte sichtbar zu machen. Möchten Sie dies zulassen?"</string>
-    <string name="bluetooth_turning_on" msgid="4850574877288036646">"Bluetooth aktivieren?"</string>
+    <string name="bluetooth_turning_on" msgid="4850574877288036646">"Bluetooth wird aktiviert..."</string>
     <string name="bluetooth_turning_off" msgid="2337747302892025192">"Bluetooth wird deaktiviert..."</string>
     <string name="bluetooth_auto_connect" msgid="40711424456733571">"Automatische Verbindung"</string>
     <string name="bluetooth_connection_permission_request" msgid="4747918249032890077">"Bluetooth-Verbindungsanfrage"</string>
@@ -492,7 +492,7 @@
     <string name="wifi_settings_category" msgid="2810363951104753710">"WLAN-Einstellungen"</string>
     <string name="wifi_settings_title" msgid="4351120897298124250">"WLAN"</string>
     <string name="wifi_settings_summary" msgid="668767638556052820">"WLAN-Zugangspunkte festlegen und verwalten"</string>
-    <string name="wifi_starting" msgid="6716593470710880000">"WLAN aktivieren?"</string>
+    <string name="wifi_starting" msgid="6716593470710880000">"WLAN wird aktiviert..."</string>
     <string name="wifi_stopping" msgid="244864762599017659">"WLAN wird deaktiviert..."</string>
     <string name="wifi_error" msgid="3207971103917128179">"Fehler"</string>
     <string name="wifi_in_airplane_mode" msgid="8652520421778203796">"Im Flugmodus"</string>
@@ -607,6 +607,8 @@
     <string name="dock_settings_summary" msgid="455802113668982481">"Audioeinstellungen für angeschlossenes Dock"</string>
     <string name="dtmf_tone_enable_title" msgid="8533399267725365088">"Wähltastentöne"</string>
     <string name="sound_effects_enable_title" msgid="1171590821131077296">"Töne bei Berührung"</string>
+    <string name="vibrator_type_ringer">Anrufe</string>
+    <string name="vibrator_type_notification">Benachrichtigungen</string>
     <string name="lock_sounds_enable_title" msgid="450098505659399520">"Ton bei Displaysperre"</string>
     <string name="haptic_feedback_enable_title" msgid="2438293710530828760">"Bei Berührung vibrieren"</string>
     <string name="audio_record_proc_title" msgid="4271091199976457534">"Geräuschunterdrückung"</string>
@@ -936,6 +938,9 @@
     <string name="lockpattern_settings_help_how_to_record" msgid="2614673439060830433">"Zeichnen eines Entsperrungsmusters"</string>
     <string name="lockpattern_too_many_failed_confirmation_attempts_header" msgid="819903817323783498">"Zu viele fehlgeschlagene Versuche!"</string>
     <string name="lockpattern_too_many_failed_confirmation_attempts_footer" msgid="6759029360597122873">"In <xliff:g id="NUMBER">%d</xliff:g> Sekunden erneut versuchen."</string>
+    <!-- Security & location settings screen, setting check box title. This controls whether the dev
+ice shows the slider widgets before the unlock option [CHAR LIMIT=28]-->
+    <string name="lockpattern_settings_enable_lock_before_unlock">Zeige Widgets vor Entsperren</string>
     <string name="skip_button_label" msgid="8680422740354436943">"Abbrechen"</string>
     <string name="next_button_label" msgid="8890792540116568321">"Weiter"</string>
     <string name="lock_title" product="tablet" msgid="2909697418179419990">"Sichern Ihres Tablets"</string>
@@ -1473,6 +1478,7 @@
     <string name="data_usage_menu_restrict_background" msgid="1989394568592253331">"Hintergrunddaten"</string>
     <string name="data_usage_menu_split_4g" msgid="5322857680792601899">"4G-Nutzung separat anzeigen"</string>
     <string name="data_usage_menu_show_wifi" msgid="8266875319417201085">"WLAN anzeigen"</string>
+    <string name="data_usage_menu_linear_chart">Lineare Skala</string>
     <string name="data_usage_menu_show_ethernet" msgid="5181361208532314097">"Ethernet-Nutzung anzeigen"</string>
     <string name="data_usage_change_cycle" msgid="7776556448920114866">"Zyklus ändern..."</string>
     <string name="data_usage_pick_cycle_day" msgid="4470796861757050966">"Tag, an dem Datenverbrauchszyklus zurückgesetzt wird:"</string>
@@ -1775,6 +1781,64 @@
     <string name="lockscreen_target_edit_title">Zuordnung bearbeiten</string>
     <string name="lockscreen_target_edit_msg">Anwendung oder Symbol zum Ändern berühren</string>
 
+    <!-- Lock Screen Weather -->
+    <string name="lockscreen_weather_title">Wetter</string>
+    <string name="lockscreen_weather_summary">Wetterinformationen auf dem Sperrbildschirm anzeigen</string>
+    <string name="lockscreen_weather_enabled">Aktiviert</string>
+    <string name="weather_enable">Wetter anzeigen</string>
+    <string name="weather_source">Yahoo! Wetter</string>
+    <string name="weather_use_custom_location">Benutzerdefinierter Standort</string>
+    <string name="weather_geolocated">Über Standortdienste bestimmt</string>
+    <string name="weather_custom_location_dialog_title">Standort eingeben</string>
+    <string name="weather_custom_location_dialog_message">Achtung: Eingabe eines ungültigen Standorts stoppt die Aktualisierung.</string>
+    <string name="weather_custom_location_hint">Stadt, Staat/Land</string>
+    <string name="weather_custom_location_title">Standort</string>
+    <string name="weather_show_location_title">Standort anzeigen</string>
+    <string name="weather_show_timestamp_title">Aktualisierungszeit anzeigen</string>
+    <string name="weather_refresh_interval">Aktualisierungsintervall</string>
+    <string name="weather_update">Aktualisieren</string>
+    <string name="weather_use_metric">Metrische Einheiten verwenden</string>
+    <string name="weather_refreshing">Wetterinformationen aktualisieren</string>
+    <string name="weather_retrieve_location_dialog_title">Standort kann nicht bestimmt werden!</string>
+    <string name="weather_retrieve_location_dialog_message">Standortdienste sind deaktiviert.\n\nAktivieren oder benutzerdefinierten Standort festlegen.</string>
+    <string name="weather_retrieve_location_dialog_enable_button">Aktivieren</string>
+    <string name="weather_invert_lowhigh">Anzeigereihenfolge Min/Max-Temperatur tauschen</string>
+
+    <!-- Lock screen Weather - Update frequency -->
+    <string name="weather_refresh_manual">Manuell</string>
+    <string name="weather_refresh_30min">30 Minuten</string>
+    <string name="weather_refresh_60min">60 Minuten</string>
+    <string name="weather_refresh_2hrs">2 Stunden</string>
+    <string name="weather_refresh_4hrs">4 Stunden</string>
+    <string name="weather_refresh_6hrs">6 Stunden</string>
+    <string name="weather_refresh_8hrs">8 Stunden</string>
+
+    <!-- Lock screen Calendar -->
+    <string name="lockscreen_calendar_title">Kalender</string>
+    <string name="lockscreen_calendar_summary">Nächsten Termin auf dem Sperrbildschirm anzeigen</string>
+    <string name="lockscreen_calendar_enabled">Aktiviert</string>
+    <string name="calendar_title">Nächsten Termin anzeigen</string>
+    <string name="calendars_title">Kalender</string>
+    <string name="calendars_summary">Termine aus diesen Kalendern berücksichtigen</string>
+    <string name="calendar_reminders_only_title">Nur Erinnerungen</string>
+    <string name="calendar_reminders_only_summary">Nur Termine mit Erinnerungen berücksichtigen</string>
+    <string name="calendar_lookahead_title">Zeitraum</string>
+    <string name="calendar_show_location_title">Ort anzeigen</string>
+    <string name="calendar_show_description_title">Beschreibung anzeigen</string>
+
+    <!-- Lock screen calendar - lookahead -->
+    <string name="calendar_lookahead_3hrs">3 Stunden</string>
+    <string name="calendar_lookahead_6hrs">6 Stunden</string>
+    <string name="calendar_lookahead_12hrs">12 Stunden</string>
+    <string name="calendar_lookahead_1day">1 Tag</string>
+    <string name="calendar_lookahead_3days">3 Tage</string>
+    <string name="calendar_lookahead_1wk">1 Woche</string>
+
+    <!-- Lock screen calendar - event metadata -->
+    <string name="calendar_metadata_none">Nicht anzeigen</string>
+    <string name="calendar_metadata_first_line">Nur die erste Zeile anzeigen</string>
+    <string name="calendar_metadata_all">Alles anzeigen</string>
+
     <!-- Screen security - Screen security  #CM -->
     <string name="screen_security_category">Bildschirm-Sicherheit</string>
     <string name="screen_security_title">Sicherheitssperre</string>
@@ -1912,9 +1976,13 @@
     <!-- Profile Config screen PreferenceGroup titles -->
     <string name="profile_connectionoverrides_title">Verbindungen festlegen</string>
     <string name="profile_volumeoverrides_title">Lautstärke festlegen</string>
+    <string name="profile_vibratoroverrides_title">Vibration festlegen</string>
     <string name="connection_state_disabled">Deaktivieren</string>
     <string name="connection_state_enabled">Aktivieren</string>
     <string name="volume_override_summary">Gesetzt auf</string>
+    <string name="vibrator_state_disabled">Deaktivieren</string>
+    <string name="vibrator_state_enabled">Aktivieren</string>
+    <string name="vibrator_state_silent">Nur wenn lautlos</string>
 
     <!-- Menu item for managing profiles -->
     <string name="profile_profiles_manage">Profile</string>
@@ -1962,6 +2030,14 @@
     <string name="profile_lockmode_default_summary">Nicht modifizieren</string>
     <string name="profile_lockmode_insecure_summary">Unsichere Sperre</string>
     <string name="profile_lockmode_disabled_summary">Nicht sperren</string>
+    <string name="profile_airplanemode_title">Flugmodus</string>
+    <string name="profile_airplanemode_default">Nicht modifizieren</string>
+    <string name="profile_airplanemode_enabled">Aktiviert</string>
+    <string name="profile_airplanemode_disabled">Deaktiviert</string>
+    <string name="profile_airplanemode_default_summary">Nicht modifizieren</string>
+    <string name="profile_airplanemode_enabled_summary">Flugmodes ist aktiviert</string>
+    <string name="profile_airplanemode_disabled_summary">Flugmodus ist deaktiviert</string>
+
 
     <string name="profile_disable_screen_lock_summary">Bildschirmsperre deaktivieren, solange dieses Profil aktiv ist</string> <!-- UNUSED -->
 
