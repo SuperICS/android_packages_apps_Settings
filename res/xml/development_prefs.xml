@@ -92,11 +92,6 @@
             android:summary="@string/strict_mode_summary"/>
 
         <CheckBoxPreference
-            android:key="pointer_location"
-            android:title="@string/pointer_location"
-            android:summary="@string/pointer_location_summary"/>
-
-        <CheckBoxPreference
             android:key="show_touches"
             android:title="@string/show_touches"
             android:summary="@string/show_touches_summary"/>

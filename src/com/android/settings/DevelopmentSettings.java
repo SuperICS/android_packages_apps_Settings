@@ -64,7 +64,6 @@ public class DevelopmentSettings extends PreferenceFragment
     private static final String HARDWARE_UI_PROPERTY = "persist.sys.ui.hw";
 
     private static final String STRICT_MODE_KEY = "strict_mode";
-    private static final String POINTER_LOCATION_KEY = "pointer_location";
     private static final String SHOW_TOUCHES_KEY = "show_touches";
     private static final String SHOW_SCREEN_UPDATES_KEY = "show_screen_updates";
     private static final String SHOW_CPU_USAGE_KEY = "show_cpu_usage";
@@ -93,7 +92,6 @@ public class DevelopmentSettings extends PreferenceFragment
     private PreferenceScreen mPassword;
 
     private CheckBoxPreference mStrictMode;
-    private CheckBoxPreference mPointerLocation;
     private CheckBoxPreference mShowTouches;
     private CheckBoxPreference mShowScreenUpdates;
     private CheckBoxPreference mShowCpuUsage;
@@ -135,7 +133,6 @@ public class DevelopmentSettings extends PreferenceFragment
         mPassword = (PreferenceScreen) findPreference(LOCAL_BACKUP_PASSWORD);
 
         mStrictMode = (CheckBoxPreference) findPreference(STRICT_MODE_KEY);
-        mPointerLocation = (CheckBoxPreference) findPreference(POINTER_LOCATION_KEY);
         mShowTouches = (CheckBoxPreference) findPreference(SHOW_TOUCHES_KEY);
         mShowScreenUpdates = (CheckBoxPreference) findPreference(SHOW_SCREEN_UPDATES_KEY);
         mShowCpuUsage = (CheckBoxPreference) findPreference(SHOW_CPU_USAGE_KEY);
@@ -207,7 +204,6 @@ public class DevelopmentSettings extends PreferenceFragment
         updateHdcpValues();
         updatePasswordSummary();
         updateStrictModeVisualOptions();
-        updatePointerLocationOptions();
         updateShowTouchesOptions();
         updateFlingerOptions();
         updateCpuUsageOptions();
@@ -274,16 +270,6 @@ public class DevelopmentSettings extends PreferenceFragment
 
     private void updateStrictModeVisualOptions() {
         mStrictMode.setChecked(currentStrictModeActiveIndex() == 1);
-    }
-
-    private void writePointerLocationOptions() {
-        Settings.System.putInt(getActivity().getContentResolver(),
-                Settings.System.POINTER_LOCATION, mPointerLocation.isChecked() ? 1 : 0);
-    }
-
-    private void updatePointerLocationOptions() {
-        mPointerLocation.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.POINTER_LOCATION, 0) != 0);
     }
 
     private void writeShowTouchesOptions() {
@@ -528,8 +514,6 @@ public class DevelopmentSettings extends PreferenceFragment
                     mAllowMockLocation.isChecked() ? 1 : 0);
         } else if (preference == mStrictMode) {
             writeStrictModeVisualOptions();
-        } else if (preference == mPointerLocation) {
-            writePointerLocationOptions();
         } else if (preference == mShowTouches) {
             writeShowTouchesOptions();
         } else if (preference == mShowScreenUpdates) {
