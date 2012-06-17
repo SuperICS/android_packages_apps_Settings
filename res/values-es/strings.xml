@@ -1938,9 +1938,11 @@
 
     <!-- Wakeup options -->
     <string name="display_category_wakeup_options_title">Opciones de reanudación</string>
-    <string name="pref_volume_wake_title">Controles Volumen</string>
+    <string name="pref_volume_wake_title">Volumen</string>
     <string name="pref_volume_wake_summary">Presionando los botones de control de volumen el dispositivo saldrá del modo En espera</string>
-
+    <string name="pref_trackball_wake_title">Trackball</string>
+    <string name="pref_trackball_wake_summary">Presionando el trackball el dispositivo saldrá del modo En espera</string>
+    
     <!-- Storage settings  -->
     <string name="storage_menu_storage">"Configuración"</string>
     <string name="storage_title_storage">"Configuración Almacenamiento"</string>
