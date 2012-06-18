@@ -754,7 +754,7 @@
     <string name="firmware_version" msgid="4801135784886859972">"Versión de Android"</string>
     <string name="model_number" msgid="3765737700545384794">"Número de modelo"</string>
     <string name="baseband_version" msgid="1848990160763524801">"Versión de banda base"</string>
-    <string name="kernel_version" msgid="9192574954196167602">"Versión de kernel"</string>
+    <string name="kernel_version" msgid="9192574954196167602">"Versión del kernel"</string>
     <string name="build_number" msgid="3075795840572241758">"Número de compilación"</string>
     <string name="device_info_not_available" msgid="8062521887156825182">"No disponible"</string>
     <string name="device_status_activity_title" msgid="1411201799384697904">"Estado"</string>
@@ -2176,7 +2176,7 @@
     <!-- About phone screen, Free memory info -->
     <string name="mem_info">"Memoria"</string>
     <!-- About device screen, version of modification of Android. -->
-    <string name="mod_version">"Versión"</string>
+    <string name="mod_version">"Versión de la ROM"</string>
     <string name="mod_version_default">"Desconocida"</string>
     <!-- About device screen, build date of ROM. -->
     <string name="build_date">"Fecha de compilación"</string>
