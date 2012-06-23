@@ -59,6 +59,20 @@
             android:title="@string/battery_pulse_title"
             android:persistent="false" />
 
+		<ListPreference
+            android:key="hdmi_resolution"
+            android:title="@string/hdmi_resolution_title"
+            android:persistent="false"
+            android:entries="@array/hdmi_resolution_entries"
+            android:entryValues="@array/hdmi_resolution_values" />
+
+            <ListPreference
+            android:key="accelerometer_coordinate"
+            android:title="@string/accelerometer_coordinate_title"
+            android:persistent="false"
+            android:entries="@array/accelerometer_entries"
+            android:entryValues="@array/accelerometer_values" />
+
         <PreferenceCategory
             android:key="category_wakeup_options"
             android:title="@string/display_category_wakeup_options_title"/>
