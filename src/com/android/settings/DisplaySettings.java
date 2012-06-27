@@ -62,6 +62,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_VOLUME_WAKE = "pref_volume_wake";
     private static final String KEY_TRACKBALL_WAKE = "pref_trackball_wake";
     private static final String KEY_HDMI_RESOLUTION = "hdmi_resolution";
+    private static final String KEY_HDMI_IGNORE_GSENSOR = "hdmi_ignore_gsensor";
     private static final String KEY_ACCELEROMETER_COORDINATE = "accelerometer_coordinate";
     
 
@@ -76,8 +77,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mTrackballWake;
     private CheckBoxPreference mAccelerometer;
     private ListPreference mFontSizePref;
+    private CheckBoxPreference mNotificationPulse;
     private CheckBoxPreference mBatteryPulse;
-    private PreferenceScreen mNotificationPulse;
+    //private PreferenceScreen mNotificationPulse;
 
     private final Configuration mCurConfig = new Configuration();
 
@@ -85,13 +87,15 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private PreferenceScreen mDisplayRotationPreference;
     private PreferenceScreen mAutomaticBacklightPreference;
 
-	private ListPreference mHdmiResolution;
+    private ListPreference mHdmiResolution;
+    private CheckBoxPreference mHdmiIgnoreGsensor;
     private ListPreference mAccelerometerCoordinate;
 
     private ContentObserver mAccelerometerRotationObserver = new ContentObserver(new Handler()) {
         @Override
         public void onChange(boolean selfChange) {
-            updateDisplayRotationPreferenceDescription();
+            //updateDisplayRotationPreferenceDescription();
+            updateAccelerometerRotationCheckbox();
         }
     };
 
@@ -102,7 +106,10 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.display_settings);
 
-        mDisplayRotationPreference = (PreferenceScreen) findPreference(KEY_DISPLAY_ROTATION);
+        //mDisplayRotationPreference = (PreferenceScreen) findPreference(KEY_DISPLAY_ROTATION);
+        mAccelerometer = (CheckBoxPreference) findPreference(KEY_ACCELEROMETER);
+        mAccelerometer.setPersistent(false);
+
         mScreenTimeoutPreference = (ListPreference) findPreference(KEY_SCREEN_TIMEOUT);
         final long currentTimeout = Settings.System.getLong(resolver, SCREEN_OFF_TIMEOUT,
                 FALLBACK_SCREEN_TIMEOUT_VALUE);
@@ -121,12 +128,24 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
         mFontSizePref = (ListPreference) findPreference(KEY_FONT_SIZE);
         mFontSizePref.setOnPreferenceChangeListener(this);
-        mNotificationPulse = (PreferenceScreen) findPreference(KEY_NOTIFICATION_PULSE);
+        /*mNotificationPulse = (PreferenceScreen) findPreference(KEY_NOTIFICATION_PULSE);
         if (mNotificationPulse != null) {
             if (!getResources().getBoolean(com.android.internal.R.bool.config_intrusiveNotificationLed)) {
                 getPreferenceScreen().removePreference(mNotificationPulse);
             } else {
-                updateLightPulseDescription();
+                updateLightPulseDescription();*/
+        mNotificationPulse = (CheckBoxPreference) findPreference(KEY_NOTIFICATION_PULSE);
+        if (mNotificationPulse != null
+                && getResources().getBoolean(
+                        com.android.internal.R.bool.config_intrusiveNotificationLed) == false) {
+            getPreferenceScreen().removePreference(mNotificationPulse);
+        } else {
+            try {
+                mNotificationPulse.setChecked(Settings.System.getInt(resolver,
+                        Settings.System.NOTIFICATION_LIGHT_PULSE) == 1);
+                mNotificationPulse.setOnPreferenceChangeListener(this);
+            } catch (SettingNotFoundException snfe) {
+                Log.e(TAG, Settings.System.NOTIFICATION_LIGHT_PULSE + " not found");
             }
         }
 
@@ -140,6 +159,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                         Settings.System.BATTERY_LIGHT_PULSE, 1) == 1);
                 mBatteryPulse.setOnPreferenceChangeListener(this);
             }
+        }
 		mHdmiResolution = (ListPreference) findPreference(KEY_HDMI_RESOLUTION);
         if(mHdmiResolution != null){
             mHdmiResolution.setOnPreferenceChangeListener(this);
@@ -147,6 +167,11 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     Settings.System.HDMI_RESOLUTION);
             mHdmiResolution.setValue(value);
             updateHdmiResolutionSummary(value);
+        }
+        mHdmiIgnoreGsensor = (CheckBoxPreference) findPreference(KEY_HDMI_IGNORE_GSENSOR);
+        if (mHdmiIgnoreGsensor != null) {
+        	mHdmiIgnoreGsensor.setChecked(Settings.System.getInt(resolver,
+        		Settings.System.HDMI_IGNORE_GSENSOR, 1) == 1);
         }
         mAccelerometerCoordinate = (ListPreference) findPreference(KEY_ACCELEROMETER_COORDINATE);
         if(mAccelerometerCoordinate != null){
@@ -156,7 +181,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         	mAccelerometerCoordinate.setValue(value);
         	updateAccelerometerCoordinateSummary(value);
         }
-        }
+        
 
         mVolumeWake = (CheckBoxPreference) findPreference(KEY_VOLUME_WAKE);
         if (mVolumeWake != null) {
@@ -317,6 +342,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         updateDisplayRotationPreferenceDescription();
         updateLightPulseDescription();
 
+        updateState();
         getContentResolver().registerContentObserver(
                 Settings.System.getUriFor(Settings.System.ACCELEROMETER_ROTATION), true,
                 mAccelerometerRotationObserver);
@@ -395,6 +421,11 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(), Settings.System.BATTERY_LIGHT_PULSE,
                     value ? 1 : 0);
             return true;
+        } else if (preference == mHdmiIgnoreGsensor ) {
+        	boolean value = mHdmiIgnoreGsensor.isChecked();
+        	Settings.System.putInt(getContentResolver(), Settings.System.HDMI_IGNORE_GSENSOR,
+        		value ? 1 : 0);
+        	return true;
         } else if (preference == mVolumeWake) {
             Settings.System.putInt(getContentResolver(), Settings.System.VOLUME_WAKE_SCREEN,
                     mVolumeWake.isChecked() ? 1 : 0);
@@ -444,5 +475,5 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         	}
         }
         return true;
-    }
+   } 
 }

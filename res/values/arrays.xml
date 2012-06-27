@@ -717,7 +717,7 @@
         <!-- Status message when VPN is failed. -->
         <item>Unsuccessful</item>
     </string-array>
-    
+
     <string-array name="hdmi_resolution_entries">
         <item>Auto</item>
         <item>1080p 60hz</item>

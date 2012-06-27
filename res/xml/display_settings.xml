@@ -65,6 +65,12 @@
             android:persistent="false"
             android:entries="@array/hdmi_resolution_entries"
             android:entryValues="@array/hdmi_resolution_values" />
+            
+        <CheckBoxPreference
+             android:key="hdmi_ignore_gsensor"
+             android:title="@string/hdmi_ignore_gsensor_title"
+             android:persistent="false"
+             android:summary="@string/hdmi_ignore_gsensor_summary" />
 
             <ListPreference
             android:key="accelerometer_coordinate"
