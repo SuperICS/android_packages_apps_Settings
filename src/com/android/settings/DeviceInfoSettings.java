@@ -17,7 +17,10 @@
 package com.android.settings;
 
 import android.app.Activity;
+import android.content.ComponentName;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.SystemClock;
@@ -25,11 +28,15 @@ import android.os.SystemProperties;
 import android.preference.Preference;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
+import android.provider.Settings;
 import android.util.Log;
 
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -50,6 +57,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment {
     private static final String KEY_COPYRIGHT = "copyright";
     private static final String KEY_SYSTEM_UPDATE_SETTINGS = "system_update_settings";
     private static final String KEY_KERNEL_VERSION = "kernel_version";
+    private static final String KEY_BUILD_NUMBER = "build_number";
     private static final String KEY_DEVICE_MODEL = "device_model";
     private static final String KEY_BASEBAND_VERSION = "baseband_version";
     private static final String KEY_FIRMWARE_VERSION = "firmware_version";
@@ -57,25 +65,24 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment {
     private static final String KEY_DEVICE_MEMORY = "device_memory";
 
     private static final String KEY_MOD_VERSION = "mod_version";
+    private static final String KEY_MOD_BUILD_DATE = "build_date";
 
     long[] mHits = new long[3];
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        
-        String VERSION = SystemProperties.get("ro.osr.version", "unknown");
-        String DATE = SystemProperties.get("ro.build.date", "unknown");
 
         addPreferencesFromResource(R.xml.device_info_settings);
 
-        setStringTitle(KEY_DEVICE_MODEL, Build.MODEL + getMsvSuffix());
         setStringSummary(KEY_FIRMWARE_VERSION, Build.VERSION.RELEASE);
         findPreference(KEY_FIRMWARE_VERSION).setEnabled(true);
         setValueSummary(KEY_BASEBAND_VERSION, "gsm.version.baseband");
-        setStringSummary(KEY_MOD_VERSION, Build.MODVERSION);
+        setStringSummary(KEY_DEVICE_MODEL, Build.MODEL + getMsvSuffix());
+        setStringSummary(KEY_BUILD_NUMBER, Build.DISPLAY);
         findPreference(KEY_KERNEL_VERSION).setSummary(getFormattedKernelVersion());
-        findPreference(KEY_MOD_VERSION).setSummary(DATE + " " + VERSION);
+        setValueSummary(KEY_MOD_VERSION, "ro.osr.version");
+        setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
 
         String cpuInfo = getCPUInfo();
         String memInfo = getMemInfo();
@@ -153,15 +160,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment {
                 Log.d(LOG_TAG, "Property '" + property + "' missing and no '"
                         + preference + "' preference");
             }
-        }
-    }
-
-    private void setStringTitle(String preference, String value) {
-        try {
-            findPreference(preference).setTitle(value);
-        } catch (RuntimeException e) {
-            findPreference(preference).setTitle(
-                getResources().getString(R.string.device_info_default));
         }
     }
 
@@ -262,6 +260,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment {
 
     private String getMemInfo() {
         String result = null;
+        BufferedReader reader = null;
+
         try {
             /* /proc/meminfo entries follow this format:
              * MemTotal:         362096 kB
