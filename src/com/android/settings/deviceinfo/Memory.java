@@ -46,6 +46,7 @@ import android.widget.Toast;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
 
 public class Memory extends SettingsPreferenceFragment {
     private static final String TAG = "MemorySettings";
@@ -116,9 +117,13 @@ public class Memory extends SettingsPreferenceFragment {
             mStorageVolumePreferenceCategories[i].init();
         }
 
-        // only show options menu if we are not using the legacy USB mass storage support
-        // or if we need the mountpoints switcher
         setHasOptionsMenu(true);
+    }
+
+    private boolean isMassStorageEnabled() {
+        // mass storage is enabled if primary volume supports it
+        final StorageVolume[] storageVolumes = mStorageManager.getVolumeList();
+        return (storageVolumes.length > 0 && storageVolumes[0].allowMassStorage());
     }
 
     @Override
@@ -181,12 +186,19 @@ public class Memory extends SettingsPreferenceFragment {
             menu.add(Menu.NONE, MENU_ID_STORAGE, 0, R.string.storage_menu_storage)
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
         }
+        inflater.inflate(R.menu.storage, menu);
+    }
+
+    @Override
+    public void onPrepareOptionsMenu(Menu menu) {
+        final MenuItem usb = menu.findItem(R.id.storage_usb);
+        usb.setVisible(!isMassStorageEnabled());
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case MENU_ID_USB:
+            case R.id.storage_usb:
                 if (getActivity() instanceof PreferenceActivity) {
                     ((PreferenceActivity) getActivity()).startPreferencePanel(
                             UsbSettings.class.getCanonicalName(),
@@ -230,7 +242,10 @@ public class Memory extends SettingsPreferenceFragment {
             StorageVolumePreferenceCategory svpc = mStorageVolumePreferenceCategories[i];
             Intent intent = svpc.intentForClick(preference);
             if (intent != null) {
-                startActivity(intent);
+                // Don't go across app boundary if monkey is running
+                if (!Utils.isMonkeyRunning()) {
+                    startActivity(intent);
+                }
                 return true;
             }
 

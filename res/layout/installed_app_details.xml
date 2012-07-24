@@ -51,6 +51,14 @@
                 layout="@layout/two_buttons_panel"
                 android:id="@+id/control_buttons_panel"/>
 
+            <!-- Ban notifications for this package -->
+            <CheckBox android:id="@+id/notification_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dip"
+                android:layout_gravity="left"
+                android:text="@string/app_notifications_switch_label" />
+
         </LinearLayout>
 
         <TextView
@@ -91,8 +99,8 @@
                     android:layout_marginLeft="1dip"
                     android:layout_marginRight="1dip"
                     android:layout_marginBottom="4dip"
-                    android:scaleType="center" />
-
+                    android:scaleType="center"
+                    android:contentDescription="@null" />
                 <TextView
                     android:id="@+id/total_size_text"
                     android:paddingTop="6dip"
@@ -131,8 +139,8 @@
                     android:layout_marginLeft="1dip"
                     android:layout_marginRight="1dip"
                     android:layout_marginBottom="4dip"
-                    android:scaleType="center" />
-
+                    android:scaleType="center"
+                    android:contentDescription="@null" />
                 <TextView
                     android:id="@+id/application_size_text"
                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -171,8 +179,8 @@
                     android:layout_marginLeft="1dip"
                     android:layout_marginRight="1dip"
                     android:layout_marginBottom="4dip"
-                    android:scaleType="center" />
-
+                    android:scaleType="center"
+                    android:contentDescription="@null" />
                 <TextView
                     android:id="@+id/external_code_size_text"
                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -212,8 +220,8 @@
                     android:layout_marginLeft="1dip"
                     android:layout_marginRight="1dip"
                     android:layout_marginBottom="4dip"
-                    android:scaleType="center" />
-
+                    android:scaleType="center"
+                    android:contentDescription="@null" />
                 <TextView
                     android:id="@+id/data_size_text"
                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -252,8 +260,8 @@
                     android:layout_marginLeft="1dip"
                     android:layout_marginRight="1dip"
                     android:layout_marginBottom="4dip"
-                    android:scaleType="center" />
-
+                    android:scaleType="center"
+                    android:contentDescription="@null" />
                 <TextView
                     android:id="@+id/external_data_size_text"
                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -312,8 +320,8 @@
                     android:layout_marginLeft="1dip"
                     android:layout_marginRight="1dip"
                     android:layout_marginBottom="4dip"
-                    android:scaleType="center" />
-
+                    android:scaleType="center"
+                    android:contentDescription="@null" />
                 <TextView
                     android:id="@+id/cache_size_text"
                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -336,7 +344,7 @@
         </RelativeLayout>
 
         <!-- Prefered activities section -->
-        <TextView
+        <TextView android:id="@+id/auto_launch_title"
             style="?android:attr/listSeparatorTextViewStyle"
             android:layout_marginTop="8dip"
             android:text="@string/auto_launch_label" />
@@ -412,8 +420,7 @@
                 style="?android:attr/listSeparatorTextViewStyle"
                 android:layout_marginTop="8dip"
                 android:text="@string/permissions_label" />
-
-            <TextView
+            <TextView android:id="@+id/security_settings_desc"
                 android:text="@string/security_settings_desc"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:paddingTop="6dip"

@@ -553,6 +553,7 @@ public class RunningServiceDetails extends Fragment
 
     @Override
     public void onRefreshUi(int what) {
+        if (getActivity() == null) return;
         switch (what) {
             case REFRESH_TIME:
                 updateTimes();

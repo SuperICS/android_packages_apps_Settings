@@ -59,7 +59,9 @@
         android:layout_height="0dip"
         android:layout_weight="1"
         android:layout_gravity="bottom|right"
-        android:src="@drawable/encroid_waiting" />
+        android:src="@drawable/encroid_waiting"
+        android:contentDescription="@null"
+    />
 
     <Button
         android:id="@+id/factory_reset"

@@ -25,13 +25,11 @@ import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteException;
 import android.media.AudioManager;
-import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.media.audiofx.AudioEffect;
 import android.net.Uri;
@@ -47,8 +45,6 @@ import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
 import android.provider.MediaStore;
 import android.provider.Settings;
-import android.provider.MediaStore.Images.Media;
-import android.provider.Settings.SettingNotFoundException;
 import android.telephony.TelephonyManager;
 import android.text.format.DateFormat;
 import android.util.Log;
@@ -63,7 +59,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
 
     private static final String KEY_VOLUME_OVERLAY = "volume_overlay";
     private static final String KEY_SILENT_MODE = "silent_mode";
-    private static final String KEY_VIBRATE = "vibrate_on_ring";
+    private static final String KEY_VIBRATE = "vibrate_when_ringing";
     private static final String KEY_RING_VOLUME = "ring_volume";
     private static final String KEY_MUSICFX = "musicfx";
     private static final String KEY_DTMF_TONE = "dtmf_tone";
@@ -74,7 +70,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private static final String KEY_LOCK_SOUNDS = "lock_sounds";
     private static final String KEY_RINGTONE = "ringtone";
     private static final String KEY_NOTIFICATION_SOUND = "notification_sound";
-    private static final String KEY_CATEGORY_CALLS = "category_calls";
+    private static final String KEY_CATEGORY_CALLS = "category_calls_and_notification";
     private static final String KEY_QUIET_HOURS = "quiet_hours";
     private static final String KEY_VOLBTN_MUSIC_CTRL = "volbtn_music_controls";
     private static final String KEY_VOLUME_ADJUST_SOUNDS = "volume_adjust_sounds";
@@ -95,9 +91,9 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private static final int MSG_UPDATE_RINGTONE_SUMMARY = 1;
     private static final int MSG_UPDATE_NOTIFICATION_SUMMARY = 2;
 
-    private CheckBoxPreference mVibrateOnRing;
     private ListPreference mVolumeOverlay;
     private ListPreference mSilentMode;
+    private CheckBoxPreference mVibrateWhenRinging;
     private CheckBoxPreference mDtmfTone;
     private CheckBoxPreference mSoundEffects;
     private CheckBoxPreference mHapticFeedback;
@@ -161,10 +157,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
 
         mSilentMode = (ListPreference) findPreference(KEY_SILENT_MODE);
         if (!getResources().getBoolean(R.bool.has_silent_mode)) {
-            getPreferenceScreen().removePreference(mSilentMode);
             findPreference(KEY_RING_VOLUME).setDependency(null);
-        } else {
-            mSilentMode.setOnPreferenceChangeListener(this);
         }
 
         mQuietHours = (PreferenceScreen) findPreference(KEY_QUIET_HOURS);
@@ -182,8 +175,10 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         mSafeHeadsetRestore.setChecked(Settings.System.getInt(resolver,
                 Settings.System.SAFE_HEADSET_VOLUME_RESTORE, 1) != 0);
 
-        mVibrateOnRing = (CheckBoxPreference) findPreference(KEY_VIBRATE);
-        mVibrateOnRing.setOnPreferenceChangeListener(this);
+         mVibrateWhenRinging = (CheckBoxPreference) findPreference(KEY_VIBRATE);
+        mVibrateWhenRinging.setPersistent(false);
+        mVibrateWhenRinging.setChecked(Settings.System.getInt(resolver,
+                Settings.System.VIBRATE_WHEN_RINGING, 0) != 0);
 
         mDtmfTone = (CheckBoxPreference) findPreference(KEY_DTMF_TONE);
         mDtmfTone.setPersistent(false);
@@ -220,8 +215,9 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         mRingtonePreference = findPreference(KEY_RINGTONE);
         mNotificationPreference = findPreference(KEY_NOTIFICATION_SOUND);
 
-        if (!((Vibrator) getSystemService(Context.VIBRATOR_SERVICE)).hasVibrator()) {
-            getPreferenceScreen().removePreference(mVibrateOnRing);
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        if (vibrator == null || !vibrator.hasVibrator()) {
+            getPreferenceScreen().removePreference(mVibrateWhenRinging);
             getPreferenceScreen().removePreference(mHapticFeedback);
         }
 
@@ -276,7 +272,6 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     public void onResume() {
         super.onResume();
 
-        updateState(true);
         lookupRingtoneNames();
 
         IntentFilter filter = new IntentFilter(AudioManager.RINGER_MODE_CHANGED_ACTION);
@@ -442,6 +437,9 @@ public class SoundSettings extends SettingsPreferenceFragment implements
                     Settings.System.SAFE_HEADSET_VOLUME_RESTORE,
                     mSafeHeadsetRestore.isChecked() ? 1 : 0);
 
+        } else if (preference == mVibrateWhenRinging) {
+            Settings.System.putInt(getContentResolver(), Settings.System.VIBRATE_WHEN_RINGING,
+                    mVibrateWhenRinging.isChecked() ? 1 : 0);
         } else if (preference == mDtmfTone) {
             Settings.System.putInt(getContentResolver(), Settings.System.DTMF_TONE_WHEN_DIALING,
                     mDtmfTone.isChecked() ? 1 : 0);
@@ -521,5 +519,10 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         cal.set(Calendar.MINUTE, mn);
         Date date = cal.getTime();
         return DateFormat.getTimeFormat(getActivity().getApplicationContext()).format(date);
+     }
+     
+    @Override
+    protected int getHelpResource() {
+        return R.string.help_url_sound;
     }
 }

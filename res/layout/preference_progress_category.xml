@@ -20,7 +20,7 @@
     android:gravity="center_vertical"
     android:orientation="horizontal">
 
-    <!-- This and the other text view have the style of the list separator text view without the background and padding -->
+    <!-- This text view has the style of the list separator text view without the background and padding. -->
     <TextView
         style="?android:attr/listSeparatorTextViewStyle"
         android:background="@null"

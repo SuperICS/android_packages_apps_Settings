@@ -57,6 +57,9 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment {
     private static final String KEY_DEVICE_MEMORY = "device_memory";
 
     private static final String KEY_MOD_VERSION = "mod_version";
+    private static final String KEY_UPDATE_SETTING = "additional_system_update_settings";
+    private static final String KEY_EQUIPMENT_ID = "fcc_equipment_id";
+    private static final String PROPERTY_EQUIPMENT_ID = "ro.ril.fccid";
 
     long[] mHits = new long[3];
 
@@ -91,6 +94,10 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment {
         } else {
             getPreferenceScreen().removePreference(findPreference(KEY_DEVICE_MEMORY));
         }
+
+        // Remove Equipment id preference if FCC ID is not set by RIL
+        removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_EQUIPMENT_ID,
+                PROPERTY_EQUIPMENT_ID);
 
         // Remove Baseband version if wifi-only device
         if (Utils.isWifiOnly(getActivity())) {

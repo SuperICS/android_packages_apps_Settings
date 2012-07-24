@@ -16,6 +16,9 @@
 
 package com.android.settings.widget;
 
+import static android.net.TrafficStats.GB_IN_BYTES;
+import static android.net.TrafficStats.MB_IN_BYTES;
+
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
@@ -27,6 +30,7 @@ import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.TextUtils;
 import android.text.format.DateUtils;
+import android.text.format.Time;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -35,15 +39,14 @@ import com.android.internal.util.Objects;
 import com.android.settings.R;
 import com.android.settings.widget.ChartSweepView.OnSweepListener;
 
+import java.util.Arrays;
+import java.util.Calendar;
+
 /**
  * Specific {@link ChartView} that displays {@link ChartNetworkSeriesView} along
  * with {@link ChartSweepView} for inspection ranges and warning/limits.
  */
 public class ChartDataUsageView extends ChartView {
-
-    private static final long KB_IN_BYTES = 1024;
-    private static final long MB_IN_BYTES = KB_IN_BYTES * 1024;
-    private static final long GB_IN_BYTES = MB_IN_BYTES * 1024;
 
     private static final int MSG_UPDATE_AXIS = 100;
     private static final long DELAY_MILLIS = 250;
@@ -249,7 +252,7 @@ public class ChartDataUsageView extends ChartView {
         final long maxSweep = Math.max(mSweepWarning.getValue(), mSweepLimit.getValue());
         final long maxSeries = Math.max(mSeries.getMaxVisible(), mDetailSeries.getMaxVisible());
         final long maxVisible = Math.max(maxSeries, maxSweep) * 12 / 10;
-        final long maxDefault = Math.max(maxVisible, 100 * MB_IN_BYTES);
+        final long maxDefault = Math.max(maxVisible, 50 * MB_IN_BYTES);
         newMax = Math.max(maxDefault, newMax);
 
         // only invalidate when vertMax actually changed
@@ -308,7 +311,7 @@ public class ChartDataUsageView extends ChartView {
     }
 
     private OnSweepListener mHorizListener = new OnSweepListener() {
-        /** {@inheritDoc} */
+        @Override
         public void onSweep(ChartSweepView sweep, boolean sweepDone) {
             updatePrimaryRange();
 
@@ -318,7 +321,7 @@ public class ChartDataUsageView extends ChartView {
             }
         }
 
-        /** {@inheritDoc} */
+        @Override
         public void requestEdit(ChartSweepView sweep) {
             // ignored
         }
@@ -336,7 +339,7 @@ public class ChartDataUsageView extends ChartView {
     }
 
     private OnSweepListener mVertListener = new OnSweepListener() {
-        /** {@inheritDoc} */
+        @Override
         public void onSweep(ChartSweepView sweep, boolean sweepDone) {
             if (sweepDone) {
                 clearUpdateAxisDelayed(sweep);
@@ -353,7 +356,7 @@ public class ChartDataUsageView extends ChartView {
             }
         }
 
-        /** {@inheritDoc} */
+        @Override
         public void requestEdit(ChartSweepView sweep) {
             if (sweep == mSweepWarning && mListener != null) {
                 mListener.requestWarningEdit();
@@ -465,7 +468,7 @@ public class ChartDataUsageView extends ChartView {
     }
 
     public static class TimeAxis implements ChartAxis {
-        private static final long TICK_INTERVAL = DateUtils.DAY_IN_MILLIS * 7;
+        private static final int FIRST_DAY_OF_WEEK = Calendar.getInstance().getFirstDayOfWeek() - 1;
 
         private long mMin;
         private long mMax;
@@ -481,7 +484,7 @@ public class ChartDataUsageView extends ChartView {
             return Objects.hashCode(mMin, mMax, mSize);
         }
 
-        /** {@inheritDoc} */
+        @Override
         public boolean setBounds(long min, long max) {
             if (mMin != min || mMax != max) {
                 mMin = min;
@@ -492,7 +495,7 @@ public class ChartDataUsageView extends ChartView {
             }
         }
 
-        /** {@inheritDoc} */
+        @Override
         public boolean setSize(float size) {
             if (mSize != size) {
                 mSize = size;
@@ -502,35 +505,49 @@ public class ChartDataUsageView extends ChartView {
             }
         }
 
-        /** {@inheritDoc} */
+        @Override
         public float convertToPoint(long value) {
             return (mSize * (value - mMin)) / (mMax - mMin);
         }
 
-        /** {@inheritDoc} */
+        @Override
         public long convertToValue(float point) {
             return (long) (mMin + ((point * (mMax - mMin)) / mSize));
         }
 
-        /** {@inheritDoc} */
+        @Override
         public long buildLabel(Resources res, SpannableStringBuilder builder, long value) {
             // TODO: convert to better string
             builder.replace(0, builder.length(), Long.toString(value));
             return value;
         }
 
-        /** {@inheritDoc} */
+        @Override
         public float[] getTickPoints() {
-            // tick mark for every week
-            final int tickCount = (int) ((mMax - mMin) / TICK_INTERVAL);
-            final float[] tickPoints = new float[tickCount];
-            for (int i = 0; i < tickCount; i++) {
-                tickPoints[i] = convertToPoint(mMax - (TICK_INTERVAL * (i + 1)));
+            final float[] ticks = new float[32];
+            int i = 0;
+
+            // tick mark for first day of each week
+            final Time time = new Time();
+            time.set(mMax);
+            time.monthDay -= time.weekDay - FIRST_DAY_OF_WEEK;
+            time.hour = time.minute = time.second = 0;
+
+            time.normalize(true);
+            long timeMillis = time.toMillis(true);
+            while (timeMillis > mMin) {
+                if (timeMillis <= mMax) {
+                    ticks[i++] = convertToPoint(timeMillis);
+                }
+                time.monthDay -= 7;
+                time.normalize(true);
+                timeMillis = time.toMillis(true);
             }
-            return tickPoints;
+
+            return Arrays.copyOf(ticks, i);
         }
 
-        /** {@inheritDoc} */
+        @Override
         public int shouldAdjustAxis(long value) {
             // time axis never adjusts
             return 0;
@@ -542,12 +559,14 @@ public class ChartDataUsageView extends ChartView {
         private long mMax;
         private float mSize;
 
+        private static final boolean LOG_SCALE = false;
+
         @Override
         public int hashCode() {
             return Objects.hashCode(mMin, mMax, mSize);
         }
 
-        /** {@inheritDoc} */
+        @Override
         public boolean setBounds(long min, long max) {
             if (mMin != min || mMax != max) {
                 mMin = min;
@@ -558,7 +577,7 @@ public class ChartDataUsageView extends ChartView {
             }
         }
 
-        /** {@inheritDoc} */
+        @Override
         public boolean setSize(float size) {
             if (mSize != size) {
                 mSize = size;
@@ -568,35 +587,35 @@ public class ChartDataUsageView extends ChartView {
             }
         }
 
-        /** {@inheritDoc} */
+        @Override
         public float convertToPoint(long value) {
-            if (mLinearChart) {
-                return (mSize * (value - mMin)) / (mMax - mMin);
-            } else {
+            if (LOG_SCALE) {
                 // derived polynomial fit to make lower values more visible
                 final double normalized = ((double) value - mMin) / (mMax - mMin);
-                final double fraction = Math.pow(
-                        10, 0.36884343106175121463 * Math.log10(normalized) + -0.04328199452018252624);
+                final double fraction = Math.pow(10,
+                        0.36884343106175121463 * Math.log10(normalized) + -0.04328199452018252624);
                 return (float) (fraction * mSize);
+            } else {
+                return (mSize * (value - mMin)) / (mMax - mMin);
             }
         }
 
-        /** {@inheritDoc} */
+        @Override
         public long convertToValue(float point) {
-            if (mLinearChart) {
-                return (long) (mMin + ((point * (mMax - mMin)) / mSize));
-            } else {
+            if (LOG_SCALE) {
                 final double normalized = point / mSize;
                 final double fraction = 1.3102228476089056629
                         * Math.pow(normalized, 2.7111774693164631640);
                 return (long) (mMin + (fraction * (mMax - mMin)));
+            } else {
+                return (long) (mMin + ((point * (mMax - mMin)) / mSize));
             }
         }
 
         private static final Object sSpanSize = new Object();
         private static final Object sSpanUnit = new Object();
 
-        /** {@inheritDoc} */
+        @Override
         public long buildLabel(Resources res, SpannableStringBuilder builder, long value) {
 
             final CharSequence unit;
@@ -621,15 +640,13 @@ public class ChartDataUsageView extends ChartView {
                 resultRounded = unitFactor * Math.round(result);
             }
 
-            final int[] sizeBounds = findOrCreateSpan(builder, sSpanSize, "^1");
-            builder.replace(sizeBounds[0], sizeBounds[1], size);
-            final int[] unitBounds = findOrCreateSpan(builder, sSpanUnit, "^2");
-            builder.replace(unitBounds[0], unitBounds[1], unit);
+            setText(builder, sSpanSize, size, "^1");
+            setText(builder, sSpanUnit, unit, "^2");
 
             return (long) resultRounded;
         }
 
-        /** {@inheritDoc} */
+        @Override
         public float[] getTickPoints() {
             final long range = mMax - mMin;
             final long tickJump;
@@ -645,6 +662,8 @@ public class ChartDataUsageView extends ChartView {
                 tickJump = 2 * GB_IN_BYTES;
             }
 
+            // target about 16 ticks on screen, rounded to nearest power of 2
+            final long tickJump = roundUpToPowerOfTwo(range / 16);
             final int tickCount = (int) (range / tickJump);
             final float[] tickPoints = new float[tickCount];
             long value = mMin;
@@ -656,7 +675,7 @@ public class ChartDataUsageView extends ChartView {
             return tickPoints;
         }
 
-        /** {@inheritDoc} */
+        @Override
         public int shouldAdjustAxis(long value) {
             final float point = convertToPoint(value);
             if (point < mSize * 0.1) {
@@ -669,8 +688,8 @@ public class ChartDataUsageView extends ChartView {
         }
     }
 
-    private static int[] findOrCreateSpan(
-            SpannableStringBuilder builder, Object key, CharSequence bootstrap) {
+    private static void setText(
+            SpannableStringBuilder builder, Object key, CharSequence text, String bootstrap) {
         int start = builder.getSpanStart(key);
         int end = builder.getSpanEnd(key);
         if (start == -1) {
@@ -678,7 +697,24 @@ public class ChartDataUsageView extends ChartView {
             end = start + bootstrap.length();
             builder.setSpan(key, start, end, Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         }
-        return new int[] { start, end };
+        builder.replace(start, end, text);
     }
 
+    private static long roundUpToPowerOfTwo(long i) {
+        // NOTE: borrowed from Hashtable.roundUpToPowerOfTwo()
+
+        i--; // If input is a power of two, shift its high-order bit right
+
+        // "Smear" the high-order bit all the way to the right
+        i |= i >>>  1;
+        i |= i >>>  2;
+        i |= i >>>  4;
+        i |= i >>>  8;
+        i |= i >>> 16;
+        i |= i >>> 32;
+
+        i++;
+
+        return i > 0 ? i : Long.MAX_VALUE;
+    }
 }

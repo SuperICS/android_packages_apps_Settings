@@ -59,7 +59,7 @@
 
     <PreferenceCategory
             android:key="category_calls_and_notification"
-            android:title="@string/sound_category_calls_and_notification_title"/>
+            android:title="@string/sound_category_call_ringtone_vibrate_title"/>
 
     <!-- Do not nest these, or removals in code will break -->
     <com.android.settings.DefaultRingtonePreference
@@ -69,22 +69,22 @@
             android:persistent="false"
             android:ringtoneType="ringtone" />
 
+    <CheckBoxPreference
+         android:key="vibrate_when_ringing"
+         android:title="@string/vibrate_when_ringing_title"
+         android:persistent="false" />
+
+    <PreferenceCategory
+            android:title="@string/sound_category_system_title"/>
+
+    <!-- Do not nest these, or removals in code will break -->
+
     <com.android.settings.DefaultRingtonePreference
             android:key="notification_sound"
             android:title="@string/notification_sound_title"
             android:dialogTitle="@string/notification_sound_dialog_title"
             android:persistent="false"
             android:ringtoneType="notification" />
-
-    <CheckBoxPreference
-            android:key="vibrate_on_ring"
-            android:title="@string/vibrate_on_ring_title"
-            android:defaultValue="false" />
-
-    <PreferenceCategory
-            android:title="@string/sound_category_feedback_title"/>
-
-    <!-- Do not nest these, or removals in code will break -->
 
     <CheckBoxPreference
             android:key="dtmf_tone"

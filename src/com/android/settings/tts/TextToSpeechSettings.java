@@ -232,15 +232,7 @@ public class TextToSpeechSettings extends SettingsPreferenceFragment implements
         String currentEngine = mTts.getCurrentEngine();
         if (TextUtils.isEmpty(currentEngine)) currentEngine = mTts.getDefaultEngine();
 
-        //The method TextToSpeachService#onLoadLanguage only advices of the use
-        //of a language, but not enforces to set it. So calling mTts.setLanguage()
-        //only check thats the language is available, but not loads the language.
-        //In these circumstances mTts.getLanguage() does not ensure that the
-        //language has been established. This is the case of the default PicoTTS
-        //implementation. As a solution, use the expected locale of
-        //maybeUpdateTtsLanguage method that returns this, if it is supported by
-        //the engine
-        Locale currentLocale = maybeUpdateTtsLanguage(currentEngine);
+        Locale currentLocale = mTts.getLanguage();
 
         // TODO: This is currently a hidden private API. The intent extras
         // and the intent action should be made public if we intend to make this
