@@ -1878,12 +1878,24 @@
     <string name="start_time_title">Inico</string>
     <string name="end_time_title">Fin</string>
 
+    <!-- Safe headset volume restore checkbox -->
+    <string name="safe_headset_restore_title">Volumen de los auriculares seguro</string>
+    <string name="safe_headset_restore_summary">Evitar los niveles altos de volumen cuando el auricular se enchufe por primera vez</string>
+
     <!-- Setting for volume rocker music controls -->
     <string name="volbtn_music_controls_title">"Controles Volumen"</string>
     <string name="volbtn_music_controls_summary">"Cuando la pantalla este apagada, una pulsación prolongada de los controles de volumen avanzará/retrocederá sobre las pistas de música activas"</string>
 
     <!-- Volume description for ringtone volume -->
     <string name="volume_ring_only_description">Tonos del teléfono</string>
+
+   <!-- Battery light settings -->
+    <string name="battery_light_title">Luz de bateria</string>
+    <string name="battery_low_pulse_title">Notificación si la bateria esta baja</string>
+    <string name="battery_light_list_title">Colores</string>
+    <string name="battery_light_low_color_title">Bateria baja</string>
+    <string name="battery_light_medium_color_title">Cargando</string>
+    <string name="battery_light_full_color_title">Carga completa</string>
 
     <!-- Backlight -->
     <string name="backlight_title">"Brillo automático"</string>

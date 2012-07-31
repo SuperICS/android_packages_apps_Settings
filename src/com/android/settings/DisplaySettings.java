@@ -57,7 +57,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_ACCELEROMETER = "accelerometer";
     private static final String KEY_FONT_SIZE = "font_size";
     private static final String KEY_NOTIFICATION_PULSE = "notification_pulse";
-    private static final String KEY_BATTERY_PULSE = "battery_pulse";
+    private static final String KEY_BATTERY_LIGHT = "battery_light";
     private static final String KEY_DISPLAY_ROTATION = "display_rotation";
     private static final String KEY_VOLUME_WAKE = "pref_volume_wake";
     private static final String KEY_TRACKBALL_WAKE = "pref_trackball_wake";
@@ -73,8 +73,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mTrackballWake;
     private CheckBoxPreference mAccelerometer;
     private ListPreference mFontSizePref;
-    private CheckBoxPreference mBatteryPulse;
     private PreferenceScreen mNotificationPulse;
+    private PreferenceScreen mBatteryPulse;
 
     private final Configuration mCurConfig = new Configuration();
 
@@ -124,15 +124,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             }
         }
 
-        mBatteryPulse = (CheckBoxPreference) findPreference(KEY_BATTERY_PULSE);
+        mBatteryPulse = (PreferenceScreen) findPreference(KEY_BATTERY_LIGHT);
         if (mBatteryPulse != null) {
             if (getResources().getBoolean(
                     com.android.internal.R.bool.config_intrusiveBatteryLed) == false) {
                 getPreferenceScreen().removePreference(mBatteryPulse);
             } else {
-                mBatteryPulse.setChecked(Settings.System.getInt(resolver,
-                        Settings.System.BATTERY_LIGHT_PULSE, 1) == 1);
-                mBatteryPulse.setOnPreferenceChangeListener(this);
+                updateBatteryPulseDescription();
             }
         }
 
@@ -289,11 +287,21 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
     }
 
+    private void updateBatteryPulseDescription() {
+        if (Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.BATTERY_LIGHT_ENABLED, 1) == 1) {
+            mBatteryPulse.setSummary(getString(R.string.notification_light_enabled));
+        } else {
+            mBatteryPulse.setSummary(getString(R.string.notification_light_disabled));
+        }
+    }
+
     @Override
     public void onResume() {
         super.onResume();
         updateDisplayRotationPreferenceDescription();
         updateLightPulseDescription();
+        updateBatteryPulseDescription();
 
         getContentResolver().registerContentObserver(
                 Settings.System.getUriFor(Settings.System.ACCELEROMETER_ROTATION), true,
@@ -329,12 +337,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference == mBatteryPulse) {
-            boolean value = mBatteryPulse.isChecked();
-            Settings.System.putInt(getContentResolver(), Settings.System.BATTERY_LIGHT_PULSE,
-                    value ? 1 : 0);
-            return true;
-        } else if (preference == mVolumeWake) {
+		if (preference == mVolumeWake) {
             Settings.System.putInt(getContentResolver(), Settings.System.VOLUME_WAKE_SCREEN,
                     mVolumeWake.isChecked() ? 1 : 0);
             return true;
