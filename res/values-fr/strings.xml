@@ -415,9 +415,7 @@
     <string name="bluetooth_settings_summary" msgid="2091062709530570462">"Gérer les connexions, configurer le nom et l\'identification de l\'appareil"</string>
     <string name="bluetooth_pairing_request" msgid="6385750334766370310">"Demande d\'association Bluetooth"</string>
     <string name="bluetooth_enter_pin_msg" msgid="5698297871117529185">"Pour l\'association à :{<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Saisir le code PIN requis de l\'appareil :"</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"Pour l\'association à :<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Saisir la clé d\'accès requise de l\'appareil :"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="7222713483058171357">"Le code PIN contient des lettres ou des symboles."</string>
-    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"Habituellement 0000 ou 1234"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="4637977124526813470">"Vous devrez peut-être également saisir ce code PIN sur l\'autre appareil."</string>
     <string name="bluetooth_enter_passkey_other_device" msgid="2798719004030279602">"Vous devrez peut-être également saisir ce mot de passe sur l\'autre appareil."</string>
     <string name="bluetooth_confirm_passkey_msg" msgid="3708312912841950052">"Pour associer votre appareil à :&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;Assurez-vous que le mot de passe &lt;br&gt;&lt;b&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/b&gt; s\'affiche."</string>
@@ -697,8 +695,6 @@
     <!-- Quiet hours #CM -->
     <string name="quiet_hours_title">Heures silencieuses</string>
     <string name="quiet_hours_summary">Configure les heures où le téléphone doit être silencieux</string>
-    <string name="quiet_hours_note_title">Note</string>
-    <string name="quiet_hours_note_summary">Les appels entrants se comportent normalement pendant les heures silencieuses</string>
     <string name="quiet_hours_enabled">Heures silencieuses</string>
     <string name="quiet_hours_enabled_on">Heures silencieuses activées</string>
     <string name="quiet_hours_enabled_off">Fonctionnement normal</string>
@@ -1105,9 +1101,6 @@
     <string name="kill_app_longpress_back_summary">Permet de forcer la fermeture de l\'application en cours en appuyant longuement sur le bouton Retour</string>
 
     <!-- Performance Settings #CM -->
-    <string name="performance_settings_title">Performances</string>
-    <string name="performance_settings_warning_title">ATTENTION !</string>
-    <string name="performance_settings_warning">Les options présentes ici altèrent les performances du système, en bien ou en mal.\nElles ont des comportements différents selon les appareils et sont disponibles pour expérimentation.\nNous vous demandons de ne pas soumettre de rapport de bug à propos de celles-ci.</string>
     <string name="pref_use_dithering_title">Activer le tramage</string>
     <string name="pref_use_dithering_summary">Le tramage (dithering) améliore la qualité des images sur certains écrans au détriment des performances (nécessite un redémarrage)</string>
     <string name="pref_use_16bpp_alpha_title">Transparence 16 bits</string>
@@ -1125,9 +1118,6 @@
     <string name="pref_purgeable_assets_title">Purge des bitmaps</string>
     <string name="pref_purgeable_assets_summary">Le système peut libérer plus de RAM si la mémoire des bitmaps peut être réclamée (nécessite un redémarrage)</string>
     <!-- Performance Settings : Processor Settings -->
-    <string name="processor_title">Paramètres CPU</string>
-    <string name="processor_summary">Stratégie et fréquence</string>
-    <string name="cpu_cur_freq_title">Fréquence actuelle</string>
     <string name="cpu_governors_title">Stratégie</string>
     <string name="cpu_governors_summary">%S</string>
     <string name="cpu_min_freq_title">Fréquence minimale</string>
@@ -2195,4 +2185,8 @@
     <string name="help_label" msgid="1107174367904110532">"Aide"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"Diffusions cellulaires"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Sélectionnez les types d\'alertes d\'urgence à afficher."</string>
+    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"Habituellement 0000 ou 1234"</string>
+
+    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"Pour l\'association à :<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Saisir la clé d\'accès requise de l\'appareil :"</string>
+
 </resources>

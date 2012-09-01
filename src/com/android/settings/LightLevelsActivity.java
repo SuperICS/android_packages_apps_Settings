@@ -163,16 +163,16 @@ public class LightLevelsActivity extends Activity implements OnClickListener {
                 value = mLcdValues[id - 3000];
                 min = Settings.System.getInt(getContentResolver(),
                         Settings.System.LIGHT_SCREEN_DIM,
-                        android.os.Power.BRIGHTNESS_DIM);
-                max = android.os.Power.BRIGHTNESS_ON;
+                        android.os.PowerManager.BRIGHTNESS_DIM);
+                max = android.os.PowerManager.BRIGHTNESS_ON;
             } else if (id >= 4000 && id < 5000) {
                 value = mBtnValues[id - 4000];
-                min = android.os.Power.BRIGHTNESS_OFF;
-                max = android.os.Power.BRIGHTNESS_ON;
+                min = android.os.PowerManager.BRIGHTNESS_OFF;
+                max = android.os.PowerManager.BRIGHTNESS_ON;
             } else if (id >= 5000 && id < 6000) {
                 value = mKbValues[id - 5000];
-                min = android.os.Power.BRIGHTNESS_OFF;
-                max = android.os.Power.BRIGHTNESS_ON;
+                min = android.os.PowerManager.BRIGHTNESS_OFF;
+                max = android.os.PowerManager.BRIGHTNESS_ON;
             } else {
                 value = -1;
             }
@@ -195,7 +195,7 @@ public class LightLevelsActivity extends Activity implements OnClickListener {
         boolean changed = false;
         try {
             int value = Integer.valueOf(mEditor.getText().toString());
-            int valLimitHi = android.os.Power.BRIGHTNESS_ON;
+            int valLimitHi = android.os.PowerManager.BRIGHTNESS_ON;
             if (mEditedId == -1337) {
                 if (value > 1 && value != (mLevels.length + 1)) {
                     int[] tmp = new int[value - 1];
@@ -228,21 +228,21 @@ public class LightLevelsActivity extends Activity implements OnClickListener {
             } else if (mEditedId >= 3000 && mEditedId < 4000) {
                 if (value >= Settings.System.getInt(getContentResolver(),
                         Settings.System.LIGHT_SCREEN_DIM,
-                        android.os.Power.BRIGHTNESS_DIM)
+                        android.os.PowerManager.BRIGHTNESS_DIM)
                         && value <= valLimitHi) {
                     mLcdValues[mEditedId - 3000] = value;
                     ((Button) findViewById(mEditedId)).setText(String.valueOf(value));
                     changed = true;
                 }
             } else if (mEditedId >= 4000 && mEditedId < 5000) {
-                if (value >= android.os.Power.BRIGHTNESS_OFF
+                if (value >= android.os.PowerManager.BRIGHTNESS_OFF
                         && value <= valLimitHi) {
                     mBtnValues[mEditedId - 4000] = value;
                     ((Button) findViewById(mEditedId)).setText(String.valueOf(value));
                     changed = true;
                 }
             } else if (mEditedId >= 5000 && mEditedId < 6000) {
-                if (value >= android.os.Power.BRIGHTNESS_OFF
+                if (value >= android.os.PowerManager.BRIGHTNESS_OFF
                         && value <= valLimitHi) {
                     mKbValues[mEditedId - 5000] = value;
                     ((Button) findViewById(mEditedId)).setText(String.valueOf(value));
@@ -355,13 +355,11 @@ public class LightLevelsActivity extends Activity implements OnClickListener {
         public void run() {
             boolean autoLcd = Settings.System.getInt(getContentResolver(),
                     Settings.System.SCREEN_BRIGHTNESS_MODE, 1337) == Settings.System.SCREEN_BRIGHTNESS_MODE_AUTOMATIC;
-            boolean filterEnabled = Settings.System.getInt(getContentResolver(),
-                    Settings.System.LIGHT_FILTER, 0) != 0;
 
             try {
                 IPowerManager power = IPowerManager.Stub.asInterface(ServiceManager
                         .getService("power"));
-                if (filterEnabled && autoLcd) {
+                if (autoLcd) {
                     mSensor.setText(String.valueOf(power.getLightSensorValue()) + " / "
                             + String.valueOf(power.getRawLightSensorValue()));
                 } else {

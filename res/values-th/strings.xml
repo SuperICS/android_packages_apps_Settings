@@ -415,9 +415,7 @@
     <string name="bluetooth_settings_summary" msgid="2091062709530570462">"จัดการการเชื่อมต่อ ตั้งชื่ออุปกรณ์และการค้นพบ"</string>
     <string name="bluetooth_pairing_request" msgid="6385750334766370310">"คำขอกำหนดค่าอุปกรณ์ให้ตรงกันทางบลูทูธ"</string>
     <string name="bluetooth_enter_pin_msg" msgid="5698297871117529185">"ในการจับคู่กับ: <xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g> ให้พิมพ์ PIN ที่อุปกรณ์ต้องการ:"</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"ในการจับคู่กับ: <xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g> ให้พิมพ์รหัสผ่านที่อุปกรณ์ต้องการ:"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="7222713483058171357">"PIN ประกอบดัวยตัวอักษรหรือสัญลักษณ์"</string>
-    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"ปกติจะเป็น 0000 หรือ 1234"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="4637977124526813470">"คุณอาจจำเป็นต้องพิมพ์รหัส PIN นี้ลงในอุปกรณ์อีกเครื่องหนึ่งด้วยเช่นกัน"</string>
     <string name="bluetooth_enter_passkey_other_device" msgid="2798719004030279602">"คุณอาจจำเป็นต้องพิมพ์รหัสผ่านนี้ลงในอุปกรณ์อีกเครื่องหนึ่งด้วยเช่นกัน"</string>
     <string name="bluetooth_confirm_passkey_msg" msgid="3708312912841950052">"หากต้องการจับคู่กับ:&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;ตรวจสอบให้แน่ใจว่าอุปกรณ์แสดงรหัสผ่านนี้:&lt;br&gt;&lt;b&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/b&gt;"</string>
@@ -1699,4 +1697,8 @@
     <string name="help_label" msgid="1107174367904110532">"ความช่วยเหลือ"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"การแจ้งเครือข่ายที่ใช้งาน"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"เลือกประเภทของการแจ้งเตือนฉุกเฉินที่จะแสดง"</string>
+    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"ปกติจะเป็น 0000 หรือ 1234"</string>
+
+    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"ในการจับคู่กับ: <xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g> ให้พิมพ์รหัสผ่านที่อุปกรณ์ต้องการ:"</string>
+
 </resources>

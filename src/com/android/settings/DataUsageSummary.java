@@ -558,6 +558,8 @@ public class DataUsageSummary extends Fragment {
                 item.setChecked(mLinearChart);
                 mChart.resetVertMax();
                 updateBody();
+                return true;
+            }
             case R.id.data_usage_menu_metered: {
                 final PreferenceActivity activity = (PreferenceActivity) getActivity();
                 activity.startPreferencePanel(DataUsageMeteredSettings.class.getCanonicalName(), null,

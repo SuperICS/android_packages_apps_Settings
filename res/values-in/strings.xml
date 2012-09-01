@@ -415,9 +415,7 @@
     <string name="bluetooth_settings_summary" msgid="2091062709530570462">"Kelola sambungan, setel nama perangkat &amp; dapat ditemukan"</string>
     <string name="bluetooth_pairing_request" msgid="6385750334766370310">"Permintaan penyandingan bluetooth"</string>
     <string name="bluetooth_enter_pin_msg" msgid="5698297871117529185">"Untuk menyandingkan dengan:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Ketikkan PIN perangkat yang diperlukan:"</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"Untuk menyandingkan dengan:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Ketik kode sandi perangkat yang diperlukan:"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="7222713483058171357">"PIN berisi huruf atau simbol"</string>
-    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"Biasanya 0000 atau 1234"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="4637977124526813470">"Anda mungkin juga perlu mengetikkan PIN ini ke perangkat lain."</string>
     <string name="bluetooth_enter_passkey_other_device" msgid="2798719004030279602">"Anda mungkin juga perlu mengetikkan sandi ini ke perangkat lain."</string>
     <string name="bluetooth_confirm_passkey_msg" msgid="3708312912841950052">"Untuk menyandingkan dengan:&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;Pastikan bahwa perangkat tersebut menampilkan kode sandi:&lt;br&gt;&lt;b&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/b&gt;"</string>
@@ -1699,4 +1697,8 @@
     <string name="help_label" msgid="1107174367904110532">"Bantuan"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"Siaran sel"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Pilih jenis peringatan darurat yang akan ditampilkan."</string>
+    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"Biasanya 0000 atau 1234"</string>
+
+    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"Untuk menyandingkan dengan:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Ketik kode sandi perangkat yang diperlukan:"</string>
+
 </resources>

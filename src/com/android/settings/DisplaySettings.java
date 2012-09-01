@@ -24,7 +24,9 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.database.ContentObserver;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.RemoteException;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
@@ -82,10 +84,17 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private PreferenceScreen mAutomaticBacklightPreference;
     private Preference mScreenSaverPreference;
 
+    private ContentObserver mAccelerometerRotationObserver = new ContentObserver(new Handler()) {
+        @Override
+        public void onChange(boolean selfChange) {
+            updateDisplayRotationPreferenceDescription();
+        }
+    };
+
     private final RotationPolicy.RotationPolicyListener mRotationPolicyListener =
             new RotationPolicy.RotationPolicyListener() {
         @Override
-        public void onChange(boolean selfChange) {
+        public void onChange() {
             updateDisplayRotationPreferenceDescription();
             updateAccelerometerRotationCheckbox();
         }
@@ -362,14 +371,10 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         if (preference == mBatteryPulse) {
             boolean value = mBatteryPulse.isChecked();
             Settings.System.putInt(getContentResolver(), Settings.System.BATTERY_LIGHT_PULSE,
-        }else if (preference == mAccelerometer) {
+                    value ? 1 : 0);
+        } else if (preference == mAccelerometer) {
             RotationPolicy.setRotationLockForAccessibility(
                     getActivity(), !mAccelerometer.isChecked());
-        } else if (preference == mNotificationPulse) {
-            boolean value = mNotificationPulse.isChecked();
-            Settings.System.putInt(getContentResolver(), Settings.System.NOTIFICATION_LIGHT_PULSE,
-                    value ? 1 : 0);
-            return true;
         } else if (preference == mVolumeWake) {
             Settings.System.putInt(getContentResolver(), Settings.System.VOLUME_WAKE_SCREEN,
                     mVolumeWake.isChecked() ? 1 : 0);

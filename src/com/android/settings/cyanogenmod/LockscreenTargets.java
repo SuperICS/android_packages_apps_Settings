@@ -556,4 +556,10 @@ public class LockscreenTargets extends Fragment implements ShortcutPickHelper.On
         mDialogIcon.setTag(tmpIcon);
         mDialogIcon.setImageDrawable(ic);
     }
+
+    @Override
+    public void onFinishFinalAnimation() {
+        // TODO Auto-generated method stub
+        
+    }
 }

@@ -415,9 +415,7 @@
     <string name="bluetooth_settings_summary" msgid="2091062709530570462">"Bestuur verbindings, stel toestelnaam en ontdekbaarheid"</string>
     <string name="bluetooth_pairing_request" msgid="6385750334766370310">"Bluetooth-saambinding-versoek"</string>
     <string name="bluetooth_enter_pin_msg" msgid="5698297871117529185">"Om saam te bind met:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Voer die toestel se vereiste PIN in:"</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"Om saam te bind met: <xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Voer die toestel se vereiste wagwoordleutel in:"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="7222713483058171357">"PIN bevat letters of simbole"</string>
-    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"Gewoonlik 0000 of 1234"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="4637977124526813470">"Jy sal hierdie PIN dalk op die ander toestel ook moet invoer."</string>
     <string name="bluetooth_enter_passkey_other_device" msgid="2798719004030279602">"Jy sal hierdie sleutel dalk op die ander toestel ook moet invoer."</string>
     <string name="bluetooth_confirm_passkey_msg" msgid="3708312912841950052">"Om saam te bind met:&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;maak seker dit wys hierdie geheimsleutel:&lt;br&gt;&lt;b&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/b&gt;"</string>
@@ -1699,4 +1697,8 @@
     <string name="help_label" msgid="1107174367904110532">"Hulp"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"Seluitsendings"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Kies die tipe noodwaarskuwings wat vertoon moet word."</string>
+    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"Gewoonlik 0000 of 1234"</string>
+
+    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"Om saam te bind met: <xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Voer die toestel se vereiste wagwoordleutel in:"</string>
+
 </resources>

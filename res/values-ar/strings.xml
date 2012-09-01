@@ -415,9 +415,7 @@
     <string name="bluetooth_settings_summary" msgid="2091062709530570462">"إدارة الاتصالات، تعيين اسم الجهاز وقابلية الاكتشاف"</string>
     <string name="bluetooth_pairing_request" msgid="6385750334766370310">"طلب اقتران البلوتوث"</string>
     <string name="bluetooth_enter_pin_msg" msgid="5698297871117529185">"للإقران مع:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>اكتب رقم التعريف الشخصي المطلوب للجهاز:"</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"للإقران مع:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>اكتب مفتاح المرور المطلوب للجهاز:"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="7222713483058171357">"يشتمل رقم التعريف الشخصي على أحرف ورموز"</string>
-    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"0000 أو 1234 عادة"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="4637977124526813470">"قد يلزم أيضًا كتابة رقم التعريف الشخصي هذا على الجهاز الآخر."</string>
     <string name="bluetooth_enter_passkey_other_device" msgid="2798719004030279602">"قد يلزم أيضًا كتابة مفتاح المرور هذا على الجهاز الآخر."</string>
     <string name="bluetooth_confirm_passkey_msg" msgid="3708312912841950052">"للاقتران مع:&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;تأكد من أنه يعرض مفتاح المرور هذا:&lt;br&gt;&lt;b&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/b&gt;"</string>
@@ -1699,4 +1697,8 @@
     <string name="help_label" msgid="1107174367904110532">"مساعدة"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"عمليات البث الخلوي"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"حدد أنواع تنبيهات الطوارئ لعرضها."</string>
+    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"0000 أو 1234 عادة"</string>
+
+    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"للإقران مع:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>اكتب مفتاح المرور المطلوب للجهاز:"</string>
+
 </resources>

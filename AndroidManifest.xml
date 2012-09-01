@@ -245,8 +245,7 @@
 
         <activity android:name="Settings$ApnSettingsActivity" android:label="@string/apn_settings"
                   android:configChanges="orientation|keyboardHidden|screenSize"
-                  android:clearTaskOnLaunch="true" android:launchMode="singleTask">
-                  android:launchMode="singleTask"
+                  android:clearTaskOnLaunch="true" android:launchMode="singleTask"
                   android:parentActivityName="Settings$WirelessSettingsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1233,18 +1232,6 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.nfc.AndroidBeam" />
-        </activity>
-
-        <!-- Accessibility tutorial -->
-        <activity android:name="AccessibilityTutorialActivity"
-                android:label="@string/accessibility_tutorial_title"
-                android:configChanges="orientation"
-                android:immersive="true"
-                android:theme="@style/Theme.AccessibilityTutorialActivity">
-            <intent-filter>
-                <action android:name="android.settings.ACCESSIBILITY_TUTORIAL" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
 
         <!-- Development settings -->

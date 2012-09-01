@@ -25,6 +25,7 @@ import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.database.Cursor;
@@ -175,7 +176,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         mSafeHeadsetRestore.setChecked(Settings.System.getInt(resolver,
                 Settings.System.SAFE_HEADSET_VOLUME_RESTORE, 1) != 0);
 
-         mVibrateWhenRinging = (CheckBoxPreference) findPreference(KEY_VIBRATE);
+        mVibrateWhenRinging = (CheckBoxPreference) findPreference(KEY_VIBRATE);
         mVibrateWhenRinging.setPersistent(false);
         mVibrateWhenRinging.setChecked(Settings.System.getInt(resolver,
                 Settings.System.VIBRATE_WHEN_RINGING, 0) != 0);
@@ -379,7 +380,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
 
         final int vibrateMode = mAudioManager.getVibrateSetting(AudioManager.VIBRATE_TYPE_RINGER);
 
-        mVibrateOnRing.setChecked(vibrateMode == AudioManager.VIBRATE_SETTING_ON);
+        mVibrateWhenRinging.setChecked(vibrateMode == AudioManager.VIBRATE_SETTING_ON);
         mSilentMode.setValue(getPhoneSilentModeSettingValue());
 
         if (Settings.System.getInt(resolver, Settings.System.QUIET_HOURS_ENABLED, 0) == 1) {
@@ -391,7 +392,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
             mQuietHours.setSummary(getString(R.string.quiet_hours_summary));
         }
 
-        mVibrateOnRing.setChecked(vibrateMode == AudioManager.VIBRATE_SETTING_ON);
+        mVibrateWhenRinging.setChecked(vibrateMode == AudioManager.VIBRATE_SETTING_ON);
         mSilentMode.setValue(getPhoneSilentModeSettingValue());
 
         mSilentMode.setSummary(mSilentMode.getEntry());
@@ -494,7 +495,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
             } catch (NumberFormatException e) {
                 Log.e(TAG, "could not persist emergency tone setting", e);
             }
-        } else if (preference == mVibrateOnRing) {
+        } else if (preference == mVibrateWhenRinging) {
             setPhoneVibrateSettingValue((Boolean) objValue);
         } else if (preference == mSilentMode) {
             setPhoneSilentSettingValue(objValue.toString());

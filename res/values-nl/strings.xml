@@ -332,16 +332,6 @@
     <string name="slide_lock_delay_title">Vertraag schermvergrendeling</string>
     <string name="slide_lock_timeout_delay_title">Vertraging bij time-out</string>
     <string name="slide_lock_screenoff_delay_title">Vertraging bij uitschakelen</string>
-    <string name="slide_lock_delay_none">Geen</string>
-    <string name="slide_lock_delay_1s">1 seconde</string>
-    <string name="slide_lock_delay_5s">5 seconden</string>
-    <string name="slide_lock_delay_10s">10 seconden</string>
-    <string name="slide_lock_delay_15s">15 seconden</string>
-    <string name="slide_lock_delay_30s">30 seconden</string>
-    <string name="slide_lock_delay_1m">1 minuut</string>
-    <string name="slide_lock_delay_5m">5 minuten</string>
-    <string name="slide_lock_delay_10m">10 minuten</string>
-    <string name="slide_lock_delay_30m">30 minuten</string>
     <string name="crypt_keeper_settings_title" msgid="4219233835490520414">"Encryptie"</string>
     <string name="crypt_keeper_encrypt_title" product="tablet" msgid="1060273569887301457">"Tablet encrypten"</string>
     <string name="crypt_keeper_encrypt_title" product="default" msgid="1878996487755806122">"Telefoon coderen"</string>
@@ -453,9 +443,7 @@
     <string name="bluetooth_settings_summary" msgid="2091062709530570462">"Verbindingen beheren, apparaatnaam en vindbaarheid instellen"</string>
     <string name="bluetooth_pairing_request" msgid="6385750334766370310">"Bluetooth-koppelingsverzoek"</string>
     <string name="bluetooth_enter_pin_msg" msgid="5698297871117529185">"Typ om te koppelen met <xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g> de vereiste pincode van het apparaat:"</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"Koppelen met:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Typ de vereiste toegangscode van het apparaat:"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="7222713483058171357">"PIN-code bevat letters of symbolen"</string>
-    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"Meestal 0000 of 1234"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="4637977124526813470">"U moet deze pincode wellicht ook opgeven op het andere apparaat."</string>
     <string name="bluetooth_enter_passkey_other_device" msgid="2798719004030279602">"U moet deze toegangscode wellicht ook opgeven op het andere apparaat."</string>
     <string name="bluetooth_confirm_passkey_msg" msgid="3708312912841950052">"Koppelen met:&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;Zorg ervoor dat de volgende toegangscode wordt vermeld:&lt;br&gt;&lt;b&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/b&gt;"</string>
@@ -560,12 +548,9 @@
     <string name="wifi_menu_forget" msgid="8736964302477327114">"Netwerk vergeten"</string>
     <string name="wifi_menu_modify" msgid="2068554918652440105">"Netwerk aanpassen"</string>
     <string name="wifi_empty_list_wifi_off" msgid="4722299515264875943">"Schakel Wi-Fi in om beschikbare netwerken te bekijken."</string>
-    <string name="wifi_show_advanced" msgid="1793703023711426246">"Geavanceerde opties tonen"</string>
     <string name="wifi_network_setup" msgid="2243277654809358812">"WPS"</string>
     <string name="wifi_wps_pin" msgid="8242979682530043184">"PIN-code opgeven via toegangspunt"</string>
-    <string name="wifi_wps_setup_title" msgid="2301524571580808871">"WPS instellen"</string>
     <string name="wifi_wps_pin_output" msgid="7773693032190962123">"Typ de PIN-code <xliff:g id="WPS_PIN">%1$s</xliff:g> bij het toegangspunt"</string>
-    <string name="wifi_wps_in_progress" msgid="2776555137392461525">"WPS wordt al uitgevoerd en het voltooien kan even duren"</string>
     <string name="wifi_wps_failed" msgid="1648418410092969300">"Kan WPS niet starten, probeer het opnieuw."</string>
     <string name="wifi_empty_list_wifi_on" msgid="3354911729026237372">"Wifi-netwerken zoeken..."</string>
     <string name="wifi_other_network" msgid="1048006316504242214">"Ander netwerk..."</string>
@@ -750,7 +735,6 @@
     <string name="dock_force_undock_summary_no_dock" product="default">Telefoon is niet gedockt</string>
     <string name="dock_force_undock_summary" product="tablet">Undock de tablet</string>
     <string name="dock_force_undock_summary" product="default">Undock de telefoon</string>
-    <string name="sync_settings" msgid="9186125469300013491">"Accounts &amp; synchronisatie"</string>
     <string name="account_settings" msgid="6403589284618783461">"Accounts"</string>
     <string name="search_settings" msgid="1910951467596035063">"Zoeken"</string>
     <string name="search_settings_summary" msgid="9205656546570654169">"Instellingen voor zoeken en zoekgeschiedenis beheren"</string>
@@ -1293,8 +1277,6 @@
     <string name="adb_over_network">ADB over netwerk</string>
     <string name="adb_over_network_summary">TCP/IP-foutopsporing over netwerkinterfaces (Wi-Fi, USB-netwerken) inschakelen. Deze instelling wordt hersteld na herstarten</string>
     <string name="adb_over_network_warning">WAARSCHUWING: Wanneer ADB over netwerk is ingeschakeld, is inbraak in uw telefoon mogelijk op alle verbonden netwerken, inclusief uw GSM-verbinding!\n\nGebruik deze optie enkel als u met een betrouwbaar netwerk bent verbonden.\n\nWeet u zeker dat u deze optie wilt inschakelen?</string>
-    <string name="adb_notify">USB-foutopsporingsmelding</string>
-    <string name="adb_notify_summary">Toon melding indien u een USB-verbinding met foutopsporing ingeschakeld heeft</string>
     <string name="verifier_device_identifier" msgid="5079997701152411060">"Apparaat-id voor ontwikkeling"</string>
     <string name="verifier_device_identifier_not_available" msgid="1272065992066977324">"Apparaatgegevens niet beschikbaar"</string>
     <string name="keep_screen_on" msgid="1146389631208760344">"Stand-by"</string>
@@ -1800,13 +1782,6 @@
     <string name="combined_bar_auto_hide_title">Automatisch verbergen</string>
     <string name="combined_bar_auto_hide_summary">Staat toe de gecombineerde balk te verbergen bij het tonen van een app op volledig scherm</string>
     <!-- Navigation Bar #CM -->
-    <string name="navigation_bar_title">Navigatiebalk</string>
-    <string name="navigation_bar_help_text">1 - Kies het vergrendelicoon om te beginnen\n\n2 - Kies een knop om een functie aan toe te wijzen of te wijzigen\n\n3 - Druk lang op een knop om de positie te wijzigen\n\n4 - Druk het vergrendelicoon nogmaals om op te slaan\n\n5 - Druk op herstel om de standaardinstellingen te herstellen\n\n</string>
-    <string name="navigation_bar_tips">&#8226; Acties kunnen slechts aan één knop worden toegewezen\n\n&#8226; De home-knop kan niet opnieuw worden toegewezen\n\n&#8226; Randknoppen kunnen niet worden herschikt</string>
-    <string name="navigation_bar_tips_title">Snelle tips</string>
-    <string name="navigation_bar_reset_message">Huidige instellingen verwijderen en standaardinstellingen herstellen?</string>
-    <string name="navigation_bar_save_message">Navigatiebalkinstellingen opgeslagen</string>
-    <string name="navigation_bar_reset_toast">Navigatiebalk hersteld naar standaardinstellingen</string>
     <!-- Power Widget -->
     <string name="power_widget_title">Energiewidget</string>
     <string name="title_expanded_widget">Toon energiewidget</string>
@@ -1963,8 +1938,6 @@
     <!-- Profiles - Quiet hours -->
     <string name="quiet_hours_title">Stille uren</string>
     <string name="quiet_hours_summary">Beheer uren wanneer apparaat stil moet zijn</string>
-    <string name="quiet_hours_note_title">Opmerking</string>
-    <string name="quiet_hours_note_summary">Inkomende oproepen zullen normaal functioneren tijdens stille uren</string>
     <string name="quiet_hours_enabled">Schakel stille uren in</string>
     <string name="quiet_hours_enabled_on">Stille uren worden geforceerd</string>
     <string name="quiet_hours_enabled_off">Notificaties zullen normaal functioneren</string>
@@ -2082,11 +2055,6 @@
     <string name="profile_disable_screen_lock_summary">Schakel vergrendelschermbeveiliging uit als dit profiel actief is</string>
 
     <!-- Performance settings -->
-    <string name="performance_settings_title">Prestaties</string>
-    <string name="performance_settings_warning_title">Waarschuwing</string>
-    <string name="performance_settings_warning">Deze instellingen zijn experimenteel en kunnen leiden tot instabiliteit, crashes, dataverlies of hardwareschade.\n\nMeld geen fouten aan de ontwikkelaars als deze instellingen veranderd zijn.</string>
-    <string name="processor_summary">Verander CPU-governor en kloksnelheid</string>
-    <string name="cpu_cur_freq_title">Huidige CPU-frequentie</string>
     <string name="cpu_governors_title">CPU-governor</string>
     <string name="cpu_min_freq_title">Minimale CPU-frequentie</string>
     <string name="cpu_max_freq_title">Maximale CPU-frequentie</string>
@@ -2231,20 +2199,7 @@
     <string name="profile_nfc_text">Een profiel naar een NFC-tag schrijven staat u toe om de tag te raken om dat profiel te kiezen. Een tweede keer raken zal het vorig gekozen profiel selecteren.</string>
 
     <!-- Display Settings : Render effect -->
-    <string name="pref_render_effect_title">Rendereffect</string>
-    <string name="pref_render_effect_summary">Kies welke kleuren er door het scherm worden gebruikt</string>
 
-    <string name="pref_render_effect_none">Geen rendereffect</string>
-    <string name="pref_render_effect_night">Nachtmodus (3700K)</string>
-    <string name="pref_render_effect_green">Terminal (groen)</string>
-    <string name="pref_render_effect_blue">Blauw</string>
-    <string name="pref_render_effect_amber">Amber</string>
-    <string name="pref_render_effect_salmon">Zalm</string>
-    <string name="pref_render_effect_fuscia">Fuchsia</string>
-    <string name="pref_render_effect_calibrated">Gekalibreerd (N1)</string>
-    <string name="pref_render_effect_calibrated_red">Gekalibreerd (N1) laag rood</string>
-    <string name="pref_render_effect_calibrated_cool">Gekalibreerd (N1) koud</string>
-    <string name="pref_render_effect_red">Rood</string>
 
     <!-- Display - Rotation -->
     <string name="display_rotation_title">Rotatie</string>
@@ -2280,4 +2235,8 @@
     <string name="help_label" msgid="1107174367904110532">"Help"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"Cell broadcasts"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Selecteer de typen noodoproepen die moeten worden weergegeven."</string>
+    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"Meestal 0000 of 1234"</string>
+
+    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"Koppelen met:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Typ de vereiste toegangscode van het apparaat:"</string>
+
 </resources>

@@ -446,9 +446,7 @@
     <string name="bluetooth_settings_summary" msgid="2091062709530570462">"Kapcsolatok kezelése, eszközök nevének és felderíthetőségének beállítása"</string>
     <string name="bluetooth_pairing_request" msgid="6385750334766370310">"Bluetooth párosítási kérelem"</string>
     <string name="bluetooth_enter_pin_msg" msgid="5698297871117529185">"A(z) <xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g> <xliff:g id="DEVICE_NAME">%1$s</xliff:g> <xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g> eszközzel való párosításhoz írja be a készülékhez szükséges PIN kódot:"</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"A(z) <xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g> <xliff:g id="DEVICE_NAME">%1$s</xliff:g> <xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g> készülékkel való párosításhoz írja be a készülék szükséges jelszavát:"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="7222713483058171357">"A PIN-kód betűket vagy szimbólumokat tartalmaz"</string>
-    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"Általában 0000 vagy 1234"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="4637977124526813470">"Előfordulhat, hogy a PIN kódot a másik készüléken is meg kell adnia."</string>
     <string name="bluetooth_enter_passkey_other_device" msgid="2798719004030279602">"Előfordulhat, hogy az azonosító kulcsot a másik eszközön is be kell írnia."</string>
     <string name="bluetooth_confirm_passkey_msg" msgid="3708312912841950052">"Párosítás ezzel:&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;Győződjön meg arról, hogy a következő azonosítókulcs látható rajta:&lt;br&gt;&lt;b&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/b&gt;"</string>
@@ -539,7 +537,6 @@
     <string name="wifi_notify_open_networks" msgid="3755768188029653293">"Hálózati értesítés"</string>
     <string name="wifi_notify_open_networks_summary" msgid="3038290727701553612">"Értesítést kérek az elérhető nyitott hálózatokról"</string>
     <!-- Changed 20120412 -->
-    <string name="wifi_setting_sleep_policy_title" msgid="9107237003911220057">"Wi-Fi - alvó módban"</string>
     <string name="wifi_poor_network_detection" msgid="4925789238170207169">"Rossz minőségű kapcsolatok kerülése"</string>
     <string name="wifi_poor_network_detection_summary" msgid="2466956369738047669">"Csak akkor használjon Wi-Fi hálózatot, ha jó internetkapcsolatot tud biztosítani"</string>
     <string name="wifi_setting_sleep_policy_title" msgid="9107237003911220057">"Tartsa bekapcsolva a Wi-Fit alvás közben"</string>
@@ -631,7 +628,6 @@
     <string name="wifi_p2p_menu_search" msgid="3436429984738771974">"Eszközök keresése"</string>
     <string name="wifi_p2p_menu_create_group" msgid="7595229161883902082">"Csoport létrehozása"</string>
     <string name="wifi_p2p_menu_remove_group" msgid="4844634506540667517">"Csoport eltávolítása"</string>
-    <string name="wifi_p2p_menu_advanced" msgid="2578792521809265949">"Haladó"</string>
     <string name="wifi_p2p_available_devices" msgid="5943352520059654483">"Elérhető eszközök"</string>
     <string name="wifi_p2p_on_summary">Közvetlen Wi-Fi bekapcsolása</string>
     <string name="wifi_p2p_settings">Közvetlen Wi-Fi beállítások</string>
@@ -1569,7 +1565,6 @@
     <string name="select_all" msgid="1562774643280376715">"Az összes kijelölése"</string>
     <string name="hdcp_checking_title" msgid="8605478913544273282">"HDCP ellenőrzés"</string>
     <string name="hdcp_checking_dialog_title" msgid="5141305530923283">"HDCP-ellenőrzés beállítása"</string>
-    <string name="debug_ui_category" msgid="9023948280291055349">"Felhasználói felület"</string>
     <string name="debug_debugging_category" msgid="6781250159513471316">"Hibakeresés"</string>
     <string name="debug_app" msgid="8349591734751384446">"Válassza az alkalmazás hibakeresése lehetőséget"</string>
     <string name="debug_app_not_set" msgid="718752499586403499">"Nincs beállítva alkalmazás hibakereséshez"</string>
@@ -1846,16 +1841,6 @@
     <string name="slide_lock_timeout_delay_title">Késleltetés bekapcsolt kijelzőnél</string>
     <string name="slide_lock_timeout_delay_summary">Ennyi ideig késlelti a képernyőzárat bekapcsolt kijelzőnél</string>
     <string name="slide_lock_screenoff_delay_title">Késleltetés kikapcsolt kijelzőnél</string>
-    <string name="slide_lock_delay_none">Nincs</string>
-    <string name="slide_lock_delay_1s">1 másodperc</string>
-    <string name="slide_lock_delay_5s">5 másodperc</string>
-    <string name="slide_lock_delay_10s">10 másodperc</string>
-    <string name="slide_lock_delay_15s">15 másodperc</string>
-    <string name="slide_lock_delay_30s">30 másodperc</string>
-    <string name="slide_lock_delay_1m">1 perc</string>
-    <string name="slide_lock_delay_5m">5 perc</string>
-    <string name="slide_lock_delay_10m">10 perc</string>
-    <string name="slide_lock_delay_30m">30 perc</string>
     <!-- New 20120411 -->
     <!-- Setting checkbox title for Whether debugging should run over TCP/IP. -->
     <string name="adb_over_network">ADB hálózaton keresztül</string>
@@ -1877,8 +1862,6 @@
     <!-- Quiet hours #CM -->
     <string name="quiet_hours_title">Csendes órák</string>
     <string name="quiet_hours_summary">Csendes órák beállításai</string>
-    <string name="quiet_hours_note_title">Megjegyzés</string>
-    <string name="quiet_hours_note_summary">A bejövő hívásokra nincs hatással</string>
     <string name="quiet_hours_enabled">Csendes órák engedélyezése</string>
     <string name="quiet_hours_enabled_on">Csendes órák bekapcsolva</string>
     <string name="quiet_hours_enabled_off">Az értesítésekre nincs hatással</string>
@@ -1966,13 +1949,6 @@
     <string name="combined_bar_auto_hide_title">Auto elrejtés</string>
     <string name="combined_bar_auto_hide_summary">Értesítési sáv elrejtése teljes képernyős alkalmazások esetén</string>
     <!-- Navigation Bar #CM -->
-    <string name="navigation_bar_title">Navigációs sáv</string>
-    <string name="navigation_bar_help_text">1 - A szerkeztéshez érintse meg a lakatot\n\n2 - Válasszon gombot a hozzárendelés módosításához\n\n3 - Tartsa hosszan a sorba rendezéshez\n\n4 - A mentéshez érintse meg ismét az ikont\n\n5 - Az alaphelyzet visszaállításához érintse meg a Visszaállítás gombot\n\n</string>
-    <string name="navigation_bar_tips">&#8226; Esemény csak egy gombhoz állítható be\n\n&#8226; A home gomb nem társítható\n\n&#8226; Az oldalsó gombok nem rendezhetőek át</string>
-    <string name="navigation_bar_tips_title">Gyors tippek</string>
-    <string name="navigation_bar_reset_message">Törli a jelenlegi beállításokat és visszaállítja az alaphelyzetet?</string>
-    <string name="navigation_bar_save_message">Navigációs sáv beállításai elmentve.</string>
-    <string name="navigation_bar_reset_toast">Navigációs sáv beállításai visszaállítva az alaphelyzetbe.</string>
     <!-- Power Widget #CM -->
     <string name="power_widget_title">Energiagazdálkodás</string>
     <string name="title_expanded_widget">Energiagazdálkodás modul</string>
@@ -2223,17 +2199,11 @@
     <string name="toggleLockScreen">Zárolt kijelző</string>
     <string name="toggleWimax">WiMAX</string>
     <!-- Performance settings #CM -->
-    <string name="performance_settings_title">Teljesítmény</string>
     <!-- Performance Settings : Warning dialog #CM -->
-    <string name="performance_settings_warning_title">Innentől óvatosan</string>
-    <string name="performance_settings_warning">Ezek a beállítások kísérleti jelleggel szerepelnek itt. Bármilyen változtatás a készülék instabilitásához, meghibásodásához vagy adatvesztéshez vezethet.\n\nAz esetleges károkért nem vállalunk felelősséget.</string>
     <!-- Performance Settings : Processor Settings -->
     <!-- Performance Settings : Processor settings title -->
-    <string name="processor_title">Processzor</string>
     <!-- Performance Settings : Processor settings summary. -->
-    <string name="processor_summary">CPU órajel és ütemező beállítások</string>
     <!-- Performance Settings : Processor settings sub items -->
-    <string name="cpu_cur_freq_title">Jelenlegi CPU frekvencia</string>
     <string name="cpu_governors_title">CPU ütemező</string>
     <string name="cpu_governors_summary">%S</string>
     <string name="cpu_min_freq_title">Minimum CPU frekvencia</string>
@@ -2327,4 +2297,40 @@
     <string name="help_label" msgid="1107174367904110532">"Súgó"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"Cellán belüli adások"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Válassza ki a megjelenítendő vészriasztások típusait."</string>
+    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"Általában 0000 vagy 1234"</string>
+
+    <string name="slide_lock_delay_none">Nincs</string>
+
+    <string name="slide_lock_delay_5s">5 másodperc</string>
+
+    <string name="slide_lock_delay_10s">10 másodperc</string>
+
+    <string name="slide_lock_delay_1s">1 másodperc</string>
+
+    <string name="slide_lock_delay_15s">15 másodperc</string>
+
+    <string name="slide_lock_delay_1m">1 perc</string>
+
+    <string name="slide_lock_delay_30s">30 másodperc</string>
+
+    <string name="slide_lock_delay_5m">5 perc</string>
+
+    <string name="slide_lock_delay_30m">30 perc</string>
+
+    <string name="performance_settings_title">Teljesítmény</string>
+
+    <string name="performance_settings_warning_title">Innentől óvatosan</string>
+
+    <string name="performance_settings_warning">Ezek a beállítások kísérleti jelleggel szerepelnek itt. Bármilyen változtatás a készülék instabilitásához, meghibásodásához vagy adatvesztéshez vezethet.\n\nAz esetleges károkért nem vállalunk felelősséget.</string>
+
+    <string name="processor_title">Processzor</string>
+
+    <string name="processor_summary">CPU órajel és ütemező beállítások</string>
+
+    <string name="cpu_cur_freq_title">Jelenlegi CPU frekvencia</string>
+
+    <string name="slide_lock_delay_10m">10 perc</string>
+
+    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"A(z) <xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g> <xliff:g id="DEVICE_NAME">%1$s</xliff:g> <xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g> készülékkel való párosításhoz írja be a készülék szükséges jelszavát:"</string>
+
 </resources>

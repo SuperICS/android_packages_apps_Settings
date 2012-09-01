@@ -216,10 +216,10 @@ public class DockSettings extends SettingsPreferenceFragment {
                     case Intent.EXTRA_DOCK_STATE_CAR:
                     case Intent.EXTRA_DOCK_STATE_DESK:
                     case Intent.EXTRA_DOCK_STATE_LE_DESK:
-                         i.setAction(Intent.ACTION_USB_ANLG_HEADSET_PLUG);
+                         i.setAction(Intent.ACTION_ANALOG_AUDIO_DOCK_PLUG);
                         break;
                     case Intent.EXTRA_DOCK_STATE_HE_DESK:
-                         i.setAction(Intent.ACTION_USB_DGTL_HEADSET_PLUG);
+                         i.setAction(Intent.ACTION_DIGITAL_AUDIO_DOCK_PLUG);
                         break;
                 }
                 i.addFlags(Intent.FLAG_RECEIVER_REGISTERED_ONLY);

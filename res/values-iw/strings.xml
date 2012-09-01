@@ -415,9 +415,7 @@
     <string name="bluetooth_settings_summary" msgid="2091062709530570462">"נהל חיבורים, הגדר שם מכשיר ויכולת גילוי"</string>
     <string name="bluetooth_pairing_request" msgid="6385750334766370310">"בקשה להתאמת Bluetooth"</string>
     <string name="bluetooth_enter_pin_msg" msgid="5698297871117529185">"כדי להתאים עם:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>הקלד את קוד ה-PIN הנדרש של המכשיר:"</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"כדי להתאים עם:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>הקלד את מפתח הסיסמה הנדרש של המכשיר:"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="7222713483058171357">"PIN מכיל אותיות או סמלים"</string>
-    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"בדרך כלל 0000 או 1234"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="4637977124526813470">"ייתכן שתצטרך להקליד את קוד ה-PIN הזה גם במכשיר השני."</string>
     <string name="bluetooth_enter_passkey_other_device" msgid="2798719004030279602">"ייתכן שתצטרך להקליד את המפתח הזה גם במכשיר השני."</string>
     <string name="bluetooth_confirm_passkey_msg" msgid="3708312912841950052">"כדי להתאים עם:&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;ודא שהמכשיר מציג סיסמה זו:&lt;br&gt;&lt;b&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/b&gt;"</string>
@@ -1740,7 +1738,6 @@
     <string name="combined_bar_title">שורה משולבת</string>
     <string name="connection_state_disabled">הפסק</string>
     <string name="connection_state_enabled">אפשר</string>
-    <string name="cpu_cur_freq_title">תדר מעבד נוכחי</string>
     <string name="cpu_governors_title">מושל המעבד</string>
     <string name="cpu_info">מעבד</string>
     <string name="cpu_max_freq_title">תדר מעבד מקסימלי</string>
@@ -1854,9 +1851,6 @@
     <string name="notification_light_general_title">כללי</string>
     <string name="notification_light_use_custom">השתמש בערכים מותאמים</string>
     <string name="ok">Ok</string>
-    <string name="performance_settings_title">ביצועים</string>
-    <string name="performance_settings_warning">"ההגדרות האלה כלולות להתנסות וכל שינוי בהם יכול לגרום לאי יציבות, התרסקויות, איבוד מידע או כשלון חומרה.\n\nאנו מבקשים שלא תדווח על באגים אם אפשרויות אלו גרמו לשינוים מברירות המחדל."</string>
-    <string name="performance_settings_warning_title">המשך בזהירות</string>
     <string name="possibleButtons">לחצנים אפשריים</string>
     <string name="power_widget_title">יישומון</string>
     <string name="pref_brightness_mode_summary">בחר כיצד לחצן הבהירות משנה מצבים</string>
@@ -1886,8 +1880,6 @@
     <string name="preview_device_title">מכשיר</string>
     <string name="preview_id_title">זיהוי ייחודי</string>
     <string name="preview_version_title">גרסה</string>
-    <string name="processor_summary">"שנה מושל CPU ומהירות שעון"</string>
-    <string name="processor_title">מעבד</string>
     <string name="profile_add_app">הוסף אפליקציה</string>
     <string name="profile_app_delete_confirm">"להסיר את האפליקציה הזאת?"</string>
     <string name="profile_appgroup_manage">ניהול קבוצת יישום</string>
@@ -1960,8 +1952,6 @@
     <string name="quiet_hours_mute">השתק התראות</string>
     <string name="quiet_hours_mute_off">צלילים יופעלו כרגיל</string>
     <string name="quiet_hours_mute_on">צלילים לא יופעלו</string>
-    <string name="quiet_hours_note_summary">שיחות נכנסות יתנהגו כרגיל בזמן שעות שקט</string>
-    <string name="quiet_hours_note_title">שים לב</string>
     <string name="quiet_hours_start">התחלת שעות שקט</string>
     <string name="quiet_hours_start_summary">מתי להתחיל לאכוף שעות שקט</string>
     <string name="quiet_hours_still">ביטול רטט</string>
@@ -1982,16 +1972,6 @@
     <string name="screen_security_category">"אבטחת מסך"</string>
     <string name="screen_security_summary">"הצגה או שינוי של הגדרות אבטחה, השהייה, והזמן הקצוב של נעילת המסך"</string>
     <string name="screen_security_title">"מסך נעילה"</string>
-    <string name="slide_lock_delay_10m">"10 דקות"</string>
-    <string name="slide_lock_delay_10s">"10 שניות"</string>
-    <string name="slide_lock_delay_15s">"15 שניות"</string>
-    <string name="slide_lock_delay_1m">"דקה אחת"</string>
-    <string name="slide_lock_delay_1s">"שניה אחת"</string>
-    <string name="slide_lock_delay_30m">"30 דקות"</string>
-    <string name="slide_lock_delay_30s">"30 שניות"</string>
-    <string name="slide_lock_delay_5m">"5 דקות"</string>
-    <string name="slide_lock_delay_5s">"5 שניות"</string>
-    <string name="slide_lock_delay_none">ללא</string>
     <string name="slide_lock_delay_title">השהיית נעילת מסך</string>
     <string name="slide_lock_screenoff_delay_title">השהיית כיבוי מסך</string>
     <string name="slide_lock_timeout_delay_title">השהייה לאחר תום זמן</string>
@@ -2109,4 +2089,8 @@
     <string name="help_label" msgid="1107174367904110532">"עזרה"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"שידורים סלולריים"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"בחר את סוגי התראות החירום להצגה."</string>
+    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"בדרך כלל 0000 או 1234"</string>
+
+    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"כדי להתאים עם:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>הקלד את מפתח הסיסמה הנדרש של המכשיר:"</string>
+
 </resources>

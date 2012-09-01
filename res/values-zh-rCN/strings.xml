@@ -505,9 +505,7 @@
     <string name="bluetooth_settings_summary" msgid="2091062709530570462">"管理连接、设置设备名称和可检测性"</string>
     <string name="bluetooth_pairing_request" msgid="6385750334766370310">"蓝牙配对请求"</string>
     <string name="bluetooth_enter_pin_msg" msgid="5698297871117529185">"要与 <xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g> 设备配对，请键入该设备所需的 PIN："</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"要与 <xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g> 设备配对，请键入该设备所需的配对密钥："</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="7222713483058171357">"PIN 由字母或符号组成"</string>
-    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"通常为 0000 或 1234"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="4637977124526813470">"您可能还需要在另一台设备上输入此 PIN。"</string>
     <string name="bluetooth_enter_passkey_other_device" msgid="2798719004030279602">"您可能还需要在另一台设备上输入此密钥。"</string>
     <string name="bluetooth_confirm_passkey_msg" msgid="3708312912841950052">"要与以下设备配对：&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;请确保其显示的配对密钥为：&lt;br&gt;&lt;b&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/b&gt;"</string>
@@ -757,8 +755,6 @@
     <!-- Quiet hours #CM -->
     <string name="quiet_hours_title">安静时段</string>
     <string name="quiet_hours_summary">配置设备应该安静的时段</string>
-    <string name="quiet_hours_note_title">注意</string>
-    <string name="quiet_hours_note_summary">在安静时段来电将像往常一样</string>
     <string name="quiet_hours_enabled">开启安静时段</string>
     <string name="quiet_hours_enabled_on">安静时段将被强制</string>
     <string name="quiet_hours_enabled_off">通知提醒将像往常一样运行</string>
@@ -959,17 +955,11 @@
     <string name="slide_lock_screenoff_delay_title">屏幕关闭延迟</string>
     <string name="slide_lock_screenoff_delay_summary">屏幕关闭后延迟多久才启用安全性锁定屏幕</string>
     <!-- Performance settings #CM -->
-    <string name="performance_settings_title">性能</string>
 <!-- Performance Settings : Warning dialog #CM -->
-    <string name="performance_settings_warning_title">警告：前面有怪兽！</string>
-    <string name="performance_settings_warning">这里的选项会改变系统的性能，这可能意味着会变得更差。它们只作实验用途，如果您更改过这里的设置，请不要向我们提交bug报告。</string>
     <!-- Performance Settings : Processor Settings -->
     <!-- Performance Settings : Processor settings title -->
-    <string name="processor_title">处理器</string>
     <!-- Performance Settings : Processor settings summary. -->
-    <string name="processor_summary">修改CPU调节器以及时钟速度</string>
    <!-- Performance Settings : Processor settings sub items -->
-    <string name="cpu_cur_freq_title">当前CPU频率</string>
     <string name="cpu_governors_title">CPU调节器</string>
     <!--<string name="cpu_governors_summary">%S</string>-->
     <string name="cpu_min_freq_title">最小CPU频率</string>
@@ -2066,4 +2056,8 @@
     <string name="help_label" msgid="1107174367904110532">"帮助"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"小区广播"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"请选择要显示的紧急消息类型。"</string>
+    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"通常为 0000 或 1234"</string>
+
+    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"要与 <xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g> 设备配对，请键入该设备所需的配对密钥："</string>
+
 </resources>

@@ -415,9 +415,7 @@
     <string name="bluetooth_settings_summary" msgid="2091062709530570462">"Quản lý kết nối, đặt tên thiết bị &amp; khả năng phát hiện thiết bị"</string>
     <string name="bluetooth_pairing_request" msgid="6385750334766370310">"Yêu cầu ghép nối Bluetooth"</string>
     <string name="bluetooth_enter_pin_msg" msgid="5698297871117529185">"Để ghép nối với:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Nhập mã PIN bắt buộc của thiết bị:"</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"Để ghép nối với:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Nhập mã xác nhận bắt buộc của thiết bị:"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="7222713483058171357">"PIN chứa các ký tự hoặc biểu tượng"</string>
-    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"Thương là 0000 hoặc 1234"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="4637977124526813470">"Bạn cũng có thể cần nhập mã PIN này trên thiết bị khác."</string>
     <string name="bluetooth_enter_passkey_other_device" msgid="2798719004030279602">"Bạn cũng có thể cần nhập mã xác nhận này trên thiết bị khác."</string>
     <string name="bluetooth_confirm_passkey_msg" msgid="3708312912841950052">"Để ghép nối với:&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;Hãy đảm bảo thiết bị đang hiển thị mã xác nhận này:&lt;br&gt;&lt;b&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/b&gt;"</string>
@@ -1699,4 +1697,8 @@
     <string name="help_label" msgid="1107174367904110532">"Trợ giúp"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"Phát sóng trên di động"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Chọn các loại cảnh báo khẩn cấp để hiển thị."</string>
+    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"Thương là 0000 hoặc 1234"</string>
+
+    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"Để ghép nối với:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Nhập mã xác nhận bắt buộc của thiết bị:"</string>
+
 </resources>

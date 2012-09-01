@@ -415,9 +415,7 @@
     <string name="bluetooth_settings_summary" msgid="2091062709530570462">"Administrar conexiones, establecer nombre y detección del dispositivo"</string>
     <string name="bluetooth_pairing_request" msgid="6385750334766370310">"Solicitud de vinculación de Bluetooth"</string>
     <string name="bluetooth_enter_pin_msg" msgid="5698297871117529185">"Para sincronizar con:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Escribe el PIN solicitado por el dispositivo:"</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"Para sincronizar con:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Escribe la clave de acceso requerida del dispositivo:"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="7222713483058171357">"El PIN contiene letras o símbolos."</string>
-    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"Por lo general, 0000 o 1234"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="4637977124526813470">"Puede que también tengas que escribir este PIN en el otro dispositivo."</string>
     <string name="bluetooth_enter_passkey_other_device" msgid="2798719004030279602">"Puede que también tengas que escribir esta clave de acceso en otro dispositivo."</string>
     <string name="bluetooth_confirm_passkey_msg" msgid="3708312912841950052">"Para sincronizar con&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;asegúrate de que se muestre esta clave de acceso:&lt;br&gt;&lt;b&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/b&gt;."</string>
@@ -1699,4 +1697,8 @@
     <string name="help_label" msgid="1107174367904110532">"Ayuda"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"Difusiones por teléfono celular"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Selecciona los tipos de alertas de emergencia a mostrar."</string>
+    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"Por lo general, 0000 o 1234"</string>
+
+    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"Para sincronizar con:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Escribe la clave de acceso requerida del dispositivo:"</string>
+
 </resources>

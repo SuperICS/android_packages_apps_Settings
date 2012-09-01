@@ -25,21 +25,14 @@
         android:layout_height="0px"
         android:layout_weight="1">
 
-    <ListView android:id="@android:id/list"
-        android:layout_width="match_parent" 
-        android:layout_height="match_parent"
-    <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="0px"
-            android:layout_weight="1">
-        <ListView android:id="@android:id/list"
-                android:layout_width="match_parent" 
-                android:layout_height="match_parent"
-                android:paddingLeft="@*android:dimen/preference_fragment_padding_side"
-                android:paddingRight="@*android:dimen/preference_fragment_padding_side"
-                android:drawSelectorOnTop="false"
-                android:scrollbarStyle="outsideOverlay"
-                android:fastScrollEnabled="true" />
+	    <ListView android:id="@android:id/list"
+	        android:layout_width="match_parent" 
+	        android:layout_height="match_parent"
+	        android:paddingLeft="@*android:dimen/preference_fragment_padding_side"
+	        android:paddingRight="@*android:dimen/preference_fragment_padding_side"
+	        android:drawSelectorOnTop="false"
+	        android:scrollbarStyle="outsideOverlay"
+	        android:fastScrollEnabled="true" />
         <TextView android:id="@android:id/empty"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

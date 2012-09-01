@@ -16,19 +16,13 @@
 
 package com.android.settings.osr.fragments;
 
-import com.android.settings.osr.TouchInterceptor;
-
-import java.util.ArrayList;
-
 import android.app.AlertDialog;
-import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.app.ListFragment;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnMultiChoiceClickListener;
 import android.content.pm.PackageManager;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
@@ -37,7 +31,6 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
-import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -46,8 +39,10 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.android.internal.telephony.Phone;
 import com.android.settings.R;
+import com.android.settings.osr.TouchInterceptor;
+
+import java.util.ArrayList;
 
 public class StatusBarToggles extends PreferenceFragment implements
         OnPreferenceChangeListener {
@@ -280,7 +275,6 @@ public class StatusBarToggles extends PreferenceFragment implements
 
         private class ButtonAdapter extends BaseAdapter {
             private Context mContext;
-            private Resources mSystemUIResources = null;
             private LayoutInflater mInflater;
             private ArrayList<Toggle> mToggles;
 
@@ -291,9 +285,8 @@ public class StatusBarToggles extends PreferenceFragment implements
                 PackageManager pm = mContext.getPackageManager();
                 if (pm != null) {
                     try {
-                        mSystemUIResources = pm.getResourcesForApplication("com.android.systemui");
+                        pm.getResourcesForApplication("com.android.systemui");
                     } catch (Exception e) {
-                        mSystemUIResources = null;
                         Log.e(TAG, "Could not load SystemUI resources", e);
                     }
                 }

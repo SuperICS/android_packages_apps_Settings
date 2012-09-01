@@ -441,9 +441,7 @@
     <string name="bluetooth_settings_summary" msgid="2091062709530570462">"Administrar conexiones, establecer el nombre del dispositivo y la visibilidad"</string>
     <string name="bluetooth_pairing_request" msgid="6385750334766370310">"Solicitud de sincronización de Bluetooth"</string>
     <string name="bluetooth_enter_pin_msg" msgid="5698297871117529185">"Para sincronizar con:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Escribe el PIN solicitado por el dispositivo:"</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"Para sincronizar con:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Escribe la clave de acceso solicitada por el dispositivo:"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="7222713483058171357">"El PIN contiene letras o símbolos."</string>
-    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"Normalmente: 0000 o 1234"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="4637977124526813470">"Es posible que tengas que introducir este PIN en el otro dispositivo."</string>
     <string name="bluetooth_enter_passkey_other_device" msgid="2798719004030279602">"Es posible que tengas que introducir la clave de acceso en el otro dispositivo."</string>
     <string name="bluetooth_confirm_passkey_msg" msgid="3708312912841950052">"Para sincronizar con:&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt; Comprueba que se muestre la clave:&lt;br&gt;&lt;b&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/b&gt;"</string>
@@ -1321,7 +1319,6 @@
     <string name="accessibility_service_no_apps_title" msgid="5124097563864109821">"¿Necesitas un lector de pantalla?"</string>
     <string name="accessibility_service_no_apps_message" msgid="7751662416377046539">"TalkBack ofrece mensajes de voz para usuarios con discapacidades visuales. ¿Quieres instalarlo de forma gratuita desde Android Market?"</string>
     <string name="accessibility_script_injection_security_warning_summary" msgid="7706858873495386310">"¿Quieres que las aplicaciones instalen scripts de Google para mejorar la accesibilidad de su contenido?"</string>
-    <string name="accessibility_touch_exploration_warning" msgid="2442154805472989569">"Esta función cambia la respuesta háptica del dispositivo. ¿Activar?"</string>
     <string name="accessibility_service_default_description" msgid="1072730037861494125">"No se ha especificado ninguna descripción."</string>
     <string name="settings_button" msgid="3006713718908152930">"Ajustes"</string>
     <string name="power_usage_summary_title" msgid="7190304207330319919">"Batería"</string>
@@ -1936,14 +1933,7 @@
     <string name="calendar_metadata_all">Mostrar todo</string>
 
     <!-- Navigation Bar #CM -->
-    <string name="navigation_bar_title">Barra de navegación</string>
 
-    <string name="navigation_bar_help_text">1 - Para empezar a editar, toca el candado\n\n2 - Toca cualquier botón para asignar una acción\n\n3 - Mantén presionado un boton para reorganizar\n\n4 - Para guardar, toca el candado nuevamente\n\n5 - Para restaurar la configuración por defecto, toca el icono de resetear\n\n</string>
-    <string name="navigation_bar_tips">&#8226; Solo se puede asignar una acción a un boton a la vez\n\n&#8226; El botón de inicio no puede ser reasignado\n\n&#8226; Los botones de los lados, no pueden ser reorganizados</string>
-    <string name="navigation_bar_tips_title">Consejos rápidos</string>
-    <string name="navigation_bar_reset_message">¿Borrar configuración actual y restaurar valores por defecto?</string>
-    <string name="navigation_bar_save_message">Barra de navegación guardada</string>
-    <string name="navigation_bar_reset_toast">Barra de navegación restaurada</string>
 
     <!-- Sound settings #CM -->
     <!-- Volumes #CM -->
@@ -2201,19 +2191,13 @@
     <string name="kill_app_longpress_back_summary">"Cerrar aplicaciones mediante la pulsación prolongada del botón Volver"</string>
 
     <!-- Performance settings -->
-    <string name="performance_settings_title">"Rendimiento"</string>
 
     <!-- Performance Settings : Warning dialog -->
-    <string name="performance_settings_warning_title">"Proceda con precaución"</string>
-    <string name="performance_settings_warning">"Estas configuraciones han sido incluidas a modo de experimentación y cualquier cambiado realizado sobre ellas puedan causar inestabilidad, cierres de aplicaciones, pérdida de datos o fallos de hardware.\n\nNo comunique informes de errores si cualquiera de estas configuraciones ha sido cambiada de su valor de defecto."</string>
 
     <!-- Performance Settings : Processor settings title -->
-    <string name="processor_title">"Procesador"</string>
     <!-- Performance Settings : Processor settings summary. -->
-    <string name="processor_summary">"Cambiar el patrón de CPU y la velocidad del reloj"</string>
 
     <!-- Performance Settings : Processor settings sub items -->
-    <string name="cpu_cur_freq_title">"Frecuencia actual de la CPU"</string>
     <string name="cpu_governors_title">"Patrones CPU"</string>
     <string name="cpu_governors_summary">%S</string>
     <string name="cpu_min_freq_title">"Frecuencia mínima de la CPU"</string>
@@ -2224,8 +2208,6 @@
     <string name="cpu_set_on_boot_summary">"Restaurar la configuración del procesador al iniciar el sistema"</string>
 
     <!-- Performance Settings : Disable bootanimation -->
-    <string name="pref_disable_bootanimation_title">Deshabilitar animación de inicio</string>
-    <string name="pref_disable_bootanimation_summary">No mostrar la animación de inicio para un arranque más rápido</string>
 
     <!-- Memory Management -->
     <string name="memory_management_title">"Gestión de la memoria"</string>
@@ -2321,4 +2303,18 @@
     <string name="help_label" msgid="1107174367904110532">"Ayuda"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"Difusiones móviles"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Selecciona los tipos de alertas de emergencia que quieres ver."</string>
+    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"Normalmente: 0000 o 1234"</string>
+
+    <string name="performance_settings_title">"Rendimiento"</string>
+
+    <string name="performance_settings_warning_title">"Proceda con precaución"</string>
+
+    <string name="processor_title">"Procesador"</string>
+
+    <string name="processor_summary">"Cambiar el patrón de CPU y la velocidad del reloj"</string>
+
+    <string name="cpu_cur_freq_title">"Frecuencia actual de la CPU"</string>
+
+    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"Para sincronizar con:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Escribe la clave de acceso solicitada por el dispositivo:"</string>
+
 </resources>

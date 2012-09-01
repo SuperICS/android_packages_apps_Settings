@@ -47,220 +47,32 @@
     <string name="create" msgid="3578857613172647409">"Crea"</string>
     <string name="device_info_default" msgid="7847265875578739287">"Sconosciuto"</string>
     <string name="header_category_wireless_networks" msgid="4944823405420438623">"WIRELESS E RETI"</string>
-    <string name="wifi_quick_toggle_title" msgid="874495178395350104">"Wi-Fi"</string>
-    <string name="wifi_quick_toggle_summary" msgid="1047950931623694366">"Attiva Wi-Fi"</string>
-    <string name="wifi_settings" msgid="1277428034634973011">"Wi-Fi"</string>
-    <string name="wifi_settings_category" msgid="2810363951104753710">"Impostazioni Wi-Fi"</string>
-    <string name="wifi_settings_title" msgid="4351120897298124250">"Wi-Fi"</string>
-    <string name="wifi_settings_summary" msgid="668767638556052820">"Configura e gestisci punti di accesso wireless"</string>
-    <string name="wifi_starting" msgid="6716593470710880000">"Attivazione Wi-Fi..."</string>
-    <string name="wifi_stopping" msgid="244864762599017659">"Disattivazione Wi-Fi..."</string>
-    <string name="wifi_error" msgid="3207971103917128179">"Errore"</string>
-    <string name="wifi_in_airplane_mode" msgid="8652520421778203796">"In modalità aereo"</string>
-    <string name="wifi_fail_to_scan" msgid="1265540342578081461">"Impossibile cercare reti"</string>
-    <string name="wifi_notify_open_networks" msgid="3755768188029653293">"Notifica rete"</string>
-    <string name="wifi_notify_open_networks_summary" msgid="3038290727701553612">"Avvisa quando è disponibile una rete aperta"</string>
     <string name="wifi_enable_watchdog_service" msgid="3808826765041243874">"Evita connessioni deboli"</string>
     <string name="wifi_enable_watchdog_service_summary" msgid="4227430628962787616">"Non utilizzare una rete Wi-Fi a meno che non abbia una buona connessione a Internet"</string>
-    <string name="wifi_setting_sleep_policy_title" msgid="9107237003911220057">"Mantieni Wi-Fi durante sospensione"</string>
-    <string name="wifi_setting_sleep_policy_error" msgid="8174902072673071961">"Si è verificato un problema durante la modifica dell\'impostazione"</string>
-    <string name="wifi_add_network" msgid="6234851776910938957">"Aggiungi rete"</string>
-    <string name="wifi_access_points" msgid="2664629396767022441">"Reti Wi-Fi"</string>
-    <string name="wifi_menu_scan" msgid="1470911530412095868">"Scansione"</string>
-    <string name="wifi_menu_advanced" msgid="7522252991919573664">"Avanzate"</string>
-    <string name="wifi_menu_connect" msgid="4996220309848349408">"Connetti alla rete"</string>
-    <string name="wifi_menu_forget" msgid="8736964302477327114">"Elimina rete"</string>
-    <string name="wifi_menu_modify" msgid="2068554918652440105">"Modifica rete"</string>
-    <string name="wifi_empty_list_wifi_off" msgid="4722299515264875943">"Per conoscere le reti disponibili, attiva il Wi-Fi."</string>
-    <string name="wifi_show_advanced" msgid="1793703023711426246">"Mostra opzioni avanzate"</string>
     <string name="wifi_network_setup" msgid="2243277654809358812">"WPS"</string>
     <string name="wifi_wps_pin" msgid="8242979682530043184">"Digita il PIN del punto di accesso"</string>
-    <string name="wifi_wps_setup_title" msgid="2301524571580808871">"Impostazione WPS"</string>
     <string name="wifi_wps_pin_output" msgid="7773693032190962123">"Digita il PIN <xliff:g id="WPS_PIN">%1$s</xliff:g> sul punto di accesso"</string>
-    <string name="wifi_wps_in_progress" msgid="2776555137392461525">"WPS già in corso. Il completamento potrebbe richiedere qualche decina di secondi."</string>
     <string name="wifi_wps_failed" msgid="1648418410092969300">"Avvio di WPS non riuscito, riprova."</string>
-    <string name="wifi_ssid" msgid="641393708309146745">"SSID rete"</string>
-    <string name="wifi_security" msgid="6603611185592956936">"Sicurezza"</string>
-    <string name="wifi_signal" msgid="5514120261628065287">"Intensità segnale"</string>
-    <string name="wifi_status" msgid="4824568012414605414">"Stato"</string>
-    <string name="wifi_speed" msgid="3526198708812322037">"Velocità di collegamento"</string>
-    <string name="wifi_ip_address" msgid="1440054061044402918">"Indirizzo IP"</string>
-    <string name="wifi_eap_method" msgid="8529436133640730382">"Metodo EAP"</string>
-    <string name="please_select_phase2" msgid="5231074529772044898">"Autenticazione fase 2"</string>
-    <string name="wifi_eap_ca_cert" msgid="3521574865488892851">"Certificato CA"</string>
-    <string name="wifi_eap_user_cert" msgid="1291089413368160789">"Certificato utente"</string>
-    <string name="wifi_eap_identity" msgid="4359453783379679103">"Identità"</string>
-    <string name="wifi_eap_anonymous" msgid="2989469344116577955">"Identità anonima"</string>
-    <string name="wifi_password" msgid="5948219759936151048">"Password"</string>
-    <string name="wifi_show_password" msgid="6461249871236968884">"Mostra password"</string>
-    <string name="wifi_ip_settings" msgid="3359331401377059481">"Impostazioni IP"</string>
-    <string name="wifi_unchanged" msgid="3410422020930397102">"(invariati)"</string>
-    <string name="wifi_unspecified" msgid="5431501214192991253">"(non specificati)"</string>
-    <string name="wifi_remembered" msgid="4955746899347821096">"Salvata"</string>
-    <string name="wifi_disabled_generic" msgid="4259794910584943386">"Disattivate"</string>
-    <string name="wifi_disabled_network_failure" msgid="3111321240793227690">"Connessione Internet debole evitata"</string>
     <string name="wifi_disabled_heading" msgid="1428050635183875599"></string>
     <string name="wifi_disabled_help" msgid="5416325603334140666">"La rete è stata ignorata a causa della connessione scarsa. Disattiva questo comportamento dalla schermata Impostazioni &gt; Wi-Fi, voce di menu Avanzate."</string>
-    <string name="wifi_disabled_password_failure" msgid="8659805351763133575">"Problema di autenticazione"</string>
-    <string name="wifi_not_in_range" msgid="1136191511238508967">"Fuori portata"</string>
-    <string name="wifi_wps_available_first_item" msgid="3538912605343585226">"Rete protetta disponibile"</string>
-    <string name="wifi_wps_available_second_item" msgid="6121307881706347616">" (rete protetta disponibile)"</string>
-    <string name="wifi_secured_first_item" msgid="4072076186051083451">"Protetta con <xliff:g id="WIFI_SECURITY_SHORT">%1$s</xliff:g>"</string>
-    <string name="wifi_secured_second_item" msgid="1326000076939056265">", protetta con <xliff:g id="WIFI_SECURITY_SHORT">%1$s</xliff:g>"</string>
     <string name="wifi_adhoc_first_item">Rete Ad-hoc</string>
     <string name="wifi_adhoc_second_item">\u0020(rete ad-hoc)</string>
-    <string name="wifi_security_none" msgid="7985461072596594400">"Nessuna"</string>
-    <string name="wifi_connect" msgid="1076622875777072845">"Connetti"</string>
-    <string name="wifi_forget" msgid="8168174695608386644">"Elimina"</string>
-    <string name="wifi_save" msgid="3331121567988522826">"Salva"</string>
-    <string name="wifi_cancel" msgid="6763568902542968964">"Annulla"</string>
     <string name="wifi_wps_overlap_error" msgid="3352261777053283320">"Rilevata un\'altra sessione protetta Wi-Fi. Riprova tra alcuni minuti."</string>
-    <string name="wifi_advanced_titlebar" msgid="1627063574532930090">"Wi-Fi avanzate"</string>
-    <string name="wifi_setting_frequency_band_title" msgid="7493768705046080060">"Banda di frequenza Wi-Fi"</string>
-    <string name="wifi_setting_frequency_band_summary" msgid="3250740757118009784">"Specifica campo di frequenza di funzionamento"</string>
-    <string name="wifi_setting_frequency_band_error" msgid="837281974489794378">"Errore di impostazione della banda di frequenza."</string>
-    <string name="wifi_advanced_mac_address_title" msgid="6571335466330978393">"Indirizzo MAC"</string>
-    <string name="wifi_advanced_ip_address_title" msgid="6215297094363164846">"Indirizzo IP"</string>
-    <string name="wifi_advanced_settings_label" msgid="3654366894867838338">"Impostazioni IP"</string>
-    <string name="wifi_ip_settings_menu_save" msgid="7296724066102908366">"Salva"</string>
-    <string name="wifi_ip_settings_menu_cancel" msgid="6582567330136502340">"Annulla"</string>
-    <string name="wifi_ip_settings_invalid_ip_address" msgid="2513142355364274970">"Digita un indirizzo IP valido."</string>
-    <string name="wifi_ip_settings_invalid_gateway" msgid="8164264988361096450">"Digita l\'indirizzo di un gateway valido."</string>
-    <string name="wifi_ip_settings_invalid_dns" msgid="8744583948328391047">"Digita un indirizzo DNS valido."</string>
-    <string name="wifi_ip_settings_invalid_network_prefix_length" msgid="40470058023181052">"Digita un prefisso di rete di 0-32 caratteri."</string>
-    <string name="wifi_dns1" msgid="7344118050720080045">"DNS 1"</string>
-    <string name="wifi_dns2" msgid="1368601006824882659">"DNS 2"</string>
-    <string name="wifi_gateway" msgid="163914742461092086">"Gateway"</string>
-    <string name="wifi_network_prefix_length" msgid="3028785234245085998">"Lunghezza prefisso rete"</string>
-    <string name="wifi_tether_checkbox_text" msgid="6961605862058056788">"Hotspot Wi-Fi portatile"</string>
-    <string name="wifi_tether_enabled_subtext" msgid="8948641212931906143">"Hotspot portatile <xliff:g id="NETWORK_SSID">%1$s</xliff:g> attivo"</string>
-    <string name="wifi_tether_failed_subtext" msgid="2654888578056042315">"Errore hotspot Wi-Fi portatile"</string>
-    <string name="wifi_tether_configure_ap_text" msgid="3474995108398156258">"Configura hotspot Wi-Fi"</string>
-    <string name="wifi_tether_configure_subtext" msgid="1927454307836232128">"Hotspot Wi-Fi <xliff:g id="NETWORK_SSID">%1$s</xliff:g><xliff:g id="NETWORK_SECURITY">%2$s</xliff:g> portatile"</string>
-    <string name="wifi_tether_configure_ssid_default" msgid="8467525402622138547">"HotspotAndroid"</string>
-    <string name="bluetooth_quick_toggle_title" msgid="1037056952714061893">"Bluetooth"</string>
-    <string name="bluetooth_quick_toggle_summary" msgid="5293641680139873341">"Attiva Bluetooth"</string>
-    <string name="bluetooth_settings" msgid="1810521656168174329">"Bluetooth"</string>
-    <string name="bluetooth_settings_title" msgid="1908745291161353016">"Bluetooth"</string>
-    <string name="bluetooth_settings_summary" msgid="2091062709530570462">"Gestisci le connessioni, imposta il nome e la rilevabilità del dispositivo"</string>
-    <string name="bluetooth_pairing_request" msgid="6385750334766370310">"Richiesta accoppiamento Bluetooth"</string>
-    <string name="bluetooth_enter_pin_msg" msgid="5698297871117529185">"Per eseguire l\'accoppiamento con <xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>, digita il PIN richiesto del dispositivo:"</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"Per eseguire l\'accoppiamento con <xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>, digita la passkey richiesta del dispositivo:"</string>
-    <string name="bluetooth_enable_alphanumeric_pin" msgid="7222713483058171357">"Il PIN contiene lettere o simboli"</string>
-    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"Di solito 0000 o 1234"</string>
-    <string name="bluetooth_enter_pin_other_device" msgid="3617812138113586885">"Potrebbe inoltre essere necessario inserire questo PIN sull\'altro dispositivo."</string>
-    <string name="bluetooth_enter_passkey_other_device" msgid="1808735246794073465">"Potrebbe inoltre essere necessario inserire questa passkey sull\'altro dispositivo."</string>
-    <string name="bluetooth_confirm_passkey_msg" msgid="3708312912841950052">"Per l\'accoppiamento con:&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;Assicurati che sia visualizzata questa passkey:&lt;br&gt;&lt;b&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/b&gt;"</string>
-    <string name="bluetooth_incoming_pairing_msg" msgid="1615930853859551491">"Da:&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;Accoppiare con questo dispositivo?"</string>
-    <string name="bluetooth_display_passkey_pin_msg" msgid="2796550001376088433">"Per eseguire l\'accoppiamento con <xliff:g id="BOLD1_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD1">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>, digita sul dispositivo <xliff:g id="BOLD2_1">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="PASSKEY">%2$s</xliff:g><xliff:g id="END_BOLD2">&lt;/b&gt;</xliff:g>, quindi premi A capo o Invio."</string>
-    <string name="bluetooth_pairing_accept" msgid="6163520056536604875">"Accoppia"</string>
-    <string name="bluetooth_pairing_decline" msgid="4185420413578948140">"Annulla"</string>
-    <string name="bluetooth_error_title" msgid="6850384073923533096"></string>
-    <string name="bluetooth_pairing_error_message" msgid="3748157733635947087">"Impossibile eseguire l\'accoppiamento con <xliff:g id="DEVICE_NAME">%1$s</xliff:g>."</string>
-    <string name="bluetooth_pairing_pin_error_message" msgid="8337234855188925274">"Impossibile eseguire l\'accoppiamento con <xliff:g id="DEVICE_NAME">%1$s</xliff:g>. La passkey o il PIN è errato."</string>
-    <string name="bluetooth_pairing_device_down_error_message" msgid="7870998403045801381">"Impossibile comunicare con <xliff:g id="DEVICE_NAME">%1$s</xliff:g>."</string>
-    <string name="bluetooth_pairing_rejected_error_message" msgid="1648157108520832454">"Accoppiamento rifiutato da <xliff:g id="DEVICE_NAME">%1$s</xliff:g>."</string>
-    <string name="bluetooth_connecting_error_message" msgid="1779660510084746802">"Errore durante la connessione a <xliff:g id="DEVICE_NAME">%1$s</xliff:g>."</string>
-    <string name="bluetooth_preference_scan_title" msgid="2277464653118896016">"Cerca dispositivi"</string>
-    <string name="bluetooth_search_for_devices" msgid="5957007154213560390">"Cerca dispositivi"</string>
-    <string name="bluetooth_searching_for_devices" msgid="9203739709307871727">"Ricerca..."</string>
-    <string name="bluetooth_preference_device_settings" msgid="907776049862799122">"Impostazioni dispositivo"</string>
-    <string name="bluetooth_preference_paired_devices" msgid="1970524193086791964">"Dispositivi accoppiati"</string>
-    <string name="bluetooth_preference_found_devices" msgid="1647983835063249680">"Dispositivi disponibili"</string>
-    <string name="bluetooth_device_context_connect" msgid="3997659895003244941">"Connetti"</string>
-    <string name="bluetooth_device_context_disconnect" msgid="8220072022970148683">"Disconnetti"</string>
-    <string name="bluetooth_device_context_pair_connect" msgid="7611522504813927727">"Accoppia e connetti"</string>
-    <string name="bluetooth_device_context_unpair" msgid="662992425948536144">"Disaccoppia"</string>
-    <string name="bluetooth_device_context_disconnect_unpair" msgid="7644014238070043798">"Disconnetti e disaccoppia"</string>
-    <string name="bluetooth_device_context_connect_advanced" msgid="2643129703569788771">"Opzioni..."</string>
-    <string name="bluetooth_menu_advanced" msgid="8572178316357220524">"Avanzate"</string>
-    <string name="bluetooth_advanced_titlebar" msgid="2142159726881547669">"Bluetooth avanzato"</string>
-    <string name="bluetooth_empty_list_bluetooth_off" msgid="4793562956642282639">"Per visualizzare i dispositivi, attiva Bluetooth."</string>
-    <string name="bluetooth_connect_specific_profiles_title" msgid="6952214406025825164">"Connessione a…"</string>
-    <string name="bluetooth_profile_a2dp" msgid="2031475486179830674">"Audio multimediale"</string>
-    <string name="bluetooth_profile_headset" msgid="8658779596261212609">"Audio telefono"</string>
-    <string name="bluetooth_profile_opp" msgid="9168139293654233697">"Trasferimento file"</string>
-    <string name="bluetooth_profile_hid" msgid="3680729023366986480">"Dispositivo di input"</string>
-    <string name="bluetooth_profile_pan" msgid="3391606497945147673">"Accesso Internet"</string>
-    <string name="bluetooth_profile_pan_nap" msgid="8429049285027482959">"Condivisione connessione Internet"</string>
-    <string name="bluetooth_disconnect_a2dp_profile" msgid="3524648279150937177">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> verrà disconnesso dall\'audio multimediale."</string>
-    <string name="bluetooth_disconnect_headset_profile" msgid="8635908811168780720">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> verrà disconnesso dall\'audio vivavoce."</string>
-    <string name="bluetooth_disconnect_hid_profile" msgid="3282295189719352075">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> verrà disconnesso dal dispositivo di input."</string>
-    <string name="bluetooth_disconnect_pan_user_profile" msgid="8037627994382458698">"L\'accesso Internet tramite <xliff:g id="DEVICE_NAME">%1$s</xliff:g> verrà disconnesso."</string>
     <string name="bluetooth_disconnect_pan_nap_profile" product="tablet" msgid="5455448395850929200">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> verrà disconnesso dalla condivisione della connessione Internet del tablet."</string>
-    <string name="bluetooth_disconnect_pan_nap_profile" product="default" msgid="5266851881175033601">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> verrà disconnesso dalla condivisione della connessione Internet del telefono."</string>
-    <string name="bluetooth_device_advanced_title" msgid="6066342531927499308">"Dispositivo Bluetooth accoppiato"</string>
-    <string name="bluetooth_device_advanced_online_mode_title" msgid="3689050071425683114">"Connetti"</string>
-    <string name="bluetooth_device_advanced_online_mode_summary" msgid="1204424107263248336">"Connessione a dispositivo Bluetooth"</string>
-    <string name="bluetooth_device_advanced_profile_header_title" msgid="3764437426089639639">"Profili"</string>
-    <string name="bluetooth_device_advanced_rename_device" msgid="5148578059584955791">"Rinomina"</string>
-    <string name="bluetooth_device_advanced_enable_opp_title" msgid="8222550640371627365">"Consenti trasfer. file arrivo"</string>
-    <string name="bluetooth_a2dp_profile_summary_connected" msgid="963376081347721598">"Collegato ad audio media"</string>
-    <string name="bluetooth_headset_profile_summary_connected" msgid="7661070206715520671">"Collegato ad audio telefono"</string>
-    <string name="bluetooth_opp_profile_summary_connected" msgid="2611913495968309066">"Collegato al server di trasferimento file"</string>
-    <string name="bluetooth_opp_profile_summary_not_connected" msgid="1267091356089086285">"Non collegato al server di trasferimento file"</string>
-    <string name="bluetooth_hid_profile_summary_connected" msgid="3381760054215168689">"Connesso a dispositivo di input"</string>
-    <string name="bluetooth_pan_user_profile_summary_connected" msgid="4602294638909590612">"Connesso a dispositivo per accesso Internet"</string>
-    <string name="bluetooth_pan_nap_profile_summary_connected" msgid="1561383706411975199">"Connessione Internet locale condivisa con dispositivo"</string>
-    <string name="bluetooth_a2dp_profile_summary_use_for" msgid="4630849022250168427">"Usa per audio media"</string>
-    <string name="bluetooth_headset_profile_summary_use_for" msgid="8705753622443862627">"Usa per audio telefono"</string>
-    <string name="bluetooth_opp_profile_summary_use_for" msgid="1255674547144769756">"Usa per trasferimento file"</string>
-    <string name="bluetooth_hid_profile_summary_use_for" msgid="232727040453645139">"Utilizza per l\'input"</string>
-    <string name="bluetooth_pan_profile_summary_use_for" msgid="5664884523822068653">"Usa per accesso Internet"</string>
-    <string name="bluetooth_dock_settings" msgid="3218335822716052885">"Impostazioni dock"</string>
-    <string name="bluetooth_dock_settings_title" msgid="5543069893044375188">"Usa dock per audio"</string>
-    <string name="bluetooth_dock_settings_headset" msgid="1001821426078644650">"Come vivavoce"</string>
-    <string name="bluetooth_dock_settings_a2dp" msgid="8791004998846630574">"Per musica e audio media"</string>
-    <string name="bluetooth_dock_settings_remember" msgid="5551459057010609115">"Ricorda impostazioni"</string>
-    <string name="nfc_quick_toggle_title" msgid="6769159366307299004">"NFC"</string>
-    <string name="nfc_quick_toggle_summary" msgid="5237208142892767592">"Consenti lo scambio di dati quando il telefono tocca un altro dispositivo"</string>
-    <string name="android_beam_settings_title" msgid="7832812974600338649">"Android Beam"</string>
-    <string name="android_beam_on_summary" msgid="3618057099355636830">"Pronto a trasmettere i contenuti dell\'applicazione tramite NFC"</string>
-    <string name="android_beam_off_summary" msgid="4663095428454779138">"Non attivo"</string>
-    <string name="android_beam_disabled_summary" msgid="1737782116894793393">"Non disponibile perché la tecnologia NFC non è attiva"</string>
-    <string name="android_beam_label" msgid="6257036050366775040">"Android Beam"</string>
-    <string name="android_beam_explained" msgid="6981652347448777459">"Quando questa funzione è attiva, puoi trasferire contenuti di applicazioni su un altro dispositivo che supporta la tecnologia NFC tenendo vicini i due dispositivi. Puoi trasferire, ad esempio, pagine dell\'applicazione Browser, video di YouTube, contatti di Persone e altri dati."\n\n"È sufficiente avvicinare i dispositivi (generalmente mettendo a contatto le due parti posteriori), quindi toccare lo schermo. L\'applicazione stabilisce i dati da trasferire."</string>
     <string name="header_category_device" msgid="5781174212691167553">"DISPOSITIVO"</string>
-    <string name="display_settings_title" msgid="1708697328627382561">"Display"</string>
-    <string name="sound_settings" msgid="5534671337768745343">"Audio"</string>
     <string name="volume_overlay_title">"Pannello volume"</string>
     <string name="silent_mode_title" msgid="3181479108593217704">"Modalità silenziosa"</string>
-    <string name="ringtone_title" msgid="5379026328015343686">"Suoneria telefono"</string>
-    <string name="ringtone_summary" msgid="2630023412632683493"></string>
-    <string name="all_volume_title" msgid="4296957391257836961">"Volumi"</string>
-    <string name="musicfx_title" msgid="3415566786340790345">"Effetti musicali"</string>
-    <string name="ring_volume_title" msgid="7938706566797464165">"Volume suoneria"</string>
-    <string name="vibrate_in_silent_title" msgid="3897968069156767036">"Vibra in modalità silenziosa"</string>
     <string name="vibrate_on_ring_title" msgid="40343855247989536">"Vibrazione e suoneria"</string>
-    <string name="notification_sound_title" msgid="312032901303146002">"Notifica predefinita"</string>
-    <string name="incoming_call_volume_title" msgid="8073714801365904099">"Suoneria"</string>
-    <string name="notification_volume_title" msgid="2012640760341080408">"Notifica"</string>
-    <string name="checkbox_notification_same_as_incoming_call" msgid="1073644356290338921">"Usa volume chiamate in entrata per le notifiche"</string>
-    <string name="notification_sound_dialog_title" msgid="9052854168612951170">"Scegli suoneria notifica"</string>
-    <string name="media_volume_title" msgid="3576565767317118106">"Applicazioni multimediali"</string>
-    <string name="media_volume_summary" msgid="5363248930648849974">"Imposta il volume di musica e video"</string>
-    <string name="alarm_volume_title" msgid="2285597478377758706">"Allarme"</string>
-    <string name="dtmf_tone_enable_title" msgid="8533399267725365088">"Toni tastierino numerico"</string>
-    <string name="sound_effects_enable_title" msgid="1171590821131077296">"Suoni alla pressione"</string>
     <string name="vibrator_type_ringer">Chiamate</string>
     <string name="vibrator_type_notification">Notifiche</string>
-    <string name="lock_sounds_enable_title" msgid="450098505659399520">"Suono di blocco schermo"</string>
-    <string name="haptic_feedback_enable_title" msgid="2438293710530828760">"Vibra alla pressione"</string>
     <string name="volbtn_music_controls_title">"Cambia traccia con tasti"</string>
     <string name="volbtn_music_controls_summary">"Quando lo schermo è spento la pressione prolungata dei tasti volume cambia traccia"</string>
-    <string name="audio_record_proc_title" msgid="4271091199976457534">"Eliminazione rumori"</string>
-    <string name="volume_media_description" msgid="7949355934788807863">"Musica, video, giochi e altri contenuti multimediali"</string>
-    <string name="volume_ring_description" msgid="5936851631698298989">"Suoneria e notifiche"</string>
     <string name="volume_ring_only_description">Suonerie</string>
-    <string name="volume_notification_description" msgid="5810902320215328321">"Notifiche"</string>
-    <string name="volume_alarm_description" msgid="8322615148532654841">"Allarmi"</string>
     <string name="link_volume_ringtones">Collega volume suoneria e notifiche</string>
     <string name="link_volume_ringtones_toast">Assicurarsi di modificare il volume per sincronizzare il volume di notifica e di suoneria.</string>
     <string name="link_volume_mutes">Collega silenz. suoneria e notifiche</string>
     <string name="quiet_hours_title">"Periodo di quiete"</string>
     <string name="quiet_hours_summary">"Configura gli orari in cui il terminale dovrebbe essere silenzioso"</string>
-    <string name="quiet_hours_note_title">"Nota"</string>
-    <string name="quiet_hours_note_summary">"Le chiamate in entrata avranno lo stesso comportamento durante il periodo di quiete"</string>
     <string name="quiet_hours_enabled">"Attiva il periodo di quiete"</string>
     <string name="quiet_hours_enabled_on">"Il periodo di quiete viene rispettato"</string>
     <string name="quiet_hours_enabled_off">"Le notifiche funzionano come di norma"</string>
@@ -345,7 +157,6 @@
     <string name="ll_reload">"Ricarica attuali"</string>
     <string name="ll_bad_levels">"I livelli devono essere incrementali"</string>
     <string name="ll_num_levels">"Imposta numero di livelli"</string>
-    <string name="notification_pulse_title" msgid="1247988024534030629">"Luce di notifica pulsante"</string>
     <string name="notification_light_general_title">"Generale"</string>
     <string name="notification_light_applist_title">"Applicazioni"</string>
     <string name="notification_light_phonelist_title">"Telefono"</string>
@@ -386,13 +197,6 @@
     <string name="combined_bar_title">"Barra combinata"</string>
     <string name="combined_bar_auto_hide_title">"Nascondi automaticamente"</string>
     <string name="combined_bar_auto_hide_summary">"Permetti di nascondere la barra combinata con applicazioni a pieno schermo"</string>
-    <string name="navigation_bar_title">Barra di navigazione</string>
-    <string name="navigation_bar_help_text">1 - Per iniziare le modifiche, tocca l\'icona del lucchetto\n\n2 - Tocca un pulsante qualsiasi per assegnare o modificare le funzionalità\n\n3 - Premi a lungo un tasto qualsiasi per modificare l\'ordine\n\n4 - Per salvare, tocca l\'icona del lucchetto nuovamente\n\n5 - Per ripristinare le impostazioni, tocca il pulsante di reset\n\n</string>
-    <string name="navigation_bar_tips">&#8226; Le azioni possono essere assegnate ad un solo tasto alla volta\n\n&#8226; Il tasto Home non può essere riassegnato\n\n&#8226; I pulsanti laterali non possono essere riorganizzati</string>
-    <string name="navigation_bar_tips_title">Consigli rapidi</string>
-    <string name="navigation_bar_reset_message">Elimina impostazioni correnti e ripristinare quelle di default?</string>
-    <string name="navigation_bar_save_message">Impostazioni della barra di navigazione salvate</string>
-    <string name="navigation_bar_reset_toast">Barra di navigazione resettata</string>
     <string name="power_widget_title">"Power widget"</string>
     <string name="title_expanded_widget">"Mostra il power widget"</string>
     <string name="summary_expanded_widget">"Mostra il power widget nel menù delle notifiche"</string>
@@ -612,255 +416,24 @@
     <string name="toggleFlashlight">"Torcia"</string>
     <string name="toggleLockScreen">"Blocco schermo"</string>
     <string name="toggleWimax">"WiMAX"</string>
-    <string name="header_category_system" msgid="2073558547468647128">"SISTEMA"</string>
-    <string name="turn_on_radio" msgid="8706561489788373676">"Attiva segnale cellulare"</string>
-    <string name="turn_off_radio" msgid="1820294552893884115">"Disattiva segnale cellulare"</string>
-    <string name="sms_over_ims_on" msgid="5085290395865632925">"Attiva SMS su IMS"</string>
-    <string name="sms_over_ims_off" msgid="8354792045992793959">"Disattiva SMS su IMS"</string>
-    <string name="ims_reg_required_on" msgid="3885152087309614653">"Attivazione registrazione IMS obbligatoria"</string>
-    <string name="ims_reg_required_off" msgid="1720570343422743943">"Disattivazione registrazione IMS obbligatoria"</string>
-    <string name="lte_ram_dump_on" msgid="8568568019520172177">"Accendi dump ram lte"</string>
-    <string name="lte_ram_dump_off" msgid="2514507918652378283">"Spegni dump ram lte"</string>
-    <string name="radioInfo_menu_viewADN" msgid="8743377494429930831">"Visualizza rubrica SIM"</string>
-    <string name="radioInfo_menu_viewFDN" msgid="7934301566925610318">"Visualizza numeri selezione fissa"</string>
-    <string name="radioInfo_menu_viewSDN" msgid="7130280686244955669">"Visualizza numeri dell\'elenco dei numeri di servizio"</string>
-    <string name="radioInfo_menu_getPDP" msgid="560610293888406317">"Ottieni elenco PDP"</string>
-    <string name="radioInfo_service_in" msgid="1915416319177520020">"In servizio"</string>
-    <string name="radioInfo_service_out" msgid="5238736759641916278">"Fuori servizio"</string>
-    <string name="radioInfo_service_emergency" msgid="2485604591272668370">"Solo chiamate di emergenza"</string>
-    <string name="radioInfo_service_off" msgid="1434084741785525415">"Segnale radio disattivato"</string>
-    <string name="radioInfo_roaming_in" msgid="9045363884600341051">"Roaming..."</string>
-    <string name="radioInfo_roaming_not" msgid="2851853244069662307">"Non roaming"</string>
-    <string name="radioInfo_phone_idle" msgid="7489244938838742820">"Inattivo"</string>
-    <string name="radioInfo_phone_ringing" msgid="4883724645684297895">"Chiamata in corso"</string>
-    <string name="radioInfo_phone_offhook" msgid="4174402846862780998">"Chiamata in corso"</string>
-    <string name="radioInfo_data_disconnected" msgid="1959735267890719418">"Disconnesso"</string>
-    <string name="radioInfo_data_connecting" msgid="8404571440697917823">"Connessione"</string>
-    <string name="radioInfo_data_connected" msgid="7074301157399238697">"Connesso"</string>
-    <string name="radioInfo_data_suspended" msgid="5315325487890334196">"Sospeso"</string>
-    <string name="radioInfo_unknown" msgid="737385314432468266">"sconosciuto"</string>
-    <string name="radioInfo_display_packets" msgid="8654359809877290639">"pkt"</string>
-    <string name="radioInfo_display_bytes" msgid="4018206969492931883">"byte"</string>
-    <string name="radioInfo_display_dbm" msgid="3621221793699882781">"dBm"</string>
-    <string name="radioInfo_display_asu" msgid="1422248392727818082">"asu"</string>
-    <string name="radioInfo_lac" msgid="8415219164758307156">"LAC"</string>
-    <string name="radioInfo_cid" msgid="4362599198392643138">"Sistema di identificazione contenuti"</string>
     <string name="sdcard_unmount" product="nosdcard" msgid="6325292633327972272">"Smonta archivio USB"</string>
-    <string name="sdcard_unmount" product="default" msgid="3364184561355611897">"Smonta scheda SD"</string>
     <string name="sdcard_format" product="nosdcard" msgid="6285310523155166716">"Cancella archivio USB"</string>
-    <string name="sdcard_format" product="default" msgid="6713185532039187532">"Cancella scheda SD"</string>
-    <string name="small_font" msgid="2295331917424072635">"Piccole"</string>
-    <string name="medium_font" msgid="2068475425515133701">"Medie"</string>
-    <string name="large_font" msgid="599055175160971446">"Grandi"</string>
-    <string name="font_size_save" msgid="3450855718056759095">"OK"</string>
     <string name="sdcard_setting" product="nosdcard" msgid="8281011784066476192">"Archivio USB"</string>
-    <string name="sdcard_setting" product="default" msgid="5922637503871474866">"Scheda SD"</string>
-    <string name="battery_info_status_label" msgid="8109155295509700309">"Stato batteria:"</string>
-    <string name="battery_info_power_label" msgid="7465140230991349382">"Presa di corrente:"</string>
-    <string name="battery_info_scale_label" msgid="3649763192389778437">"Scala batteria:"</string>
-    <string name="battery_info_level_label" msgid="8706526709307788737">"Livello batteria:"</string>
-    <string name="battery_info_health_label" msgid="6416051542741886958">"Condizioni batteria:"</string>
-    <string name="battery_info_technology_label" msgid="788304533220748681">"Tecnologia batteria:"</string>
-    <string name="battery_info_voltage_label" msgid="8971764146757637863">"Voltaggio batteria:"</string>
-    <string name="battery_info_voltage_units" msgid="8658490792208288107">"mV"</string>
-    <string name="battery_info_temperature_label" msgid="1968383098818648037">"Temperatura batteria:"</string>
-    <string name="battery_info_temperature_units" msgid="9098950587249987550">"°C"</string>
-    <string name="battery_info_uptime" msgid="5548545143573527992">"Tempo dall\'avvio:"</string>
-    <string name="battery_info_awake_battery" msgid="2557725975486185849">"Tempo di attività con batteria:"</string>
-    <string name="battery_info_awake_plugged" msgid="176716874713478188">"Tempo di attività sotto carica:"</string>
-    <string name="battery_info_screen_on" msgid="376277447175613889">"Tempo accensione schermo:"</string>
-    <string name="battery_info_status_unknown" msgid="196130600938058547">"Sconosciuta"</string>
-    <string name="battery_info_status_charging" msgid="1705179948350365604">"In carica"</string>
-    <string name="battery_info_status_charging_ac" msgid="5874340256342956252">"(CA)"</string>
-    <string name="battery_info_status_charging_usb" msgid="4059070156126770959">"(USB)"</string>
-    <string name="battery_info_status_discharging" msgid="6222697503392774475">"In uso"</string>
-    <string name="battery_info_status_not_charging" msgid="2820070506621483576">"Non in carica"</string>
-    <string name="battery_info_status_full" msgid="2824614753861462808">"Carica"</string>
-    <string name="battery_info_power_unplugged" msgid="5987246575519551081">"Non collegato"</string>
-    <string name="battery_info_power_ac" msgid="6808516193001604634">"CA"</string>
-    <string name="battery_info_power_usb" msgid="8012931702516331797">"USB"</string>
-    <string name="battery_info_power_ac_usb" msgid="6777734146838328688">"CA+USB"</string>
-    <string name="battery_info_power_unknown" msgid="7344115502868899881">"Sconosciuto"</string>
-    <string name="battery_info_health_unknown" msgid="5664295556921944255">"Sconosciuto"</string>
-    <string name="battery_info_health_good" msgid="8070356565806711806">"Buon livello"</string>
-    <string name="battery_info_health_overheat" msgid="8442959549291368806">"Surriscaldamento"</string>
-    <string name="battery_info_health_dead" msgid="1725917445762829059">"Scarica"</string>
-    <string name="battery_info_health_over_voltage" msgid="2420269351664490121">"Sovratensione"</string>
-    <string name="battery_info_health_unspecified_failure" msgid="6347021103185471590">"Errore sconosciuto"</string>
-    <string name="battery_info_health_cold" msgid="3835692786176707318">"Minimo"</string>
-    <string name="bluetooth" msgid="5549625000628014477">"Bluetooth"</string>
-    <string name="bluetooth_visibility" msgid="2930835434091839916">"Rilevabile"</string>
-    <string name="bluetooth_is_discoverable" msgid="8373421452106840526">"Visibile a tutti dispositivi Bluetooth vicini (<xliff:g id="DISCOVERABLE_TIME_PERIOD">%1$s</xliff:g>)"</string>
-    <string name="bluetooth_is_discoverable_always" msgid="2849387702249327748">"Visibile a tutti dispositivi Bluetooth vicini"</string>
-    <string name="bluetooth_not_visible_to_other_devices" msgid="9120274591523391910">"Non visibile ad altri dispositivi Bluetooth"</string>
-    <string name="bluetooth_only_visible_to_paired_devices" msgid="2049983392373296028">"Visibile solo ai dispositivi accoppiati"</string>
-    <string name="bluetooth_not_discoverable" msgid="128269993123955177">"Rendi rilevabile il dispositivo"</string>
-    <string name="bluetooth_visibility_timeout" msgid="8002247464357005429">"Timeout visibilità"</string>
-    <string name="bluetooth_visibility_timeout_summary" msgid="6483353842671501585">"Imposta la durata della rilevabilità del dispositivo"</string>
-    <string name="bluetooth_lock_voice_dialing" msgid="3139322992062086225">"Blocca composizione vocale"</string>
-    <string name="bluetooth_lock_voice_dialing_summary" msgid="4741338867496787042">"Impedisci l\'uso del compositore Bluetooth quando lo schermo è bloccato"</string>
-    <string name="bluetooth_devices" msgid="1886018064039454227">"Dispositivi Bluetooth"</string>
-    <string name="bluetooth_device_name" msgid="8415828355207423800">"Nome dispositivo"</string>
     <string name="bluetooth_device_details" msgid="4594773497930028085">"Impostazioni dispositivo"</string>
     <string name="bluetooth_profile_details" msgid="6823621790324933337">"Impostazioni profilo"</string>
-    <string name="bluetooth_name_not_set" msgid="2653752006416027426">"Nessun nome impostato, è in uso il nome dell\'account"</string>
-    <string name="bluetooth_scan_for_devices" msgid="9214184305566815727">"Cerca dispositivi"</string>
     <string name="bluetooth_rename_device" product="tablet" msgid="787970073150631155">"Rinomina tablet"</string>
-    <string name="bluetooth_rename_device" product="default" msgid="6267987985556136749">"Rinomina telefono"</string>
-    <string name="bluetooth_rename_button" msgid="1648028693822994566">"Rinomina"</string>
-    <string name="bluetooth_disconnect_title" msgid="6026705382020027966">"Disconnettere?"</string>
-    <string name="bluetooth_disconnect_all_profiles" msgid="9148530542956217908">"Questa operazione terminerà la connessione con:&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;"</string>
-    <string name="bluetooth_disable_profile_title" msgid="5916643979709342557">"Disattivare il profilo?"</string>
-    <string name="bluetooth_disable_profile_message" msgid="2895844842011809904">"Verrà disattivato:&lt;br&gt;&lt;b&gt;<xliff:g id="PROFILE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;Su:&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%2$s</xliff:g>&lt;/b&gt;"</string>
-    <string name="bluetooth_connected" msgid="6038755206916626419">"Connesso"</string>
-    <string name="bluetooth_connected_no_headset" msgid="2866994875046035609">"Collegato (telefono escluso)"</string>
-    <string name="bluetooth_connected_no_a2dp" msgid="4576188601581440337">"Collegato (contenuti multimed. esclusi)"</string>
-    <string name="bluetooth_connected_no_headset_no_a2dp" msgid="9195757766755553810">"Collegato (telef. o conten. mult. esclusi)"</string>
-    <string name="bluetooth_disconnected" msgid="6557104142667339895">"Disconnesso"</string>
-    <string name="bluetooth_disconnecting" msgid="8913264760027764974">"Disconnessione..."</string>
-    <string name="bluetooth_connecting" msgid="8555009514614320497">"Connessione..."</string>
-    <string name="bluetooth_unknown" msgid="644716244548801421"></string>
-    <string name="bluetooth_pairing" msgid="1426882272690346242">"Accoppiamento..."</string>
-    <string name="bluetooth_device" msgid="5291950341750186887">"Dispositivo Bluetooth senza nome"</string>
-    <string name="progress_scanning" msgid="192587958424295789">"Ricerca"</string>
-    <string name="bluetooth_no_devices_found" msgid="1085232930277181436">"Nessun dispositivo Bluetooth in vicinanze."</string>
-    <string name="bluetooth_notif_ticker" msgid="4726721390078512173">"Richiesta accoppiamento Bluetooth"</string>
-    <string name="bluetooth_notif_title" msgid="2485175521845371514">"Richiesta accoppiamento"</string>
-    <string name="bluetooth_notif_message" msgid="5300852675110479862">"Tocca per l\'accoppiamento con <xliff:g id="DEVICE_NAME">%1$s</xliff:g>."</string>
-    <string name="bluetooth_show_received_files" msgid="5164787486105868895">"Mostra file ricevuti"</string>
-    <string name="device_picker" msgid="8398232791303186677">"Selettore dispositivo Bluetooth"</string>
-    <string name="bluetooth_permission_request" msgid="1523129741266262748">"Richiesta autorizzazione Bluetooth"</string>
-    <string name="bluetooth_ask_enablement" msgid="5279027758886569301">"Un\'applicazione vuole attivare il Bluetooth. Consentire?"</string>
     <string name="bluetooth_ask_discovery" product="tablet" msgid="4420151924834278808">"Un\'applicazione sul tablet vuole rendere il tablet rilevabile da altri dispositivi Bluetooth per <xliff:g id="TIMEOUT">%1$d</xliff:g> secondi. Consentire?"</string>
-    <string name="bluetooth_ask_discovery" product="default" msgid="4478906085771274647">"Un\'applicazione sul telefono vuole rendere il telefono rilevabile da altri dispositivi Bluetooth per <xliff:g id="TIMEOUT">%1$d</xliff:g> secondi. Consentire?"</string>
     <string name="bluetooth_ask_lasting_discovery" product="tablet" msgid="8737516188038252313">"Un\'applicazione sul tablet vuole rendere il tablet \"sempre rilevabile\" da altri dispositivi Bluetooth. Consentire?"</string>
-    <string name="bluetooth_ask_lasting_discovery" product="default" msgid="7751530664834149084">"Un\'applicazione sul telefono vuole rendere il telefono \"sempre rilevabile\" da altri dispositivi Bluetooth. Consentire?"</string>
     <string name="bluetooth_ask_enablement_and_discovery" product="tablet" msgid="8504403125440086020">"Un\'applicazione sul tablet vuole attivare il Bluetooth e rendere il tablet rilevabile da altri dispositivi per <xliff:g id="TIMEOUT">%1$d</xliff:g> secondi. Consentire?"</string>
-    <string name="bluetooth_ask_enablement_and_discovery" product="default" msgid="3040361003987241057">"Un\'applicazione sul telefono vuole attivare il Bluetooth e rendere il telefono rilevabile da altri dispositivi per <xliff:g id="TIMEOUT">%1$d</xliff:g> secondi. Consentire?"</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="tablet" msgid="7254712987802497615">"Un\'applicazione sul tablet vuole attivare il  Bluetooth e rendere il tablet rilevabile da altri dispositivi. Consentire?"</string>
-    <string name="bluetooth_ask_enablement_and_lasting_discovery" product="default" msgid="3947789545028519103">"Un\'applicazione sul telefono vuole attivare il Bluetooth e rendere il telefono rilevabile da altri dispositivi. Consentire?"</string>
-    <string name="bluetooth_turning_on" msgid="4850574877288036646">"Attivazione Bluetooth..."</string>
-    <string name="bluetooth_turning_off" msgid="2337747302892025192">"Disattivazione Bluetooth..."</string>
-    <string name="bluetooth_auto_connect" msgid="40711424456733571">"Connessione automatica"</string>
-    <string name="bluetooth_connection_permission_request" msgid="4747918249032890077">"Richiesta di connessione Bluetooth"</string>
-    <string name="bluetooth_connection_notif_message" msgid="3687933246423942977">"Tocca per connetterti a \"<xliff:g id="DEVICE_NAME">%1$s</xliff:g>\"."</string>
-    <string name="bluetooth_connection_dialog_text" msgid="8455427559949998023">"Vuoi connetterti a \"<xliff:g id="DEVICE_NAME">%1$s</xliff:g>\"?"</string>
-    <string name="bluetooth_phonebook_request" msgid="457033227379858269">"Richiesta rubrica"</string>
-    <string name="bluetooth_pb_acceptance_dialog_text" msgid="6555508756987053866">"%1$s desidera accedere ai tuoi contatti e alla tua cronologia chiamate. Consentire l\'accesso a %2$s?"</string>
-    <string name="bluetooth_pb_remember_choice" msgid="2901499974259177202">"Non chiedermelo più"</string>
-    <string name="date_and_time" msgid="4114084177056654663">"Impostazioni data e ora"</string>
-    <string name="date_time_12_hour_sample" msgid="3259617262618020574">"13:00"</string>
-    <string name="date_time_24_hour_sample" msgid="8916857570746212357">"13:00"</string>
-    <string name="choose_timezone" msgid="1362834506479536274">"Scegli il fuso orario"</string>
-    <string name="normal_date_format" msgid="7636406984925498359">"Regionale (<xliff:g id="DATE">%s</xliff:g>)"</string>
-    <string name="display_preview_label" msgid="1127597250917274792">"Anteprima:"</string>
-    <string name="display_font_size_label" msgid="8941851418397475389">"Dimensioni carattere:"</string>
-    <!-- no translation found for intent_sender_data_label (6332324780477289261) -->
-    <skip />
-    <string name="intent_sender_sendbroadcast_text" msgid="1415735148895872715">"Invia <xliff:g id="BROADCAST">broadcast</xliff:g>"</string>
-    <string name="intent_sender_action_label" msgid="616458370005452389">"<xliff:g id="ACTION">Action</xliff:g>:"</string>
-    <string name="intent_sender_startactivity_text" msgid="5080516029580421895">"Inizia <xliff:g id="ACTIVITY">activity</xliff:g>"</string>
-    <string name="intent_sender_resource_label" msgid="6963659726895482829">"<xliff:g id="RESOURCE">Resource</xliff:g>:"</string>
-    <string name="intent_sender_account_label" msgid="465210404475603404">"Account:"</string>
-    <string name="proxy_settings_title" msgid="5912878565897294401">"Impostazioni proxy"</string>
-    <string name="proxy_clear_text" msgid="5555400754952012657">"Cancella"</string>
-    <string name="proxy_port_label" msgid="5655276502233453400">"Porta proxy"</string>
-    <string name="proxy_exclusionlist_label" msgid="7700491504623418701">"Ignora proxy per"</string>
-    <string name="proxy_exclusionlist_hint" msgid="6084099226687226948">"example.com,mycomp.test.com,localhost"</string>
-    <string name="proxy_defaultView_text" msgid="6387985519141433291">"Ripristina predefinite"</string>
-    <string name="proxy_action_text" msgid="2957063145357903951">"Fine"</string>
-    <string name="proxy_hostname_label" msgid="8490171412999373362">"Hostname proxy"</string>
-    <string name="proxy_hostname_hint" msgid="2076157057003936176">"proxy.example.com"</string>
-    <string name="proxy_error" msgid="8926675299638611451">"Attenzione"</string>
-    <string name="proxy_error_dismiss" msgid="4993171795485460060">"OK"</string>
-    <string name="proxy_error_invalid_host" msgid="8052095511862922213">"Il nome host specificato non è valido."</string>
-    <string name="proxy_error_invalid_exclusion_list" msgid="6467799485443290961">"L\'elenco di esclusioni digitato non è nel formato corretto. Digita un elenco di domini esclusi separati da virgole."</string>
-    <string name="proxy_error_empty_port" msgid="5539106187558215246">"Devi inserire un valore nel campo Porta."</string>
-    <string name="proxy_error_empty_host_set_port" msgid="2451694104858226781">"Il campo Porta deve essere vuoto se il campo Host è vuoto."</string>
-    <string name="proxy_error_invalid_port" msgid="2671425042711054494">"La porta specificata non è valida."</string>
-    <string name="proxy_warning_limited_support" msgid="7229337138062837422">"Il proxy HTTP viene utilizzato dal browser ma potrebbe non essere utilizzato da altre applicazioni."</string>
-    <string name="radio_info_signal_location_label" msgid="16475158265551708">"Posizione:"</string>
-    <string name="radio_info_neighboring_location_label" msgid="2385625674055934880">"CID adiacente:"</string>
-    <string name="radio_info_data_attempts_label" msgid="1731106244577323381">"Tentativi dati:"</string>
-    <string name="radio_info_gprs_service_label" msgid="2331818110375395364">"Servizio GPRS:"</string>
-    <string name="radio_info_roaming_label" msgid="6141505430275138647">"Roaming:"</string>
-    <string name="radio_info_imei_label" msgid="1220524224732944192">"IMEI:"</string>
-    <string name="radio_info_call_redirect_label" msgid="1654674226961476872">"Reindirizzamento chiamate:"</string>
-    <string name="radio_info_ppp_resets_label" msgid="3241667824729310546">"Numero di PPP reimpostati dall\'avvio:"</string>
-    <string name="radio_info_gsm_disconnects_label" msgid="1683069665736339820">"Disconnessioni GSM:"</string>
-    <string name="radio_info_current_network_label" msgid="3256402602440102610">"Rete corrente:"</string>
-    <string name="radio_info_data_successes_label" msgid="4417894113689054945">"Dati riusciti:"</string>
-    <string name="radio_info_ppp_received_label" msgid="3345184342444878849">"PPP ricevuto:"</string>
-    <string name="radio_info_gsm_service_label" msgid="2082332114596916985">"Servizio GSM:"</string>
-    <string name="radio_info_signal_strength_label" msgid="1931937920896925766">"Intensità segnale:"</string>
-    <string name="radio_info_call_status_label" msgid="4896238900685510883">"Stato chiamata:"</string>
-    <string name="radio_info_ppp_sent_label" msgid="5009102250704375687">"PPP inviato:"</string>
-    <string name="radio_info_radio_resets_label" msgid="9211343458143291617">"Reimpostaz. segnale cellulare:"</string>
-    <string name="radio_info_message_waiting_label" msgid="6981842420058672207">"Messaggio in attesa:"</string>
-    <string name="radio_info_phone_number_label" msgid="7192944627907412169">"Numero di telefono:"</string>
-    <string name="radio_info_band_mode_label" msgid="441469694142042022">"Seleziona banda radio"</string>
-    <string name="radio_info_network_type_label" msgid="3706382548257257987">"Tipo di rete:"</string>
-    <string name="radio_info_set_perferred_label" msgid="9039200405863503267">"Imposta tipo di rete preferito:"</string>
-    <string name="radio_info_ping_ipaddr" msgid="498747917793263530">"Indir. IP ping:"</string>
-    <string name="radio_info_ping_hostname" msgid="3054888474808217853">"Nome host ping (www.google.com):"</string>
-    <string name="radio_info_http_client_test" msgid="5733604021077701555">"Test client HTTP:"</string>
-    <string name="ping_test_label" msgid="7255376471490860631">"Esegui test ping"</string>
-    <string name="radio_info_smsc_label" msgid="6399460520126501354">"SMSC:"</string>
-    <string name="radio_info_smsc_update_label" msgid="7258686760358791539">"Aggiorna"</string>
-    <string name="radio_info_smsc_refresh_label" msgid="6902302130315125102">"Aggiorna"</string>
-    <string name="radio_info_toggle_dns_check_label" msgid="8292252930563286858">"Attiva o disattiva verifica DNS"</string>
-    <string name="oem_radio_info_label" msgid="6163141792477958941">"Info/impostazioni specifiche OEM"</string>
-    <string name="band_mode_title" msgid="954174198903776205">"Imposta banda GSM/UMTS"</string>
-    <string name="band_mode_loading" msgid="548764766363847336">"Caricamento lista bande..."</string>
-    <string name="band_mode_set" msgid="5730560180249458484">"Imposta"</string>
-    <string name="band_mode_failed" msgid="1495968863884716379">"Non riuscita"</string>
-    <string name="band_mode_succeeded" msgid="2701016190055887575">"Riuscita"</string>
-    <string name="sdcard_changes_instructions" msgid="4482324130377280131">"Le modifiche verranno applicate quando verrà ricollegato il cavo USB."</string>
-    <string name="sdcard_settings_screen_mass_storage_text" msgid="3741220147296482474">"Attiva archivio di massa USB"</string>
-    <string name="sdcard_settings_total_bytes_label" msgid="9184160745785062144">"Byte totali:"</string>
     <string name="sdcard_settings_not_present_status" product="nosdcard" msgid="1636218515775929394">"Archivio USB non montato."</string>
-    <string name="sdcard_settings_not_present_status" product="default" msgid="2048419626134861599">"Nessuna scheda SD."</string>
-    <string name="sdcard_settings_available_bytes_label" msgid="763232429899373001">"Byte disponibili:"</string>
     <string name="sdcard_settings_mass_storage_status" product="nosdcard" msgid="7993410985895217054">"Archivio USB usato come disp. archiviaz. massa"</string>
-    <string name="sdcard_settings_mass_storage_status" product="default" msgid="2742075324087038036">"Scheda SD in uso come dispositivo di archiviazione di massa."</string>
     <string name="sdcard_settings_unmounted_status" product="nosdcard" msgid="9191210735703409245">"Puoi rimuovere l\'archivio USB."</string>
-    <string name="sdcard_settings_unmounted_status" product="default" msgid="6462544066195404905">"È ora possibile rimuovere la scheda SD."</string>
     <string name="sdcard_settings_bad_removal_status" product="nosdcard" msgid="7761390725880773697">"Archivio USB rimosso quando ancora in uso."</string>
-    <string name="sdcard_settings_bad_removal_status" product="default" msgid="5145797653495907970">"La scheda SD è stata rimossa quando ancora in uso."</string>
-    <string name="sdcard_settings_used_bytes_label" msgid="8820289486001170836">"Byte utilizzati:"</string>
     <string name="sdcard_settings_scanning_status" product="nosdcard" msgid="7503429447676219564">"Ricerca di media in archivio USB…"</string>
-    <string name="sdcard_settings_scanning_status" product="default" msgid="2763464949274455656">"Ricerca di media nella scheda SD..."</string>
     <string name="sdcard_settings_read_only_status" product="nosdcard" msgid="3624143937437417788">"Archivio USB montato: lettura."</string>
-    <string name="sdcard_settings_read_only_status" product="default" msgid="4518291824764698112">"La scheda SD montata è di sola lettura."</string>
-    <string name="skip_label" msgid="47510779345218297">"Salta"</string>
-    <string name="next_label" msgid="4693520878012668114">"Avanti"</string>
-    <string name="language_picker_title" msgid="5349877711342869319">"Lingua"</string>
-    <string name="activity_picker_label" msgid="6295660302548177109">"Scegli attività"</string>
-    <string name="device_info_label" msgid="6551553813651711205">"Info dispositivo"</string>
-    <string name="battery_info_label" msgid="4132685016148679403">"Info batteria"</string>
-    <string name="display_label" msgid="8074070940506840792">"Schermo"</string>
     <string name="phone_info_label" product="tablet" msgid="7820855350955963628">"Info tablet"</string>
-    <string name="phone_info_label" product="default" msgid="2127552523124277664">"Info telefono"</string>
     <string name="sd_card_settings_label" product="nosdcard" msgid="8101475181301178428">"Archivio USB"</string>
-    <string name="sd_card_settings_label" product="default" msgid="5743100901106177102">"Scheda SD"</string>
-    <string name="proxy_settings_label" msgid="3271174136184391743">"Impostazioni proxy"</string>
-    <string name="cancel" msgid="6859253417269739139">"Annulla"</string>
-    <string name="settings_label" msgid="1626402585530130914">"Impostazioni"</string>
-    <string name="settings_label_launcher" msgid="8344735489639482340">"Impostazioni"</string>
-    <string name="settings_shortcut" msgid="3936651951364030415">"Scorciatoia Impostazioni"</string>
-    <string name="airplane_mode" msgid="8837269988154128601">"Modalità aereo"</string>
-    <string name="radio_controls_title" msgid="6889937359495515769">"Altro..."</string>
-    <string name="wireless_networks_settings_title" msgid="3643009077742794212">"Wireless e reti"</string>
-    <string name="radio_controls_summary" msgid="2998818677094465517">"Gestisci Wi-Fi, Bluetooth, modalità aereo, reti mobili e VPN"</string>
-    <string name="roaming" msgid="3596055926335478572">"Roaming dati"</string>
-    <string name="roaming_enable" msgid="3737380951525303961">"Connessione a servizi di dati in roaming"</string>
-    <string name="roaming_disable" msgid="1295279574370898378">"Connessione a servizi di dati in roaming"</string>
-    <string name="roaming_reenable_message" msgid="9141007271031717369">"Connettività dati persa: hai lasciato la rete del tuo operatore con il roaming dati disattivato."</string>
-    <string name="roaming_turn_it_on_button" msgid="4387601818162120589">"Attiva"</string>
-    <string name="roaming_warning" msgid="7625933694709170887">"Se consenti il roaming dei dati i costi potrebbero essere elevati."</string>
-    <string name="roaming_reenable_title" msgid="6068100976707316772">"Consentire il roaming dei dati?"</string>
-    <string name="networks" msgid="6333316876545927039">"Selezione operatore"</string>
-    <string name="sum_carrier_select" msgid="3616956422251879163">"Scegli un operatore di rete"</string>
     <string name="date_and_time_settings_title" msgid="3350640463596716780">"Data e ora"</string>
     <string name="date_and_time_settings_title_setup_wizard" msgid="2391530758339384324">"Imposta data e ora"</string>
     <string name="date_and_time_settings_summary" msgid="7095318986757583584">"Imposta data, ora, fuso orario e formati"</string>
@@ -878,7 +451,6 @@
     <string name="zone_list_menu_sort_alphabetically" msgid="5683377702671088588">"Ordine alfabetico"</string>
     <string name="zone_list_menu_sort_by_timezone" msgid="2720190443744884114">"Ordina per fuso orario"</string>
     <string name="date_picker_title" msgid="1338210036394128512">"Data"</string>
-    <string name="time_picker_title" msgid="483460752287255019">"Ora"</string>
     <string name="biometric_weak_improve_matching_title" msgid="8754080894393195194">"Migliora riconoscimento viso"</string>
     <string name="biometric_weak_liveliness_title" msgid="2661613702124561096">"Controllo vitalità"</string>
     <string name="biometric_weak_liveliness_summary" msgid="4199587000948042325">"Richiedi battito di ciglia durante sblocco"</string>
@@ -905,16 +477,6 @@
     <string name="slide_lock_delay_title">Ritardo schermata</string>
     <string name="slide_lock_timeout_delay_title">Dopo timeout schermo</string>
     <string name="slide_lock_screenoff_delay_title">Dopo spegnimento schermo</string>
-    <string name="slide_lock_delay_none">Nessuno</string>
-    <string name="slide_lock_delay_1s">1 secondo</string>
-    <string name="slide_lock_delay_5s">5 secondi</string>
-    <string name="slide_lock_delay_10s">10 secondi</string>
-    <string name="slide_lock_delay_15s">15 secondi</string>
-    <string name="slide_lock_delay_30s">30 secondi</string>
-    <string name="slide_lock_delay_1m">1 minuto</string>
-    <string name="slide_lock_delay_5m">5 minuti</string>
-    <string name="slide_lock_delay_10m">10 minuti</string>
-    <string name="slide_lock_delay_30m">30 minuti</string>
     <string name="crypt_keeper_settings_title" msgid="4219233835490520414">"Crittografia"</string>
     <string name="crypt_keeper_encrypt_title" product="tablet" msgid="1060273569887301457">"Esegui crittografia tablet"</string>
     <string name="crypt_keeper_encrypt_title" product="default" msgid="1878996487755806122">"Esegui crittografia telefono"</string>
@@ -1019,99 +581,31 @@
     <string name="device_admin_title" msgid="3562216873644263804">"Amministrazione dispositivo"</string>
     <string name="manage_device_admin" msgid="5059296715271077278">"Amministratori dispositivo"</string>
     <string name="manage_device_admin_summary" msgid="7672709110988761075">"Visualizza o disattiva amministratori dispositivo"</string>
-    <string name="privacy_settings" msgid="5446972770562918934">"Backup e ripristino"</string>
-    <string name="privacy_settings_title" msgid="4856282165773594890">"Backup e ripristino"</string>
-    <string name="backup_section_title" msgid="7952232291452882740">"Backup e ripristino"</string>
-    <string name="personal_data_section_title" msgid="7815209034443782061">"Dati personali"</string>
-    <string name="master_clear_title" msgid="5907939616087039756">"Ripristino dati di fabbrica"</string>
     <string name="master_clear_summary" product="tablet" msgid="4036344100254678429">"Cancella tutti i dati sul tablet"</string>
-    <string name="master_clear_summary" product="default" msgid="4986154238001088492">"Cancella tutti i dati sul telefono"</string>
     <string name="master_clear_desc" product="tablet" msgid="8317211882509025841">"Questa operazione cancellerà tutti i dati memorizzati nell\'"<b>"archivio interno"</b>" del tablet, compresi:"\n\n<li>"Il tuo account Google"</li>\n<li>"Dati e impostazioni del sistema e delle applicazioni"</li>\n<li>"Applicazioni scaricate"</li></string>
-    <string name="master_clear_desc" product="default" msgid="9165016501623540228">"Questa operazione cancellerà tutti i dati memorizzati nell\'"<b>"archivio interno"</b>" del telefono, compresi:"\n\n<li>"Il tuo account Google"</li>\n<li>"Dati e impostazioni del sistema e delle applicazioni"</li>\n<li>"Applicazioni scaricate"</li></string>
-    <string name="master_clear_accounts" product="default" msgid="6412857499147999073">\n\n"Al momento sei collegato ai seguenti account:"\n</string>
-    <string name="master_clear_desc_also_erases_external" msgid="1903185203791274237"><li>"Musica"</li>\n<li>"Foto"</li>\n<li>"Altri dati utente"</li></string>
     <string name="master_clear_desc_erase_external_storage" product="nosdcard" msgid="7744115866662613411">\n\n"Per cancellare musica, foto e altri dati dell\'utente, è necessario cancellare i dati dell\'"<b>"archivio USB"</b>"."</string>
-    <string name="master_clear_desc_erase_external_storage" product="default" msgid="4801026652617377093">\n\n"Per cancellare musica, foto e altri dati dell\'utente, è necessario cancellare i dati della "<b>"scheda SD"</b>"."</string>
     <string name="erase_external_storage" product="nosdcard" msgid="969364037450286809">"Cancella archivio USB"</string>
-    <string name="erase_external_storage" product="default" msgid="1397239046334307625">"Cancella scheda SD"</string>
     <string name="erase_external_storage_description" product="nosdcard" msgid="4728558173931599429">"Cancella tutti i dati nell\'archivio USB interno, come musica o foto"</string>
-    <string name="erase_external_storage_description" product="default" msgid="1737638779582964966">"Cancella tutti i dati sulla scheda SD, come musica o foto"</string>
     <string name="master_clear_button_text" product="tablet" msgid="3130786116528304116">"Reimposta tablet"</string>
-    <string name="master_clear_button_text" product="default" msgid="7550632653343157971">"Ripristina telefono"</string>
-    <string name="master_clear_final_desc" msgid="7209547812233487345">"Cancellare tutti i dati personali e le applicazioni scaricate? Questa azione è irreversibile."</string>
-    <string name="master_clear_final_button_text" msgid="5390908019019242910">"Cancella tutto"</string>
-    <string name="master_clear_gesture_prompt" msgid="1428645764883536750">"Inserisci la sequenza di sblocco"</string>
-    <string name="master_clear_gesture_explanation" msgid="2234954758550554549">"Per confermare un ripristino dati di fabbrica occorre inserire la sequenza di sblocco."</string>
-    <string name="master_clear_failed" msgid="7959646179737950703">"Nessun ripristino eseguito perché il servizio System Clear non è disponibile."</string>
-    <string name="master_clear_confirm_title" msgid="7572642091599403668">"Reimpostare?"</string>
-    <string name="backup_data_title" msgid="1239105919852668016">"Backup dei miei dati"</string>
-    <string name="backup_data_summary" msgid="9157861529438245957">"Effettua il backup di dati delle applicazioni, password Wi-Fi e altre impostazioni sui server di Google"</string>
-    <string name="backup_configure_account_title" msgid="3790872965773196615">"Account di backup"</string>
-    <string name="backup_configure_account_default_summary" msgid="2436933224764745553">"Al momento nessun account memorizza i dati di backup"</string>
-    <string name="auto_restore_title" msgid="5397528966329126506">"Ripristino automatico"</string>
-    <string name="auto_restore_summary" msgid="4235615056371993807">"In caso di reinstallazione di un\'applicazione, ripristina impostazioni e dati di backup"</string>
-    <string name="local_backup_password_title" msgid="3860471654439418822">"Password di backup desktop"</string>
-    <string name="local_backup_password_summary_none" msgid="4780151366296088113">"I backup desktop completi non sono attualmente protetti."</string>
-    <string name="local_backup_password_summary_change" msgid="3615162467655442441">"Seleziona per modificare o rimuovere la password per i backup desktop completi"</string>
-    <string name="backup_erase_dialog_title" msgid="1027640829482174106"></string>
-    <string name="backup_erase_dialog_message" msgid="7218566008912418809">"Interrompere il backup delle password Wi-Fi, dei segnalibri, di altre impostazioni e dei dati delle applicazioni, oltre a cancellare tutte le copie sui server di Google?"</string>
     <string name="header_category_system" msgid="2073558547468647128">"SISTEMA"</string>
-    <string name="dock_settings" msgid="1820107306693002541">"Dock"</string>
-    <string name="dock_settings_title" msgid="9161438664257429372">"Impostazioni dock"</string>
-    <string name="dock_audio_settings_title" msgid="3324750259959570305">"Audio"</string>
-    <string name="dock_settings_summary" msgid="455802113668982481">"Impostazioni audio per dock collegato"</string>
-    <string name="dock_audio_summary_desk" msgid="6487784412371139335">"Impostazioni per dock da tavolo collegato"</string>
-    <string name="dock_audio_summary_car" msgid="6740897586006248450">"Impostazioni per dock auto collegato"</string>
     <string name="dock_audio_summary_none" product="tablet" msgid="8215337394914283607">"Tablet non inserito nel dock"</string>
-    <string name="dock_audio_summary_none" product="default" msgid="289909253741048784">"Telefono non inserito nel dock"</string>
-    <string name="dock_audio_summary_unknown" msgid="4465059868974255693">"Impostazioni per dock collegato"</string>
-    <string name="dock_not_found_title" msgid="3290961741828952424">"Dock non trovato"</string>
     <string name="dock_not_found_text" product="tablet" msgid="9015625921245904495">"Devi inserire il tablet nel dock per poter configurare l\'audio del dock."</string>
-    <string name="dock_not_found_text" product="default" msgid="3882255773040651831">"Devi inserire il telefono nel dock per poter configurare l\'audio del dock."</string>
     <string name="dock_usb_audio_enable_title">Usa audio su USB del dock</string>
     <string name="dock_usb_audio_enable_summary_on">Usa l\' uscita passiva dell\' audio sul dock</string>
     <string name="dock_usb_audio_enable_summary_off">Non usare l\' uscita passiva dell\' audio sul dock</string>
-    <string name="dock_sounds_enable_title" msgid="885839627097024110">"Suono inserimento nel dock"</string>
     <string name="dock_sounds_enable_summary_on" product="tablet" msgid="838102386448981339">"Riproduci suono all\'inserimento o alla rimozione del tablet dal dock"</string>
-    <string name="dock_sounds_enable_summary_on" product="default" msgid="8491180514199743771">"Riproduci suono all\'inserimento o alla rimozione del telefono dal dock"</string>
     <string name="dock_sounds_enable_summary_off" product="tablet" msgid="5077843049805652363">"Non riprodurre suono all\'inserimento o alla rimozione del tablet dal dock"</string>
-    <string name="dock_sounds_enable_summary_off" product="default" msgid="3151046599205265919">"Non riprodurre suono all\'inserimento o alla rimozione del telefono dal dock"</string>
     <string name="dock_force_undock_title">"Forza rimozione da dock"</string>
     <string name="dock_force_undock_summary_no_dock" product="tablet">"Il tablet non è collegato ad una dock"</string>
     <string name="dock_force_undock_summary_no_dock" product="default">"Il telefono non è collegato ad una dock"</string>
     <string name="dock_force_undock_summary" product="tablet">"Rimuovi il tablet dalla dock station"</string>
     <string name="dock_force_undock_summary" product="default">"Rimuovi il telefono dalla dock station"</string>
-    <string name="date_and_time_settings_title" msgid="3350640463596716780">"Data e ora"</string>
-    <string name="date_and_time_settings_title_setup_wizard" msgid="2391530758339384324">"Imposta data e ora"</string>
-    <string name="date_and_time_settings_summary" msgid="7095318986757583584">"Imposta data, ora, fuso orario e formati"</string>
-    <string name="date_time_auto" msgid="7076906458515908345">"Data e ora automatiche"</string>
-    <string name="date_time_auto_summaryOn" msgid="4609619490075140381">"Utilizza l\'ora fornita dalla rete"</string>
-    <string name="date_time_auto_summaryOff" msgid="8698762649061882791">"Utilizza l\'ora fornita dalla rete"</string>
-    <string name="zone_auto" msgid="334783869352026648">"Fuso orario automatico"</string>
-    <string name="zone_auto_summaryOn" msgid="6142830927278458314">"Utilizza il fuso orario fornito dalla rete"</string>
-    <string name="zone_auto_summaryOff" msgid="2597745783162041390">"Utilizza il fuso orario fornito dalla rete"</string>
-    <string name="date_time_24hour" msgid="1193032284921000063">"Usa formato 24 ore"</string>
-    <string name="date_time_set_time" msgid="5716856602742530696">"Imposta ora"</string>
-    <string name="date_time_set_timezone" msgid="5045627174274377814">"Seleziona fuso orario"</string>
-    <string name="date_time_set_date" msgid="7021491668550232105">"Imposta data"</string>
-    <string name="date_time_date_format" msgid="436706100255870967">"Seleziona formato data"</string>
-    <string name="zone_list_menu_sort_alphabetically" msgid="5683377702671088588">"Ordine alfabetico"</string>
-    <string name="zone_list_menu_sort_by_timezone" msgid="2720190443744884114">"Ordina per fuso orario"</string>
-    <string name="date_picker_title" msgid="1338210036394128512">"Data"</string>
     <string name="time_picker_title" msgid="483460752287255019">"Ora"</string>
-    <string name="performance_settings_title">Prestazioni</string>
-    <string name="performance_settings_warning_title">"Procedere con cautela"</string>
-    <string name="performance_settings_warning">"Queste impostazioni sono sperimentali e qualsiasi loro cambiamento potrebbe causare instabilità, crash, perdita di dati e danni all\'hardware.\n\nNon inviate segnalazioni di bug se una qualsiasi di queste impostazioni è stata modificata."</string>
-    <string name="processor_title">"Processore"</string>
-    <string name="processor_summary">"Seleziona il governor e la velocità della CPU"</string>
-    <string name="cpu_cur_freq_title">"Frequenza CPU attuale"</string>
     <string name="cpu_governors_title">"Governor CPU"</string>
     <string name="cpu_min_freq_title">"Frequenza minima CPU"</string>
     <string name="cpu_max_freq_title">"Frequenza massima CPU"</string>
     <string name="cpu_set_on_boot">"Imposta all\'avvio"</string>
     <string name="cpu_set_on_boot_summary">"Reimposta i parametri selezionati ad ogni riavvio"</string>
-    <string name="pref_disable_bootanimation_title">Disabilita bootanimation</string>
-    <string name="pref_disable_bootanimation_summary">Non visualizza la bootanimation per un avvio più rapido</string>
     <string name="memory_management_title">"Gestione memoria"</string>
     <string name="memory_management_summary">"Personalizza l\'uso della memoria per modificare le prestazioni del sistema"</string>
     <string name="pref_zram_title">"zRam"</string>
@@ -1130,24 +624,6 @@
     <string name="device_status" msgid="607405385799807324">"Stato"</string>
     <string name="status_imei">IMEI</string>
     <string name="status_number" product="tablet" msgid="1138837891091222272">"Numero di telefono"</string>
-    <string name="status_number" product="default" msgid="5123197324870153205">"Il mio numero di telefono"</string>
-    <string name="status_min_number" msgid="3519504522179420597">"MIN"</string>
-    <string name="status_msid_number" msgid="909010114445780530">"MSID"</string>
-    <string name="status_prl_version" msgid="8499039751817386529">"Versione PRL"</string>
-    <string name="status_meid_number" msgid="1751442889111731088">"MEID"</string>
-    <string name="status_icc_id" msgid="943368755577172747">"ICCID"</string>
-    <string name="status_network_type" msgid="3279383550222116235">"Tipo di rete cellulare"</string>
-    <string name="status_data_state" msgid="5503181397066522950">"Stato rete cellulare"</string>
-    <string name="status_service_state" msgid="2323931627519429503">"Stato servizio"</string>
-    <string name="status_signal_strength" msgid="3732655254188304547">"Intensità segnale"</string>
-    <string name="status_roaming" msgid="2638800467430913403">"Roaming.."</string>
-    <string name="status_operator" msgid="2274875196954742087">"Rete"</string>
-    <string name="status_wifi_mac_address" msgid="33109409206264790">"Indirizzo MAC Wi-Fi"</string>
-    <string name="status_bt_address" msgid="4195174192087439720">"Indirizzo Bluetooth"</string>
-    <string name="status_serial_number" msgid="2257111183374628137">"Numero di serie"</string>
-    <string name="status_unavailable" msgid="7862009036663793314">"Non disponibile"</string>
-    <string name="status_up_time" msgid="7294859476816760399">"Tempo di attività"</string>
-    <string name="status_awake_time" msgid="2393949909051183652">"Tempo di attività"</string>
     <string name="system_update_settings_list_item_title" msgid="3342887311059985961">"Aggiornamenti sistema"</string>
     <string name="system_update_settings_list_item_summary" msgid="3853057315907710747"></string>
     <string name="donate_settings_title">Donazione</string>
@@ -1354,8 +830,6 @@
     <string name="radio_info_signal_location_label" msgid="16475158265551708">"Posizione:"</string>
     <string name="radio_info_neighboring_location_label" msgid="2385625674055934880">"CID adiacente:"</string>
     <string name="radio_info_data_attempts_label" msgid="1731106244577323381">"Tentativi dati:"</string>
-    <string name="wifi_p2p_settings_title" msgid="5933614000444751775">"Wi-Fi Direct"</string>
-    <string name="wifi_p2p_settings_summary" msgid="6653169526746701975">"Imposta connettività peer-to-peer"</string>
     <string name="bluetooth_quick_toggle_title" msgid="1037056952714061893">"Bluetooth"</string>
     <string name="bluetooth_quick_toggle_summary" msgid="5293641680139873341">"Attiva Bluetooth"</string>
     <string name="bluetooth_settings" msgid="1810521656168174329">"Bluetooth"</string>
@@ -1363,9 +837,7 @@
     <string name="bluetooth_settings_summary" msgid="2091062709530570462">"Gestisci le connessioni, imposta il nome e la rilevabilità del dispositivo"</string>
     <string name="bluetooth_pairing_request" msgid="6385750334766370310">"Richiesta accoppiamento Bluetooth"</string>
     <string name="bluetooth_enter_pin_msg" msgid="5698297871117529185">"Per eseguire l\'accoppiamento con <xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>, digita il PIN richiesto del dispositivo:"</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"Per eseguire l\'accoppiamento con <xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>, digita la passkey richiesta del dispositivo:"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="7222713483058171357">"Il PIN contiene lettere o simboli"</string>
-    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"Di solito 0000 o 1234"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="4637977124526813470">"Potrebbe inoltre essere necessario digitare questo PIN sull\'altro dispositivo."</string>
     <string name="bluetooth_enter_passkey_other_device" msgid="2798719004030279602">"Potrebbe inoltre essere necessario digitare questa passkey sull\'altro dispositivo."</string>
     <string name="bluetooth_confirm_passkey_msg" msgid="3708312912841950052">"Per l\'accoppiamento con:&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;Assicurati che sia visualizzata questa passkey:&lt;br&gt;&lt;b&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/b&gt;"</string>
@@ -1541,7 +1013,6 @@
     <string name="wifi_p2p_settings_title" msgid="400503541488064638">"Wi-Fi Direct"</string>
     <string name="wifi_p2p_device_info" msgid="3191876744469364173">"Informazioni dispositivo"</string>
     <string name="wifi_p2p_persist_network" msgid="1646424791818168590">"Memorizza questa connessione"</string>
-    <string name="wifi_p2p_menu_search" msgid="7189970585393813135">"Cerca"</string>
     <string name="wifi_p2p_menu_create_group" msgid="7595229161883902082">"Crea gruppo"</string>
     <string name="wifi_p2p_menu_remove_group" msgid="4844634506540667517">"Rimuovi gruppo"</string>
     <string name="wifi_p2p_available_devices" msgid="5943352520059654483">"Dispositivi disponibili"</string>
@@ -1629,7 +1100,6 @@
     <string name="roaming_reenable_title" msgid="7626425894611573131">"Attenzione"</string>
     <string name="networks" msgid="6333316876545927039">"Selezione operatore"</string>
     <string name="sum_carrier_select" msgid="3616956422251879163">"Scegli un operatore di rete"</string>
-    <string name="sync_settings" msgid="9186125469300013491">"Account e sincronizzazione"</string>
     <string name="wifi_p2p_menu_search" msgid="3436429984738771974">"Cerca dispositivi"</string>
     <string name="wifi_p2p_menu_searching" msgid="2396704492143633876">"Ricerca…"</string>
     <string name="wifi_p2p_menu_rename" msgid="8448896306960060415">"Rinomina dispositivo"</string>
@@ -2714,4 +2184,23 @@
     <string name="help_label" msgid="1107174367904110532">"Guida"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"Cell broadcast"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Seleziona i tipi di avvisi di emergenza da visualizzare."</string>
+
+    <string name="slide_lock_delay_1s">1 secondo</string>
+
+    <string name="slide_lock_delay_10s">10 secondi</string>
+
+    <string name="slide_lock_delay_15s">15 secondi</string>
+
+    <string name="slide_lock_delay_5s">5 secondi</string>
+
+    <string name="slide_lock_delay_30s">30 secondi</string>
+
+    <string name="slide_lock_delay_5m">5 minuti</string>
+
+    <string name="slide_lock_delay_1m">1 minuto</string>
+
+    <string name="slide_lock_delay_30m">30 minuti</string>
+
+    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"Per eseguire l\'accoppiamento con <xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>, digita la passkey richiesta del dispositivo:"</string>
+
 </resources>

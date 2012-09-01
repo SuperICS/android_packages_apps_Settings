@@ -31,7 +31,6 @@ import android.net.wifi.WifiConfiguration.AuthAlgorithm;
 import android.net.wifi.WifiConfiguration.IpAssignment;
 import android.net.wifi.WifiConfiguration.KeyMgmt;
 import android.net.wifi.WifiConfiguration.ProxySettings;
-import android.net.wifi.WifiConfiguration.Status;
 import android.net.wifi.WifiInfo;
 import android.os.Handler;
 import android.security.Credentials;
@@ -40,7 +39,6 @@ import android.text.Editable;
 import android.text.InputType;
 import android.text.TextWatcher;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -100,8 +98,6 @@ public class WifiConfigController implements TextWatcher,
     public static final int WIFI_EAP_METHOD_TLS  = 1;
     public static final int WIFI_EAP_METHOD_TTLS = 2;
     public static final int WIFI_EAP_METHOD_PWD  = 3;
-
-    private static final String TAG = "WifiConfigController";
 
     private Spinner mIpSettingsSpinner;
     private TextView mIpAddressView;
@@ -585,30 +581,6 @@ public class WifiConfigController implements TextWatcher,
         }
     }
     
-    private void showNetworkSetupFields() {
-        mView.findViewById(R.id.setup_fields).setVisibility(View.VISIBLE);
-
-        if (mNetworkSetupSpinner == null) {
-            mNetworkSetupSpinner = (Spinner) mView.findViewById(R.id.network_setup);
-            mNetworkSetupSpinner.setOnItemSelectedListener(this);
-        }
-
-        mView.findViewById(R.id.l_method).setVisibility(View.VISIBLE);
-        mView.findViewById(R.id.l_identity).setVisibility(View.VISIBLE);
-
-        if (mEapMethodSpinner.getSelectedItemPosition() == WIFI_EAP_METHOD_PWD){
-            mView.findViewById(R.id.l_phase2).setVisibility(View.GONE);
-            mView.findViewById(R.id.l_ca_cert).setVisibility(View.GONE);
-            mView.findViewById(R.id.l_user_cert).setVisibility(View.GONE);
-            mView.findViewById(R.id.l_anonymous).setVisibility(View.GONE);
-        } else {
-            mView.findViewById(R.id.l_phase2).setVisibility(View.VISIBLE);
-            mView.findViewById(R.id.l_ca_cert).setVisibility(View.VISIBLE);
-            mView.findViewById(R.id.l_user_cert).setVisibility(View.VISIBLE);
-            mView.findViewById(R.id.l_anonymous).setVisibility(View.VISIBLE);
-        }
-    }
-
     private void showIpConfigFields() {
         WifiConfiguration config = null;
 
@@ -788,8 +760,6 @@ public class WifiConfigController implements TextWatcher,
             showSecurityFields();
         } else if (parent == mEapMethodSpinner) {
             showSecurityFields();
-        } else if (parent == mNetworkSetupSpinner) {
-            showNetworkSetupFields();
         } else if (parent == mProxySettingsSpinner) {
             showProxyFields();
         } else {

@@ -417,9 +417,7 @@
     <string name="bluetooth_settings_summary" msgid="2091062709530570462">"Bağlantıları yönet, cihaz adını gir ve keşfedilebilirlik ayarını yap"</string>
     <string name="bluetooth_pairing_request" msgid="6385750334766370310">"Bluetooth eşleşme isteği"</string>
     <string name="bluetooth_enter_pin_msg" msgid="5698297871117529185">"<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g> ile eşleştirmek için cihazın istenen PIN\'ini yazın:"</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g> ile eşleştirmek için cihazın istenen passkey kodunu yazın:"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="7222713483058171357">"PIN, harfler veya simgeler içerir"</string>
-    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"Genellikle 0000 veya 1234"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="4637977124526813470">"Bu PIN\'i diğer cihazda da yazmanız gerekebilir."</string>
     <string name="bluetooth_enter_passkey_other_device" msgid="2798719004030279602">"Bu passkey kodunu diğer cihazda da girmeniz gerekebilir."</string>
     <string name="bluetooth_confirm_passkey_msg" msgid="3708312912841950052">"Şu cihazla eşleştirmek için:&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;Şu passkey kodunun göründüğünden emin olun:&lt;br&gt;&lt;b&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/b&gt;"</string>
@@ -1754,8 +1752,6 @@
     <!-- START: Quiet hours #CM -->
     <string name="quiet_hours_title">Sessiz saatler</string>
     <string name="quiet_hours_summary">Cihazın sessiz saatlerini ayarlayın</string>
-    <string name="quiet_hours_note_title">Not</string>
-    <string name="quiet_hours_note_summary">Gelen çağrılar sessiz saatler süresince normal şekilde çalışır</string>
     <string name="quiet_hours_enabled">Sessiz saatleri etkinleştir</string>
     <string name="quiet_hours_enabled_on">Sessiz saatleri zorunlu kıl</string>
     <string name="quiet_hours_enabled_off">Bildirimler normal şekilde çalışır</string>
@@ -2022,25 +2018,9 @@
     <string name="slide_lock_delay_title">Ekran kilidi gecikmesi</string>
     <string name="slide_lock_timeout_delay_title">Zaman aşımından sonraki gecikme</string>
     <string name="slide_lock_screenoff_delay_title">Kapandıktan sonraki gecikme</string>
-    <string name="slide_lock_delay_none">Hiçbiri</string>
-    <string name="slide_lock_delay_1s">1 saniye</string>
-    <string name="slide_lock_delay_5s">5 saniye</string>
-    <string name="slide_lock_delay_10s">10 saniye</string>
-    <string name="slide_lock_delay_15s">15 saniye</string>
-    <string name="slide_lock_delay_30s">30 saniye</string>
-    <string name="slide_lock_delay_1m">1 dakika</string>
-    <string name="slide_lock_delay_5m">5 dakika</string>
-    <string name="slide_lock_delay_10m">10 dakika</string>
-    <string name="slide_lock_delay_30m">30 dakika</string>
     <!-- END: Screen security - Screen security  #CM -->
 
     <!-- START: Performance settings #CM -->
-    <string name="performance_settings_title">Performans</string>
-    <string name="performance_settings_warning_title">Dikkatli Olun</string>
-    <string name="performance_settings_warning">Buradaki ayarlar sadece DENEYİMLİ KULLANICILAR içindir. Yaptığınız bir değişiklik sistemin kararsız çalışmasına sebep olabilir ve buna bağlı olarak çökmeler, yeniden başlatma, veri kaybı ve donanım hataları oluşabilir.\n\nLütfen, varsayılan değerleri değiştirdikten sonra bize hata raporu göndermeyin.</string>
-    <string name="processor_title">İşlemci</string>
-    <string name="processor_summary">İşlemci yöneticileri ve frekans ayarları</string>
-    <string name="cpu_cur_freq_title">Şimdiki frekans</string>
     <string name="cpu_governors_title">İşlemci yöneticisi</string>
     <string name="cpu_governors_summary">%S</string>
     <string name="cpu_min_freq_title">En düşük frekans</string>
@@ -2206,4 +2186,8 @@
     <string name="help_label" msgid="1107174367904110532">"Yardım"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"Hücre yayınları"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Görüntülenecek acil durum uyarı türünü seçin."</string>
+    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"Genellikle 0000 veya 1234"</string>
+
+    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g> ile eşleştirmek için cihazın istenen passkey kodunu yazın:"</string>
+
 </resources>

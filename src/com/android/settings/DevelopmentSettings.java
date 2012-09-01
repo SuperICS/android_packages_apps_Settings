@@ -34,6 +34,7 @@ import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
+import android.content.pm.VerifierDeviceIdentity;
 import android.os.AsyncTask;
 import android.os.BatteryManager;
 import android.os.Build;
@@ -86,6 +87,7 @@ public class DevelopmentSettings extends PreferenceFragment
     private static final String DEBUG_APP_KEY = "debug_app";
     private static final String WAIT_FOR_DEBUGGER_KEY = "wait_for_debugger";
     private static final String STRICT_MODE_KEY = "strict_mode";
+    private static final String POINTER_LOCATION_KEY = "show_pointer";
     private static final String SHOW_TOUCHES_KEY = "show_touches";
     private static final String SHOW_SCREEN_UPDATES_KEY = "show_screen_updates";
     private static final String DISABLE_OVERLAYS_KEY = "disable_overlays";
@@ -167,9 +169,6 @@ public class DevelopmentSettings extends PreferenceFragment
     private Dialog mEnableDialog;
     private Dialog mAdbDialog;
 
-    private String mCurrentDialog;
-    private Object mSelectedRootValue;
-
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -193,7 +192,7 @@ public class DevelopmentSettings extends PreferenceFragment
         mAllPrefs.add(mDebugAppPref);
         mWaitForDebugger = findAndInitCheckboxPref(WAIT_FOR_DEBUGGER_KEY);
         mStrictMode = findAndInitCheckboxPref(STRICT_MODE_KEY);
-        mPointerLocation = findAndInitCheckboxPref(POINTER_LOCATION_KEY);
+        findAndInitCheckboxPref(POINTER_LOCATION_KEY);
         mShowTouches = findAndInitCheckboxPref(SHOW_TOUCHES_KEY);
         mShowScreenUpdates = findAndInitCheckboxPref(SHOW_SCREEN_UPDATES_KEY);
         mDisableOverlays = findAndInitCheckboxPref(DISABLE_OVERLAYS_KEY);
@@ -317,6 +316,8 @@ public class DevelopmentSettings extends PreferenceFragment
                 getPreferenceScreen().removePreference(allowRoot);
             }
         }
+    }
+    
     private void setPrefsEnabledState(boolean enabled) {
         for (int i = 0; i < mAllPrefs.size(); i++) {
             Preference pref = mAllPrefs.get(i);
@@ -368,10 +369,8 @@ public class DevelopmentSettings extends PreferenceFragment
         mHaveDebugSettings = false;
         updateCheckBox(mEnableAdb, Settings.Secure.getInt(cr,
                 Settings.Secure.ADB_ENABLED, 0) != 0);
-        mAdbOverNetwork.setChecked(Settings.Secure.getInt(cr,
+        updateCheckBox(mAdbOverNetwork, Settings.Secure.getInt(cr,
                 Settings.Secure.ADB_PORT, 0) > 0);
-
-        mKeepScreenOn.setChecked(Settings.System.getInt(cr,
         updateCheckBox(mKeepScreenOn, Settings.System.getInt(cr,
                 Settings.System.STAY_ON_WHILE_PLUGGED_IN, 0) != 0);
         updateCheckBox(mEnforceReadExternal, isPermissionEnforced(context, READ_EXTERNAL_STORAGE));
@@ -512,16 +511,6 @@ public class DevelopmentSettings extends PreferenceFragment
 
     private void updateStrictModeVisualOptions() {
         updateCheckBox(mStrictMode, currentStrictModeActiveIndex() == 1);
-    }
-
-    private void writePointerLocationOptions() {
-        Settings.System.putInt(getActivity().getContentResolver(),
-                Settings.System.POINTER_LOCATION, mPointerLocation.isChecked() ? 1 : 0);
-    }
-
-    private void updatePointerLocationOptions() {
-        updateCheckBox(mPointerLocation, Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.POINTER_LOCATION, 0) != 0);
     }
 
     private void writeShowTouchesOptions() {
@@ -776,7 +765,7 @@ public class DevelopmentSettings extends PreferenceFragment
     }
             
     private void updateEnableTracesOptions() {
-        String strValue = SystemProperties.get(Trace.PROPERTY_TRACE_TAG_ENABLEFLAGS);
+        SystemProperties.get(Trace.PROPERTY_TRACE_TAG_ENABLEFLAGS);
         long flags = SystemProperties.getLong(Trace.PROPERTY_TRACE_TAG_ENABLEFLAGS, 0);
         String[] values = mEnableTracesPref.getEntryValues();
         int numSet = 0;
@@ -875,8 +864,6 @@ public class DevelopmentSettings extends PreferenceFragment
                         .setPositiveButton(android.R.string.yes, this)
                         .setNegativeButton(android.R.string.no, this)
                         .show();
-                mCurrentDialog = ENABLE_ADB;
-                mOkDialog.setOnDismissListener(this);
                 mAdbDialog.setOnDismissListener(this);
             } else {
                 Settings.Secure.putInt(getActivity().getContentResolver(),
@@ -884,17 +871,16 @@ public class DevelopmentSettings extends PreferenceFragment
             }
         } else if (preference == mAdbOverNetwork) {
             if (mAdbOverNetwork.isChecked()) {
-                mOkClicked = false;
-                if (mOkDialog != null) dismissDialog();
-                mOkDialog = new AlertDialog.Builder(getActivity()).setMessage(
+                mDialogClicked = false;
+                if (mAdbDialog != null) dismissDialogs();
+                mAdbDialog = new AlertDialog.Builder(getActivity()).setMessage(
                     getResources().getString(R.string.adb_over_network_warning))
                     .setTitle(R.string.adb_over_network)
                     .setIconAttribute(android.R.attr.alertDialogIcon)
                     .setPositiveButton(android.R.string.yes, this)
                     .setNegativeButton(android.R.string.no, this)
                     .show();
-                mCurrentDialog = ADB_TCPIP;
-                mOkDialog.setOnDismissListener(this);
+                mAdbDialog.setOnDismissListener(this);
             } else {
                 Settings.Secure.putInt(getActivity().getContentResolver(),
                         Settings.Secure.ADB_PORT, -1);
@@ -972,18 +958,16 @@ public class DevelopmentSettings extends PreferenceFragment
         } else if (preference == mRootAccess) {
             if ("0".equals(SystemProperties.get(ROOT_ACCESS_PROPERTY, "1"))
                     && !"0".equals(newValue)) {
-                mSelectedRootValue = newValue;
-                mOkClicked = false;
-                if (mOkDialog != null) dismissDialog();
-                mOkDialog = new AlertDialog.Builder(getActivity()).setMessage(
+                mDialogClicked = false;
+                if (mAdbDialog != null) dismissDialogs();
+                mAdbDialog = new AlertDialog.Builder(getActivity()).setMessage(
                     getResources().getString(R.string.root_access_warning_message))
                     .setTitle(R.string.root_access_warning_title)
                     .setIconAttribute(android.R.attr.alertDialogIcon)
                     .setPositiveButton(android.R.string.yes, this)
                     .setNegativeButton(android.R.string.no, this)
                     .show();
-                mCurrentDialog = ROOT_ACCESS_KEY;
-                mOkDialog.setOnDismissListener(this);
+                mAdbDialog.setOnDismissListener(this);
             } else {
                 writeRootAccessOptions(newValue);
             }

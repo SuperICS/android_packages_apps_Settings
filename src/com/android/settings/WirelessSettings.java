@@ -22,7 +22,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
-import android.net.wifi.p2p.WifiP2pManager;
 import android.nfc.NfcAdapter;
 import android.os.Bundle;
 import android.os.SystemProperties;
@@ -30,14 +29,10 @@ import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.Switch;
 
 import com.android.internal.telephony.TelephonyIntents;
 import com.android.internal.telephony.TelephonyProperties;
 import com.android.settings.nfc.NfcEnabler;
-import com.android.settings.NsdEnabler;
 
 public class WirelessSettings extends SettingsPreferenceFragment {
 
@@ -153,15 +148,6 @@ public class WirelessSettings extends SettingsPreferenceFragment {
         // Remove Mobile Network Settings if it's a wifi-only device.
         if (Utils.isWifiOnly(getActivity())) {
             getPreferenceScreen().removePreference(findPreference(KEY_MOBILE_NETWORK_SETTINGS));
-        }
-
-        WifiP2pManager p2p = (WifiP2pManager) activity.getSystemService(Context.WIFI_P2P_SERVICE);
-
-        if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_WIFI_DIRECT)) {
-            getPreferenceScreen().removePreference(wifiP2p);
-            getPreferenceScreen().removePreference(findPreference(KEY_WIFI_P2P_SETTINGS));
-        } else {
-            mWifiP2pEnabler = new WifiP2pEnabler(activity, wifiP2p);
         }
 
         // Enable Proxy selector settings if allowed.

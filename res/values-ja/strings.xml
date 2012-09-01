@@ -417,9 +417,7 @@
     <string name="bluetooth_settings_summary" msgid="2091062709530570462">"接続、端末名、検出の許可を設定する"</string>
     <string name="bluetooth_pairing_request" msgid="6385750334766370310">"Bluetoothのペア設定リクエスト"</string>
     <string name="bluetooth_enter_pin_msg" msgid="5698297871117529185">"<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>をペアに設定するには、デバイスに必要なパスキーを入力してください:"</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>をペアに設定するには、デバイスに必要なパスキーを入力してください:"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="7222713483058171357">"PINに文字か記号が含まれる"</string>
-    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"通常は0000または1234です"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="4637977124526813470">"もう一方のデバイスでも、このPINの入力が必要な場合があります。"</string>
     <string name="bluetooth_enter_passkey_other_device" msgid="2798719004030279602">"もう一方のデバイスでも、このパスキーの入力が必要な場合があります。"</string>
     <string name="bluetooth_confirm_passkey_msg" msgid="3708312912841950052">"次のデバイスをペアに設定する場合:&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;次のパスキーが表示されていることを確認してください:&lt;br&gt;&lt;b&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/b&gt;"</string>
@@ -1840,14 +1838,7 @@
     <string name="combined_bar_auto_hide_summary">フルスクリーンアプリを表示中にコンバインドバーを隠せるようにする</string>
 
     <!-- Navigation Bar #CM -->
-    <string name="navigation_bar_title">ナビゲーションバー</string>
 
-    <string name="navigation_bar_help_text">1 - 編集するにはロックアイコンをタップします\n\n2 - 機能の割り当てや変更をするボタンをタップします\n\n3 - 並びを変更するには長押しします\n\n4 - 保存するために再びロックアイコンをタップします\n\n5 - システムのデフォルトに戻すにはリセットボタンをタップします\n\n</string>
-    <string name="navigation_bar_tips">&#8226; アクションは一度に一つのボタンにしか割り当てられません\n\n&#8226; ホームボタンは変更できません\n\n&#8226; サイドボタンは並び替えできません</string>
-    <string name="navigation_bar_tips_title">クィックチップス</string>
-    <string name="navigation_bar_reset_message">現在の設定を破棄し、デフォルトに戻しますか?</string>
-    <string name="navigation_bar_save_message">ナビゲーションバーの設定を保存しました</string>
-    <string name="navigation_bar_reset_toast">ナビゲーションバーをデフォルトに戻しました</string>
 
     <!-- Power Widget #CM -->
     <string name="power_widget_title">電源管理ウィジェット</string>
@@ -2073,32 +2064,16 @@
     <string name="slide_lock_timeout_delay_title">画面タイムアウト時の遅延</string>
     <string name="slide_lock_timeout_delay_summary">画面がタイムアウトしてからロックするまでの時間</string>
     <string name="slide_lock_screenoff_delay_title">画面オフ時の遅延</string>
-    <string name="slide_lock_delay_none">なし</string>
-    <string name="slide_lock_delay_1s">1秒</string>
-    <string name="slide_lock_delay_5s">5秒</string>
-    <string name="slide_lock_delay_10s">10秒</string>
-    <string name="slide_lock_delay_15s">15秒</string>
-    <string name="slide_lock_delay_30s">30秒</string>
-    <string name="slide_lock_delay_1m">1分</string>
-    <string name="slide_lock_delay_5m">5分</string>
-    <string name="slide_lock_delay_10m">10分</string>
-    <string name="slide_lock_delay_30m">30分</string>
 
     <!-- Performance settings #CM -->
-    <string name="performance_settings_title">パフォーマンス</string>
 
     <!-- Performance Settings : Warning dialog #CM -->
-    <string name="performance_settings_warning_title">注意してください</string>
-    <string name="performance_settings_warning">これらの設定は実験中のものを含み、変更により不安定、クラッシュ、データの損失、あるいはハードウェアの故障を引き起こす可能性があります。\n\nこれらの設定を変更した後にバグリポートをしないでください。</string>
 
     <!-- Performance Settings : Processor Settings -->
     <!-- Performance Settings : Processor settings title -->
-    <string name="processor_title">プロセッサ</string>
     <!-- Performance Settings : Processor settings summary. -->
-    <string name="processor_summary">調整タイプとクロックの設定</string>
 
     <!-- Performance Settings : Processor settings sub items -->
-    <string name="cpu_cur_freq_title">現在のCPUクロック</string>
     <string name="cpu_governors_title">CPU調整</string>
     <string name="cpu_min_freq_title">最小CPUクロック</string>
     <string name="cpu_max_freq_title">最大CPUクロック</string>
@@ -2193,8 +2168,6 @@
     <!-- Quiet hours -->
     <string name="quiet_hours_title">サイレントタイム</string>
     <string name="quiet_hours_summary">デバイスがサイレントモードになる時間の参照や変更</string>
-    <string name="quiet_hours_note_title">ノート</string>
-    <string name="quiet_hours_note_summary">着信はサイレントタイム中でも通常の挙動になります</string>
     <string name="quiet_hours_enabled">サイレントタイムを有効にする</string>
     <string name="quiet_hours_enabled_on">サイレントタイムが機能します</string>
     <string name="quiet_hours_enabled_off">通知は平常通り行われます</string>
@@ -2288,4 +2261,8 @@
     <string name="help_label" msgid="1107174367904110532">"ヘルプ"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"エリアメール"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"表示する緊急警報の種類を選択してください。"</string>
+    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"通常は0000または1234です"</string>
+
+    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>をペアに設定するには、デバイスに必要なパスキーを入力してください:"</string>
+
 </resources>

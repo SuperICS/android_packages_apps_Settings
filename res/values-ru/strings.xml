@@ -415,9 +415,7 @@
     <string name="bluetooth_settings_summary" msgid="2091062709530570462">"Настройка подключений, видимости и имени устройства"</string>
     <string name="bluetooth_pairing_request" msgid="6385750334766370310">"Запрос сопряжения Bluetooth"</string>
     <string name="bluetooth_enter_pin_msg" msgid="5698297871117529185">"Для подключения к устройству <xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g> введите PIN-код:"</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"Для подключения к устройству <xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g> введите пароль:"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="7222713483058171357">"PIN-код содержит буквы или символы"</string>
-    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"Обычно 0000 или 1234"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="4637977124526813470">"Возможно, потребуется ввести PIN-код на другом устройстве."</string>
     <string name="bluetooth_enter_passkey_other_device" msgid="2798719004030279602">"Возможно, потребуется ввести ключ доступа на другом устройстве."</string>
     <string name="bluetooth_confirm_passkey_msg" msgid="3708312912841950052">"Для подключения к устройству&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;на нем должен отображаться этот код доступа:&lt;br&gt;&lt;b&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>"</string>
@@ -598,7 +596,6 @@
     <string name="wifi_p2p_menu_search" msgid="3436429984738771974">"Поиск устройств"</string>
     <string name="wifi_p2p_menu_create_group" msgid="7595229161883902082">"Создать группу"</string>
     <string name="wifi_p2p_menu_remove_group" msgid="4844634506540667517">"Удалить группу"</string>
-    <string name="wifi_p2p_menu_advanced" msgid="2578792521809265949">"Дополнительно"</string>
     <string name="wifi_p2p_available_devices" msgid="5943352520059654483">"Список"</string>
     <string name="wifi_p2p_on_summary">Вкл. Wi-Fi Direct</string>
     <string name="wifi_p2p_settings">Настройки Wi-Fi Direct</string>
@@ -683,7 +680,6 @@
     <string name="dock_force_undock_summary_no_dock" product="default">Телефон не подключен к док-станции</string>
     <string name="dock_force_undock_summary" product="tablet">Отключить планшетный ПК от док-станции</string>
     <string name="dock_force_undock_summary" product="default">Отключить телефон от док-станции</string>
-    <string name="sync_settings" msgid="9186125469300013491">"Аккаунты"</string>
     <string name="account_settings" msgid="6403589284618783461">"Аккаунты"</string>
     <string name="search_settings" msgid="1910951467596035063">"Поиск"</string>
     <string name="search_settings_summary" msgid="9205656546570654169">"Настроить параметры и управлять историей поиска"</string>
@@ -1843,14 +1839,7 @@
     <string name="combined_bar_auto_hide_summary">Скрывать объединённую панель при показе полноэкранного приложения</string>
 
     <!-- Navigation Bar #CM -->
-    <string name="navigation_bar_title">Строка навигации</string>
 
-    <string name="navigation_bar_help_text">1 - Для редактирования, нажмите значок замка\n2 - Нажмите любую кнопку, чтобы задать или изменить функциональность\n3 - Долгим нажатием на любой кнопке можно изменить её порядок\n4 - Для сохранения нажмите на значок замка\n5 - Для сброса настроек, нажмите кнопку сброса\n</string>
-    <string name="navigation_bar_tips">&#8226; Одно действие может быть назначено только на одну кнопку\n\n&#8226; Кнопка Домой не может быть изменена\n\n&#8226; Боковые кнопки не могут быть изменены</string>
-    <string name="navigation_bar_tips_title">Быстрые подсказки</string>
-    <string name="navigation_bar_reset_message">Удалить текущие настройки и восстановить значения по умолчанию?</string>
-    <string name="navigation_bar_save_message">Настройки строки навигации сохранены</string>
-    <string name="navigation_bar_reset_toast">Настройки строки навигации сброшены по умолчанию</string>
 
     <!-- Power Widget #CM -->
     <string name="power_widget_title">Кнопки в панели уведомлений</string>
@@ -2112,8 +2101,6 @@
     <!-- Profiles - Quiet hours -->
     <string name="quiet_hours_title">Тихие часы</string>
     <string name="quiet_hours_summary">Настройка часов, когда устройство должно быть тихим</string>
-    <string name="quiet_hours_note_title">Примечание</string>
-    <string name="quiet_hours_note_summary">Входящие звонки будут вести себя как обычно во время тихих часов</string>
     <string name="quiet_hours_enabled">Включить тихие часы</string>
     <string name="quiet_hours_enabled_on">Тихие часы активированы</string>
     <string name="quiet_hours_enabled_off">Уведомления будут вести себя как обычно</string>
@@ -2144,20 +2131,14 @@
     <string name="safe_headset_restore_summary">Уменьшать громкость до 55% при первом подключении наушников</string>
 
     <!-- Performance settings #CM -->
-    <string name="performance_settings_title">Производительность</string>
 
     <!-- Performance Settings : Warning dialog #CM -->
-    <string name="performance_settings_warning_title">Соблюдайте осторожность</string>
-    <string name="performance_settings_warning">Эти настройки включены для экспериментов и любые внесённые изменения могут вызвать нестабильную работу, сбои, потерю данных или аппаратные сбои.\n\nМы просим не слать баг-репорты, если Вы что-то меняли в этих настройках.</string>
 
     <!-- Performance Settings : Processor Settings -->
     <!-- Performance Settings : Processor settings title -->
-    <string name="processor_title">Процессор</string>
     <!-- Performance Settings : Processor settings summary. -->
-    <string name="processor_summary">Изменение режимов и частот ЦП</string>
 
     <!-- Performance Settings : Processor settings sub items -->
-    <string name="cpu_cur_freq_title">Текущая частота ЦП</string>
     <string name="cpu_governors_title">Режим ЦП</string>
     <string name="cpu_min_freq_title">Минимальная частота ЦП</string>
     <string name="cpu_max_freq_title">Максимальная частота ЦП</string>
@@ -2325,4 +2306,40 @@
     <string name="help_label" msgid="1107174367904110532">"Справка"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"Широковещательная передача сообщений"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Выберите типы экстренных оповещений на экране."</string>
+    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"Обычно 0000 или 1234"</string>
+
+    <string name="slide_lock_delay_none">Нет</string>
+
+    <string name="slide_lock_delay_5s">5 секунд</string>
+
+    <string name="slide_lock_delay_10s">10 секунд</string>
+
+    <string name="slide_lock_delay_1s">1 секунда</string>
+
+    <string name="slide_lock_delay_15s">15 секунд</string>
+
+    <string name="slide_lock_delay_1m">1 минута</string>
+
+    <string name="slide_lock_delay_30s">30 секунд</string>
+
+    <string name="slide_lock_delay_5m">5 минут</string>
+
+    <string name="slide_lock_delay_30m">30 минут</string>
+
+    <string name="performance_settings_title">Производительность</string>
+
+    <string name="performance_settings_warning_title">Соблюдайте осторожность</string>
+
+    <string name="performance_settings_warning">Эти настройки включены для экспериментов и любые внесённые изменения могут вызвать нестабильную работу, сбои, потерю данных или аппаратные сбои.\n\nМы просим не слать баг-репорты, если Вы что-то меняли в этих настройках.</string>
+
+    <string name="processor_title">Процессор</string>
+
+    <string name="processor_summary">Изменение режимов и частот ЦП</string>
+
+    <string name="cpu_cur_freq_title">Текущая частота ЦП</string>
+
+    <string name="slide_lock_delay_10m">10 минут</string>
+
+    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"Для подключения к устройству <xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g> введите пароль:"</string>
+
 </resources>

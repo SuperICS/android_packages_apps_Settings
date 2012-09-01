@@ -662,8 +662,6 @@ public class ChartDataUsageView extends ChartView {
                 tickJump = 2 * GB_IN_BYTES;
             }
 
-            // target about 16 ticks on screen, rounded to nearest power of 2
-            final long tickJump = roundUpToPowerOfTwo(range / 16);
             final int tickCount = (int) (range / tickJump);
             final float[] tickPoints = new float[tickCount];
             long value = mMin;

@@ -69,7 +69,7 @@ public class WifiP2pSettings extends SettingsPreferenceFragment
     private static final int MENU_ID_SEARCH = Menu.FIRST;
     private static final int MENU_ID_CREATE_GROUP = Menu.FIRST + 1;
     private static final int MENU_ID_REMOVE_GROUP = Menu.FIRST + 2;
-    private static final int MENU_ID_RENAME = Menu.FIRST + 1;
+    private static final int MENU_ID_RENAME = Menu.FIRST + 3;
 
     private final IntentFilter mIntentFilter = new IntentFilter();
     private WifiP2pManager mWifiP2pManager;
@@ -268,7 +268,7 @@ public class WifiP2pSettings extends SettingsPreferenceFragment
         menu.add(Menu.NONE, MENU_ID_SEARCH, 0, textId)
             .setEnabled(mWifiP2pEnabled)
             .setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
-        menu.add(Menu.NONE, MENU_ID_REMOVE_GROUP, 0, R.string.wifi_p2p_menu_remove_group)
+        menu.add(Menu.NONE, MENU_ID_REMOVE_GROUP, 0, R.string.wifi_p2p_menu_remove_group);
         menu.add(Menu.NONE, MENU_ID_RENAME, 0, R.string.wifi_p2p_menu_rename)
             .setEnabled(mWifiP2pEnabled)
             .setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);

@@ -414,9 +414,7 @@
     <string name="bluetooth_settings_summary" msgid="2091062709530570462">"Gerenciar conexões, definir o nome e detecção do dispositivo"</string>
     <string name="bluetooth_pairing_request" msgid="6385750334766370310">"Solicitação de pareamento Bluetooth"</string>
     <string name="bluetooth_enter_pin_msg" msgid="5698297871117529185">"Para parear com:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Digite o PIN solicitado pelo dispositivo:"</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"Para parear com:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Digite a senha solicitada pelo dispositivo:"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="7222713483058171357">"O PIN contém letras ou símbolos"</string>
-    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"Geralmente, 0000 ou 1234"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="4637977124526813470">"Talvez seja necessário digitar este PIN no outro dispositivo."</string>
     <string name="bluetooth_enter_passkey_other_device" msgid="2798719004030279602">"Talvez seja necessário digitar esta senha no outro dispositivo."</string>
     <string name="bluetooth_confirm_passkey_msg" msgid="3708312912841950052">"Para parear com:&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;Verifique se ele está mostrando a seguinte senha:&lt;br&gt;&lt;b&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/b&gt;"</string>
@@ -1037,8 +1035,6 @@
     <string name="clear_failed_dlg_text" msgid="1092177570631523106">"Não foi possível limpar os dados do aplicativo."</string>
     <string name="security_settings_desc" product="tablet" msgid="1292421279262430109">"Este aplicativo pode acessar os seguintes itens em seu tablet:"</string>
     <string name="security_settings_desc" product="default" msgid="61749028818785244">"Este aplicativo pode acessar os seguintes itens em seu telefone:"</string>
-    <string name="computing_size" msgid="1599186977475211186">"Calculando\u2026"</string>
-    <string name="invalid_size_value" msgid="1901940003700269523">"Não é possível calcular o tamanho do pacote"</string>
     <string name="security_settings_desc_multi" product="tablet" msgid="7300932212437084403">"Este aplicativo pode acessar os itens a seguir em seu tablet. Para melhorar o desempenho e reduzir o uso de memória, algumas destas permissões estão disponíveis para <xliff:g id="BASE_APP_NAME">%1$s</xliff:g>, pois tal aplicativo é executado no mesmo processo que <xliff:g id="ADDITIONAL_APPS_LIST">%2$s</xliff:g>:"</string>
     <string name="security_settings_desc_multi" product="default" msgid="6610268420793984752">"Este aplicativo pode acessar os itens a seguir em seu telefone. Para melhorar o desempenho e reduzir o uso de memória, algumas destas permissões estão disponíveis para <xliff:g id="BASE_APP_NAME">%1$s</xliff:g>, pois tal aplicativo é executado no mesmo processo que <xliff:g id="ADDITIONAL_APPS_LIST">%2$s</xliff:g>:"</string>
     <string name="join_two_items" msgid="1336880355987539064">"<xliff:g id="FIRST_ITEM">%1$s</xliff:g> e <xliff:g id="SECOND_ITEM">%2$s</xliff:g>"</string>
@@ -1574,8 +1570,6 @@
     <string name="data_usage_empty" msgid="8621855507876539282">"Nenhum aplicativo usou dados durante o período."</string>
     <string name="data_usage_label_foreground" msgid="4938034231928628164">"Primeiro plano"</string>
     <string name="data_usage_label_background" msgid="3225844085975764519">"Plano de fundo"</string>
-    <string name="data_usage_disclaimer" product="tablet" msgid="2591250607795265503">"Calculado pelo tablet. O cálculo da operadora sobre uso de dados pode diferir."</string>
-    <string name="data_usage_disclaimer" product="default" msgid="4735170480663491977">"Calculado pelo telefone. O cálculo da operadora sobre uso de dados pode diferir."</string>
     <string name="data_usage_app_restricted" msgid="3568465218866589705">"restrito"</string>
     <string name="data_usage_disable_mobile" msgid="5211007048880167438">"Desativar dados móveis?"</string>
     <string name="data_usage_disable_mobile_limit" msgid="4644364396844393848">"Definir limite de dados móveis"</string>
@@ -1931,20 +1925,14 @@
     <string name="pref_volume_wake_summary">Os botões de volume despertarão o dispositivo.</string>
 
     <!-- Performance settings #CM -->
-    <string name="performance_settings_title">Desempenho</string>
 
     <!-- Performance Settings : Warning dialog #CM -->
-    <string name="performance_settings_warning_title">Proceda com cautela</string>
-    <string name="performance_settings_warning">Estas configurações são incluídas para testes e qualquer mudança feita nelas pode causar instabilidade, paradas, perda de dados ou falhas de hardware.\n\nPedimos que você não relate bugs se qualquer destas configurações estiverem diferentes do padrão.</string>
 
     <!-- Performance Settings : Processor Settings -->
     <!-- Performance Settings : Processor settings title -->
-    <string name="processor_title">Processador</string>
     <!-- Performance Settings : Processor settings summary. -->
-    <string name="processor_summary">Alterar gerenciador de CPU e velocidade do clock</string>
 
     <!-- Performance Settings : Processor settings sub items -->
-    <string name="cpu_cur_freq_title">Frequência de CPU atual</string>
     <string name="cpu_governors_title">Gerenciador de CPU</string>
     <string name="cpu_governors_summary">%S</string>
     <string name="cpu_min_freq_title">Frequência mínima da CPU</string>
@@ -1991,8 +1979,6 @@
     <!-- Quiet hours #CM -->
     <string name="quiet_hours_title">Horas de silêncio</string>
     <string name="quiet_hours_summary">Ver ou alterar o horário que o dispositivo deve ficar em silêncio</string>
-    <string name="quiet_hours_note_title">Nota</string>
-    <string name="quiet_hours_note_summary">Ligações recebidas se comportarão normalmente durante as horas de silêncio</string>
     <string name="quiet_hours_enabled">Habilitar horas de silêncio</string>
     <string name="quiet_hours_enabled_on">Horas de silêncio serão impostas</string>
     <string name="quiet_hours_enabled_off">Notificações funcionarão normalmente</string>
@@ -2245,29 +2231,12 @@
     <string name="profile_nfc_text">Escrevendo um perfil a uma etiqueta NFC permite você encostar a etiqueta para selecionar aquele perfil. Encostando pela segunda vez irá selecionar o perfil selecionado anterior.</string>
     <string name="intent_sender_data_label">Dados:</string>
     <string name="volume_ring_only_description">Toques de celular</string>
-    <string name="slide_lock_delay_none">Nenhum</string>
-    <string name="slide_lock_delay_1s">1 segundo</string>
-    <string name="slide_lock_delay_5s">5 segundos</string>
-    <string name="slide_lock_delay_10s">10 segundos</string>
-    <string name="slide_lock_delay_15s">15 segundos</string>
-    <string name="slide_lock_delay_30s">30 segundos</string>
-    <string name="slide_lock_delay_1m">1 minuto</string>
-    <string name="slide_lock_delay_5m">5 minutos</string>
-    <string name="slide_lock_delay_10m">10 minutos</string>
-    <string name="slide_lock_delay_30m">30 minutos</string>
     <string name="battery_pulse_title">Pulsar luz quando bateria estiver baixa</string>
     <string name="notification_light_phonelist_title">Telefone</string>
     <string name="notification_light_missed_call_title">Chamada perdida</string>
     <string name="notification_light_voicemail_title">Correio de Voz</string>
     <string name="vibrator_type_ringer">Ligações</string>
     <string name="vibrator_type_notification">Notificações</string>
-    <string name="navigation_bar_title">Barra de Navegação</string>
-    <string name="navigation_bar_help_text">1 - Para começar a editar, pressionar o ícone de travar\n\n2 - Pressionar qualquer botão para atribuir ou mudar a funcionalidade\n\n3 - Toque longo em qualquer botão para reorganizar a ordem\n\n4 - Para salvar, pressione o ícone de travar novamente\n\n5 - Para restaurar o padrão de sistema, pressione o botão de restaurar\n\n</string>
-    <string name="navigation_bar_tips">• Ações só podem ser atribuídas a um botão por vez\n\n• O botão home não pode ser reatribuído\n\n• Botões laterais não pode ser rearranjados</string>
-    <string name="navigation_bar_tips_title">Dicas rápidas</string>
-    <string name="navigation_bar_reset_message">Remover configurações atuais e restaurar para o padrão?</string>
-    <string name="navigation_bar_save_message">Configurações da barra de navegação foram salvas</string>
-    <string name="navigation_bar_reset_toast">Barra de navegação foi restaurada para o padrão</string>
     <string name="vibrator_state_disabled">Desativado</string>
     <string name="vibrator_state_enabled">Ativado</string>
     <string name="vibrator_state_silent">Somente em silencioso</string>
@@ -2352,4 +2321,23 @@
     <string name="help_label" msgid="1107174367904110532">"Ajuda"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"Transmissões por celular"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Selecione os tipos de alertas de emergência a exibir."</string>
+
+    <string name="slide_lock_delay_1s">1 segundo</string>
+
+    <string name="slide_lock_delay_10s">10 segundos</string>
+
+    <string name="slide_lock_delay_15s">15 segundos</string>
+
+    <string name="slide_lock_delay_5s">5 segundos</string>
+
+    <string name="slide_lock_delay_30s">30 segundos</string>
+
+    <string name="slide_lock_delay_5m">5 minutos</string>
+
+    <string name="slide_lock_delay_1m">1 minuto</string>
+
+    <string name="slide_lock_delay_30m">30 minutos</string>
+
+    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"Para parear com:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Digite a senha solicitada pelo dispositivo:"</string>
+
 </resources>

@@ -415,9 +415,7 @@
     <string name="bluetooth_settings_summary" msgid="2091062709530570462">"Gestiona les connexions, defineix el nom i la detecció del dispositiu"</string>
     <string name="bluetooth_pairing_request" msgid="6385750334766370310">"Sol·licitud de sincronització de Bluetooth"</string>
     <string name="bluetooth_enter_pin_msg" msgid="5698297871117529185">"Per enllaçar amb:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Escriu el PIN que el dispositiu sol·licita:"</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"Per sincronitzar amb:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Escriu la contrasenya que requereix el dispositiu:"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="7222713483058171357">"El PIN conté lletres o símbols"</string>
-    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"En general, 0000 o 1234"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="4637977124526813470">"Pot ser que també hagis d\'introduir aquest PIN a l\'altre dispositiu."</string>
     <string name="bluetooth_enter_passkey_other_device" msgid="2798719004030279602">"Pot ser que també hagis d\'introduir aquesta contrasenya a l\'altre dispositiu."</string>
     <string name="bluetooth_confirm_passkey_msg" msgid="3708312912841950052">"Per sincronitzar  amb:&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;Assegura\'t que apareix aquesta contrasenya:&lt;br&gt;&lt;b&gt;<xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/b&gt;"</string>
@@ -1699,4 +1697,8 @@
     <string name="help_label" msgid="1107174367904110532">"Ajuda"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"Emissions mòbils"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Selecciona els tipus d\'alertes d\'emergència que es mostraran."</string>
+    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"En general, 0000 o 1234"</string>
+
+    <string name="bluetooth_enter_passkey_msg" msgid="2220143735340367939">"Per aparellar amb:<xliff:g id="BOLD_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Escriu la contrasenya que requereix el dispositiu:"</string>
+
 </resources>
